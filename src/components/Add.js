@@ -20,10 +20,12 @@ class Add extends Component {
           price: "",
           message: ""
         });
+        //meal created: show success message, close th modal and update th meals list
         notify.show(response.data.message, "success", 4000);
         document.getElementById(`closeAddModal`).click();
         this.props.getMeals();
       })
+      // meal not created, show errors
       .catch(error => {
         if (error.response) {
           this.setState({ message: error.response.data.message });

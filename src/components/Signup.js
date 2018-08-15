@@ -11,7 +11,7 @@ class Signup extends React.Component {
     is_admin: false,
     errors: {}
   };
-
+// sign up
   handleSignup = event => {
     event.preventDefault();
     const { name, email, password, is_admin, errors } = this.state;

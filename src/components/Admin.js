@@ -40,7 +40,7 @@ class AdminDashboard extends Component {
     this.getMeals();
   }
 
-  //delete meal from meals list
+  //delete meal from meals list: close modal, show success message, get all meals
   ConfirmDelete(id) {
     axiosInstance.delete(`/meals/${id}`).then(response => {
       notify.show(response.data.message, "success", 4000);
@@ -96,7 +96,7 @@ class AdminDashboard extends Component {
   };
   render() {
     const { meals, loaded } = this.state;
-
+    // if no meals, return message. else map thru the meals: meal card
     const mealDetails =
       meals.length === 0 ? (
         <div>No Meals Found</div>

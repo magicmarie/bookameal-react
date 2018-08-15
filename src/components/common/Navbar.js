@@ -18,6 +18,7 @@ class Navbar extends React.Component {
       }
     }
   };
+  //logged in as a caterer/admin
   // adminLogIn = () => (
   //   <ul className="navbar-nav">
   //     <li className="nav-item active">
@@ -40,14 +41,10 @@ class Navbar extends React.Component {
   //         Orders
   //       </Link>
   //     </li>
-  //     <li className="nav-item active">
-  //       <Link className="nav-link" to="/">
-  //         Log Out
-  //       </Link>
-  //     </li>
   //   </ul>
   // );
 
+  // logged in as a customer
   // userLogIn = () => (
   //   <ul className="navbar-nav">
   //     <li className="nav-item active">
@@ -70,7 +67,7 @@ class Navbar extends React.Component {
   // );
 
   render() {
-    const { isAdmin, isLoggedIn } = this.state;
+    const { isLoggedIn } = this.state;
 
     return (
       <nav className="navbar navbar-expand-lg navbar-light topnav">

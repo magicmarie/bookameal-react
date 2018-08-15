@@ -9,6 +9,7 @@ class AdminMenu extends Component {
     menu: [],
     loaded: false
   };
+  // get the menu
   getMenu = () => {
     axiosInstance
       .get("/menu")
@@ -31,6 +32,7 @@ class AdminMenu extends Component {
         }
       });
   };
+  // make an order from the menu
   handleAddOrder = (id, meal_id, meal_name, price) => {
     axiosInstance
       .post(`/orders/${id}/${meal_id}`)

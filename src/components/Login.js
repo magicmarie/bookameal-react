@@ -10,28 +10,30 @@ class Login extends React.Component {
     password: "",
     errors: {}
   };
-
+  // login
   handleLogin = event => {
     event.preventDefault();
     const { email, password } = this.state;
     axios
       .post("/api/v1/auth/login ", { email, password })
       .then(response => {
+        // save token to localstorage, decode to get is_admin value
         localStorage.setItem("token", response.data.token);
         const decoded = jwtDecode(response.data.token);
+        // admin/caterer
         if (decoded.is_admin === "True") {
           notify.show(response.data.message, "success", 4000);
           this.props.history.push("/admin");
+          // customer
         } else {
           notify.show(response.data.message, "success", 4000);
           this.props.history.push("/user");
         }
       })
-      .catch(err => {
-        if (err.response) {
-          console.log(err.response.data.message);
-          notify.show(err.response.data.message, "error", 4000);
-        } else if (err.request) {
+      .catch(error => {
+        if (error.response) {
+          notify.show(error.response.data.message, "error", 4000);
+        } else if (error.request) {
           notify.show("Network error", "error", 4000);
         }
       });

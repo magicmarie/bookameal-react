@@ -4,6 +4,7 @@ import { notify } from "react-notify-toast";
 import { Link } from "react-router-dom";
 import axiosInstance from "./common/Apicalls";
 
+// menu card: customer side
 const Menu = props => (
   <div className=" row menu-item">
     <div className="number">{props.id}</div>
@@ -66,6 +67,7 @@ class UserDashboard extends Component {
   //       }
   //     });
   //};
+
   //post order from menu: user
   handleAddOrder = (id, meal_id, meal_name, price) => {
     axiosInstance
