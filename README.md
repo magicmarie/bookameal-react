@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/178e6b00b37e387e886f/maintainability)](https://codeclimate.com/github/magicmarie/bookameal-react/maintainability)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
