@@ -18,7 +18,6 @@
 .idea
 .eslintrc.yml
 .vscode
-yarn.lock
 
 npm-debug.log*
 yarn-debug.log*
