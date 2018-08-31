@@ -1,24 +1,30 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "../App";
-import mockLocalStorage from "./MockLocalStorage";
-
-global.localStorage = mockLocalStorage;
+import { MemoryRouter } from "react-router-dom";
+import jwt from "jsonwebtoken";
 
 describe("App", () => {
   beforeEach(() => {
-    Object.defineProperty(window, "localStorage", {
-      value: mockLocalStorage
-    });
+    localStorage.setItem(
+      "token",
+      jwt.sign(
+        { email: "test@test.com", name: "test", is_admin: "True", id: 1 },
+        "secret"
+      )
+    );
   });
 
-  afterEach(() => {
-    // console.log(window.localStorage.getItem(""));
-  });
+  afterEach(() => {});
 
   it("renders without crashing", () => {
     const div = document.createElement("div");
-    ReactDOM.render(<App />, div);
+    ReactDOM.render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>,
+      div
+    );
     ReactDOM.unmountComponentAtNode(div);
   });
 });
