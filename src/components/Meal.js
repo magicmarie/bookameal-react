@@ -5,38 +5,36 @@ import Edit from "./Edit";
 
 //meal card: admin side
 const Meal = props => (
-  <div className="card mb-2 meal" style={{ width: "12rem", height: "8rem" }}>
+  <div className="card mb-2 meal">
     <div className="card-body text-center">
       <div className="card-text"> {props.mealName}</div>
       <div className="card-text">{props.price}</div>
-      <div className="row">
+      <hr />
+      <div className="row1">
         <Link
           to="#"
           data-toggle="modal"
-          className="btn btn-primary btn-sm mealcard"
-          data-target="#menuModal"
-          onClick={() =>
-            props.handleAddMenu(props.id, props.mealName, props.price)
-          }
-        >
-          Add
-        </Link>
+          className="mealcard fa
+          fa-plus icon"
+          aria-hidden="false"
+          data-target="#addToMenuModal"
+          title="add to menu"
+          onClick={() => props.setMealId(props.id)}
+        />
         <Link
           to="#"
           data-toggle="modal"
+          title="edit meal"
           data-target={`#EditModal${props.id}`}
-          className="btn btn-success btn-sm mealcard"
-        >
-          Edit
-        </Link>
+          className="fa fa-edit icon mealcard"
+        />
         <Link
           to="#"
-          className="btn btn-danger btn-sm"
+          className="fa fa-trash icon mealcard"
           data-toggle="modal"
+          title="delete meal"
           data-target={`#deleteModal${props.id}`}
-        >
-          Delete
-        </Link>
+        />
       </div>
       <Delete
         id={props.id}

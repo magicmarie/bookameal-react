@@ -11,21 +11,21 @@ class Signup extends React.Component {
     is_admin: false,
     errors: {}
   };
-// sign up
+  // sign up
   handleSignup = event => {
     event.preventDefault();
     const { name, email, password, is_admin, errors } = this.state;
     axios
       .post("/api/v1/auth/signup", { name, email, password, is_admin, errors })
       .then(response => {
-        notify.show(response.data.message, "success", 4000);
+        notify.show(response.data.message, "success", 2500);
         this.props.history.push("/login");
       })
       .catch(err => {
         if (err.response) {
-          notify.show(err.response.data.message, "error", 4000);
+          notify.show(err.response.data.message, "error", 2500);
         } else if (err.request) {
-          notify.show("Network error", "error", 4000);
+          notify.show("Network error", "error", 2500);
         }
       });
   };

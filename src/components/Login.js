@@ -3,6 +3,7 @@ import axios from "axios";
 import { notify } from "react-notify-toast";
 import jwtDecode from "jwt-decode";
 import { Link } from "react-router-dom";
+import { AppContext } from "../appContext";
 
 class Login extends React.Component {
   state = {
@@ -19,22 +20,23 @@ class Login extends React.Component {
       .then(response => {
         // save token to localstorage, decode to get is_admin value
         localStorage.setItem("token", response.data.token);
+        this.props.context.login(response.data.token);
         const decoded = jwtDecode(response.data.token);
         // admin/caterer
         if (decoded.is_admin === "True") {
-          notify.show(response.data.message, "success", 4000);
+          notify.show(response.data.message, "success", 2000);
           this.props.history.push("/admin");
           // customer
         } else {
-          notify.show(response.data.message, "success", 4000);
+          notify.show(response.data.message, "success", 2000);
           this.props.history.push("/user");
         }
       })
       .catch(error => {
         if (error.response) {
-          notify.show(error.response.data.message, "error", 4000);
+          notify.show(error.response.data.message, "error", 2500);
         } else if (error.request) {
-          notify.show("Network error", "error", 4000);
+          notify.show("Network error", "error", 2500);
         }
       });
   };
@@ -44,6 +46,7 @@ class Login extends React.Component {
 
   render() {
     const { email, password } = this.state;
+    // console.log(this.props.context);
     return (
       <div className="row justify-content-md-center">
         <div className="col-md-5">
@@ -92,4 +95,8 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default React.forwardRef((props, ref) => (
+  <AppContext.Consumer>
+    {context => <Login {...props} context={context} ref={ref} />}
+  </AppContext.Consumer>
+));

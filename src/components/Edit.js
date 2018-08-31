@@ -58,7 +58,7 @@ class Edit extends Component {
                 )}
                 <form onSubmit={this.handleEditMeal}>
                   <div className="form-group">
-                    <label htmlFor="text">Name</label>
+                    <label htmlFor="text">Name:</label>
                     <input
                       type="text"
                       name="meal_name"
@@ -68,8 +68,8 @@ class Edit extends Component {
                       className="form-control"
                     />
                   </div>
-                  <div>
-                    <label htmlFor="number">Price</label>
+                  <div className="form-group">
+                    <label htmlFor="number">Price:</label>
                     <input
                       type="integer"
                       name="price"
@@ -79,17 +79,20 @@ class Edit extends Component {
                       className="form-control"
                     />
                   </div>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    data-dismiss="modal"
-                    id={`closeEditModal${this.props.id}`}
-                  >
-                    Close
-                  </button>
-                  <button type="submit" className="btn btn-primary">
-                    Save
-                  </button>
+                  <div>
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      data-dismiss="modal"
+                      onClick={this.reset}
+                      id={`closeEditModal${this.props.id}`}
+                    >
+                      Close
+                    </button>
+                    <button type="submit" className="btn btn-primary ml-3">
+                      Save
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>

@@ -3,35 +3,42 @@ import Loader from "react-loader";
 import { notify } from "react-notify-toast";
 import { Link } from "react-router-dom";
 import axiosInstance from "./common/Apicalls";
+import WeekDays from "./WeekDays";
 
 // menu card: customer side
 const Menu = props => (
-  <div className=" row menu-item">
-    <div className="number">{props.id}</div>
-    <p>{props.mealName}</p>
-    <div className="price">{props.price}</div>
-    <Link
-      to="#"
-      className="add"
-      onClick={() => props.handleAddOrder(props.id, props.mealId)}
-    >
-      +
-    </Link>
+  <div className="menu-item">
+    <div className="row">
+      <div className="col-md-6">{props.mealName}</div>
+      <div className="price col-md-2">{props.price}</div>
+      <Link
+        to="#"
+        className="add col-md-4 text-center"
+        title="make an order"
+        onClick={() => props.handleAddOrder(props.id, props.mealId)}
+      >
+        +
+      </Link>
+    </div>
   </div>
 );
 
 class UserDashboard extends Component {
   state = {
     menus: [],
-    loaded: false
+    loaded: false,
+    today: ""
   };
-  //get menu
-  getMenus = () => {
+  //get menu: customer side
+  getMenus = menu_day => {
     axiosInstance
-      .get("/menu")
+      .get(`/user-menus/${menu_day}`)
       .then(response => {
-        const menus = response.data.Menu;
-        this.setState({ menus, loaded: true });
+        this.setState({
+          menus: response.data.menus,
+          loaded: true,
+          today: menu_day.charAt(0).toUpperCase() + menu_day.slice(1)
+        });
       })
       .catch(error => {
         if (error.response) {
@@ -40,42 +47,22 @@ class UserDashboard extends Component {
             this.setState({
               menus: []
             });
+          } else if (status === 401) {
+            localStorage.removeItem("token");
           }
         } else if (error.request) {
-          notify.show("Wrong request", "warning", 4000);
+          notify.show("Wrong request", "warning", 2500);
         }
       });
   };
-  //get user orders
-  // getOrders = () => {
-  //   axiosInstance
-  //     .get("/user/orders")
-  //     .then(response => {
-  //       const orders = response.data;
-  //       this.setState({ orders, loaded: true });
-  //     })
-  //     .catch(error => {
-  //       if (error.response) {
-  //         const { status } = error.response;
-  //         if (status === 404) {
-  //           this.setState({
-  //             orders: []
-  //           });
-  //         }
-  //       } else if (error.request) {
-  //         notify.show("Wrong request", "warning", 4000);
-  //       }
-  //     });
-  //};
 
   //post order from menu: user
-  handleAddOrder = (id, meal_id, meal_name, price) => {
+  handleAddOrder = (id, meal_id) => {
     axiosInstance
       .post(`/orders/${id}/${meal_id}`)
       .then(response => {
-        const orders = response.data;
-        this.setState({ orders });
-        notify.show(response.data.message, "success", 4000);
+        console.log(response.data);
+        notify.show(response.data.message, "success", 2500);
       })
       .catch(error => {
         if (error.response) {
@@ -86,81 +73,82 @@ class UserDashboard extends Component {
             });
           }
         } else if (error.request) {
-          notify.show("Wrong request", "error", 4000);
+          notify.show("Wrong request", "error", 2500);
         }
       });
   };
-  componentWillMount() {
-    this.getMenus();
+  componentDidMount() {
+    const today = this.getCurrentDay();
+    this.getMenus(today);
+    this.setState({ today });
   }
 
-  render() {
-    let daysList = [
-      { dataDay: "monday", value: "Monday" },
-      { dataDay: "tuesday", value: "Tuesday" },
-      { dataDay: "wednesday", value: "Wednesday" },
-      { dataDay: "thursday", value: "Thursday" },
-      { dataDay: "friday", value: "Friday" },
-      { dataDay: "saturday", value: "Saturday" },
-      { dataDay: "sunday", value: "Sunday" }
+  getCurrentDay = () => {
+    const numberDay = new Date().getDay();
+    const days = [
+      { key: 1, name: "Monday" },
+      { key: 2, name: "Tuesday" },
+      { key: 3, name: "Wednesday" },
+      { key: 4, name: "Thursday" },
+      { key: 5, name: "Friday" },
+      { key: 6, name: "Saturday" },
+      { key: 7, name: "Sunday" }
     ];
-    let days = daysList.map((day, i) => (
-      <li key={i} className="list-group-item">
-        <button className="btn btn-block btn-lg" data-day={day.dataDay}>
-          {day.value}
-        </button>
-      </li>
-    ));
-    const { menus, loaded } = this.state;
+    const today = days.find(day => day.key === numberDay);
+    return today.name;
+  };
+
+  getMenu = day => {
+    day = day.charAt(0).toUpperCase() + day.slice(1);
+    const { menus } = this.state;
+    this.setState({ currentDay: day, menus });
+  };
+  render() {
+    const { loaded, menus, today } = this.state;
     const menuItems =
       menus.length === 0 ? (
         <div>No Menu Found</div>
       ) : (
-        menus.map(menu => (
-          <Menu
-            id={menu.id}
-            mealId={menu.meal_id}
-            mealName={menu.meal_name}
-            price={menu.price}
-            key={menu.id}
-            handleAddOrder={this.handleAddOrder}
-          />
+        menus.map((menu, index) => (
+          <div key={index}>
+            <div className="row">
+              <h5>
+                <strong>{menu.userName}</strong>
+              </h5>
+            </div>
+            {menu.meals.map(meal => (
+              <Menu
+                id={meal.menu_id}
+                mealId={meal.id}
+                mealName={meal.name}
+                price={meal.price}
+                key={meal.id}
+                handleAddOrder={this.handleAddOrder}
+              />
+            ))}
+          </div>
         ))
       );
-    // const { orders } = this.state;
-    // const orderItems =
-    //   orders.length === 0 ? (
-    //     <div>No Orders Found</div>
-    //   ) : (
-    //     orders.map(order => (
-    //       <Menu
-    //         id={order.id}
-    //         mealId={order.meal_id}
-    //         mealName={order.meal_name}
-    //         price={order.price}
-    //         key={order.id}
-    //       />
-    //     ))
-    //   );
+
     return (
       <div className="row">
         <div className="col-md-2">
-          <div className="header">Menus</div>
-          <ul className="list-group">{days}</ul>
+          <div className="header text-center">Days</div>
+
+          <ul className="list-group">
+            <WeekDays getMenu={this.getMenus} />
+          </ul>
         </div>
-        <div className="col-md-5">
-          <div className="menu">
-            <h4 className="header text-center">Daily Menu</h4>
-            <Loader loaded={loaded}>{menuItems}</Loader>
-          </div>
-        </div>
-        <div className="col-md-5">
-          <div className="ordered">
-            <div className="header text-center">Order</div>
-            <Loader loaded={loaded}>
-              {/* <div className="row">{orderItems}</div> */}
-            </Loader>
-          </div>
+        <div className="vl" />
+        <div className="col-md-9">
+          <h4 className="header text-center">
+            {today}
+            's Menus
+          </h4>
+          <Loader loaded={loaded}>
+            <div className="h4">{menus.userName}</div>
+            <div>{menuItems}</div>
+          </Loader>
         </div>
       </div>
     );
