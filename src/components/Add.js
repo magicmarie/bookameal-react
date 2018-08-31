@@ -15,13 +15,9 @@ class Add extends Component {
     axiosInstance
       .post("/meals", { meal_name, price })
       .then(response => {
-        this.setState({
-          meal_name: "",
-          price: "",
-          message: ""
-        });
-        //meal created: show success message, close th modal and update th meals list
-        notify.show(response.data.message, "success", 4000);
+        this.reset();
+        //meal created: show success message, close the modal and update th meals list
+        notify.show(response.data.message, "success", 2500);
         document.getElementById(`closeAddModal`).click();
         this.props.getMeals();
       })
@@ -30,12 +26,19 @@ class Add extends Component {
         if (error.response) {
           this.setState({ message: error.response.data.message });
         } else if (error.request) {
-          notify.show("Network error", "error", 4000);
+          notify.show("Network error", "error", 2500);
         }
       });
   };
   onChange = event =>
     this.setState({ [event.target.name]: event.target.value });
+
+  reset = () =>
+    this.setState({
+      meal_name: "",
+      price: "",
+      message: ""
+    });
 
   render() {
     return (
@@ -55,6 +58,7 @@ class Add extends Component {
                   Create New meal
                 </h5>
                 <button
+                  onClick={this.reset}
                   type="button"
                   className="close"
                   data-dismiss="modal"
@@ -79,7 +83,7 @@ class Add extends Component {
                 )}
                 <form onSubmit={this.handleNewMeal}>
                   <div className="form-group">
-                    <label htmlFor="text">Name</label>
+                    <label htmlFor="text">Name:</label>
                     <input
                       type="text"
                       name="meal_name"
@@ -89,8 +93,8 @@ class Add extends Component {
                       className="form-control"
                     />
                   </div>
-                  <div>
-                    <label htmlFor="number">Price</label>
+                  <div className="form-group">
+                    <label htmlFor="number">Price:</label>
                     <input
                       type="integer"
                       name="price"
@@ -100,17 +104,20 @@ class Add extends Component {
                       className="form-control"
                     />
                   </div>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    data-dismiss="modal"
-                    id="closeAddModal"
-                  >
-                    Close
-                  </button>
-                  <button type="submit" className="btn btn-primary">
-                    Save
-                  </button>
+                  <div>
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      data-dismiss="modal"
+                      id="closeAddModal"
+                      onClick={this.reset}
+                    >
+                      Close
+                    </button>
+                    <button type="submit" className="btn btn-primary ml-3">
+                      Save
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>
