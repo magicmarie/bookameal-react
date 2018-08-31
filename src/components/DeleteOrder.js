@@ -1,9 +1,10 @@
 import React from "react";
 
-//delete meal modal
-const DeleteMeal = props => (
+//delete order modal
+
+const DeleteOrder = props => (
   <div>
-    <div id={`deleteModal${props.id}`} className="modal fade">
+    <div id={`deleteOrderModal${props.id}`} className="modal fade">
       <div className="modal-dialog modal-confirm">
         <div className="modal-content">
           <div className="modal-header">
@@ -19,8 +20,8 @@ const DeleteMeal = props => (
           </div>
           <div className="modal-body">
             <p>
-              Do you really want to delete <strong>{props.meal_name}</strong>?
-              This process cannot be undone.
+              Do you really want to delete <strong>{props.meal_name}</strong>{" "}
+              from your orders? This process cannot be undone.
             </p>
           </div>
           <div className="modal-footer">
@@ -35,7 +36,7 @@ const DeleteMeal = props => (
             <button
               type="button"
               className="btn btn-danger"
-              onClick={() => props.ConfirmDelete(props.id)}
+              onClick={() => props.ConfirmDeleteOrder(props.id)}
             >
               Delete
             </button>
@@ -46,4 +47,4 @@ const DeleteMeal = props => (
   </div>
 );
 
-export default DeleteMeal;
+export default DeleteOrder;
