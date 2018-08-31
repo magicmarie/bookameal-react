@@ -1,7 +1,5 @@
 [![Build Status](https://travis-ci.org/magicmarie/bookameal-react.svg?branch=develop)](https://travis-ci.org/magicmarie/bookameal-react)
-
 [![Coverage Status](https://coveralls.io/repos/github/magicmarie/bookameal-react/badge.svg?branch=develop)](https://coveralls.io/github/magicmarie/bookameal-react?branch=develop)
-
 [![Maintainability](https://api.codeclimate.com/v1/badges/178e6b00b37e387e886f/maintainability)](https://codeclimate.com/github/magicmarie/bookameal-react/maintainability)
 
 ## Book A Meal application
