@@ -1,14 +1,12 @@
 language: node_js
 node_js:
-  - "node"
-cache:
-  directories:
-    - "node_modules"
-
+  - "stable"
+# cache:
+#   directories:
+#   - node_modules
 script:
-  - npm test -- -u --coverage --silent # Include coverage when running tests
-#  - npm run build
+  - yarn install
+  - yarn coverage
 
-after_script: # Upload coverage reports
-  # - COVERALLS_REPO_TOKEN=$repo_token npm run coveralls
-  - npm run coveralls
+after_script:
+  - COVERALLS_REPO_TOKEN=$coveralls_repo_token yarn run coveralls
