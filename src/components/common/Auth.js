@@ -9,7 +9,11 @@ const AuthRoute = ({ component: Component, ...rest }) => {
     <Route
       {...rest}
       render={props => {
-        return token === null ? <Redirect to="/login" /> : <Component />;
+        return token === null ? (
+          <Redirect to="/login" />
+        ) : (
+          <Component {...props} />
+        );
       }}
     />
   );

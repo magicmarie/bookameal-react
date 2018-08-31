@@ -64,11 +64,9 @@ body {
 }
 
 /* Add style to the top navigation */
-
 .topnav {
   background-color: #7070da;
-  color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .topnav a:hover {
@@ -95,26 +93,12 @@ h4 {
   font-weight: bold;
 }
 
-.menu {
-  padding: 15px;
-}
-
-.menu-item .number {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #7070da;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  vertical-align: middle;
-  text-align: center;
-}
-
 .menu-item .price {
   padding: 0.25em 0.4em;
-  font-size: 75%;
-  font-weight: 700;
+  flex: 0 0 01;
+  font-size: 80%;
+  font-weight: 10000;
+  padding: 15px;
   line-height: 1;
   text-align: center;
   border-radius: 0.25rem;
@@ -124,12 +108,12 @@ h4 {
 
 .menu-item .add {
   font-size: 2rem;
+  color: #7070da;
 }
 
 .menu-item {
-  display: block;
   padding: 0.75rem 1.25rem;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
   background-color: #fff;
   font-size: 1.25rem;
   flex: 0 0 1;
@@ -168,10 +152,35 @@ h4 {
 }
 
 .meal {
-  margin-right: 10px;
+  margin-right: 20px;
   background: #eee;
+  margin-left: 10px;
+  min-height: 8rem;
 }
 
 .mealcard {
+  margin-left: 10px;
   margin-right: 10px;
+}
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.icon {
+  font-size: 20px;
+  color: #4978a7;
+}
+
+.row1 {
+  margin: auto;
+  align-items: center;
+}
+
+.vl {
+  border-left: 2px solid #7070da;
+  height: 700px;
 }
