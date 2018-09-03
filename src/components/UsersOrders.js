@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 import { notify } from "react-notify-toast";
 import axiosInstance from "./common/Apicalls";
 import Delete from "./DeleteOrder";
+import Pagination from "./common/Pagination";
 
 //order: customer side
 const Order = props => (
-  <div className="card mb-2 meal" style={{ width: "12rem", height: "10rem" }}>
+  <div className="card mb-2 meal">
     <div className="card-body text-center">
       <div className="card-text">{props.mealName}</div>
       <div className="card-text">{props.price}</div>
@@ -36,7 +37,12 @@ const Order = props => (
 class UserOrders extends Component {
   state = {
     orders: [],
-    loaded: false
+    loaded: false,
+    nextPage: null,
+    previousPage: null,
+    currentPage: null,
+    pages: null,
+    totalCount: null
   };
 
   //delete order: close modal, show success message, get the menu
@@ -49,11 +55,30 @@ class UserOrders extends Component {
   };
   //get user orders
   getUserOrders = () => {
+    const page = this.state.currentPage || 1;
+
     axiosInstance
-      .get("/user/orders")
+      .get("/user/orders", { params: { page } })
       .then(response => {
-        const orders = response.data.Orders.orders;
-        this.setState({ orders, loaded: true });
+        const {
+          currentPage,
+          orders,
+          nextPage,
+          pages,
+          perPage,
+          previousPage,
+          totalCount
+        } = response.data.Orders;
+        this.setState({
+          currentPage,
+          orders,
+          nextPage,
+          pages,
+          perPage,
+          previousPage,
+          totalCount,
+          loaded: true
+        });
       })
       .catch(error => {
         if (error.response) {
@@ -70,18 +95,34 @@ class UserOrders extends Component {
         }
       });
   };
+  //pagination
+  changePage = selectedPage => {
+    this.setState(
+      {
+        currentPage: selectedPage
+      },
+      () => this.getUserOrders()
+    );
+  };
   componentDidMount() {
     this.getUserOrders();
   }
 
   render() {
-    const { orders, loaded } = this.state;
+    const {
+      orders,
+      loaded,
+      currentPage,
+      pages,
+      nextPage,
+      previousPage
+    } = this.state;
     const ordersDetails =
       orders.length === 0 ? (
         <div>No orders Found</div>
       ) : (
         orders.map(order => (
-          <div key={order.id}>
+          <div className="col-md-3 col-lg-3" key={order.id}>
             <Order
               id={order.id}
               mealName={order.meal_name}
@@ -94,10 +135,19 @@ class UserOrders extends Component {
       );
 
     return (
-      <Loader loaded={loaded}>
-        <h2 className="header text-center">Orders</h2>
-        <div className="row">{ordersDetails}</div>
-      </Loader>
+      <div>
+        <Loader loaded={loaded}>
+          <h2 className="header text-center">Orders</h2>
+          <div className="row">{ordersDetails}</div>
+        </Loader>
+        <Pagination
+          currentPage={currentPage}
+          previousPage={previousPage}
+          nextPage={nextPage}
+          pages={pages}
+          changePage={this.changePage}
+        />
+      </div>
     );
   }
 }

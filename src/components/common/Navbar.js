@@ -1,3 +1,4 @@
+// navbar component
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { AppContext } from "../../appContext";
@@ -5,7 +6,9 @@ import { AppContext } from "../../appContext";
 class Navbar extends React.Component {
   render() {
     return (
+      // subscribes to context changes, re-renders when the Provider’s value prop changes.
       <AppContext.Consumer>
+        {/* context shares data globally */}
         {context => {
           return (
             <nav className="navbar navbar-expand-lg navbar-light topnav">

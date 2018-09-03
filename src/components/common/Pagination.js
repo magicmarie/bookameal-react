@@ -1,21 +1,21 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
+//import PropTypes from "prop-types";
 
 //Pagination component to be reused in other components where pagination is needed.
 
 class Pagination extends Component {
-  static propTypes = {
-    pages: PropTypes.number,
-    currentPage: PropTypes.number,
-    nextPage: PropTypes.number,
-    previousPage: PropTypes.number,
-    changePage: PropTypes.func.isRequired
-  };
+  // static propTypes = {
+  //   pages: PropTypes.number,
+  //   currentPage: PropTypes.number,
+  //   nextPage: PropTypes.number,
+  //   previousPage: PropTypes.number,
+  //   changePage: PropTypes.func.isRequired
+  // };
 
   static defaultProps = {
     nextPage: null,
     previousPage: null,
-    totalPages: null,
+    pages: null,
     currentPage: null
   };
 
@@ -51,8 +51,9 @@ class Pagination extends Component {
     ));
 
     return (
-      <nav aria-label="Page navigation example justify-content">
+      <nav aria-label="Page navigation example">
         <ul className="pagination">
+          {/* if previous page, do nothing, else add disabled class */}
           <li className={`page-item${previousPage ? "" : " disabled"}`}>
             <a
               className="page-link"
@@ -64,6 +65,7 @@ class Pagination extends Component {
             </a>
           </li>
           {totalpages}
+          {/* if next page, do nothing, else add disabled class */}
           <li className={`page-item${nextPage ? "" : " disabled"}`}>
             <a
               className="page-link mb-4"

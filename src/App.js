@@ -21,6 +21,7 @@ import AppProvider from "./appContext";
 class App extends Component {
   render = () => {
     return (
+      // allows Consumers to subscribe to context changes
       <AppProvider>
         <Navbar />
         <div className="container-fluid">

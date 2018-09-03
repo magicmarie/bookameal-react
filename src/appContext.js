@@ -1,6 +1,8 @@
+// app provider component: react context API
 import React, { Component } from "react";
 import jwtDecode from "jwt-decode";
 
+// 
 export const AppContext = React.createContext();
 
 class AppProvider extends Component {

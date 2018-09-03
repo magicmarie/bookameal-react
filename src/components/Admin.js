@@ -4,7 +4,7 @@ import { notify } from "react-notify-toast";
 import axiosInstance from "./common/Apicalls";
 import Meal from "./Meal";
 import Add from "./Add";
-import Addtomenu from "./AddToMenu";
+import AddToMenu from "./AddToMenu";
 import Pagination from "./common/Pagination";
 
 class AdminDashboard extends Component {
@@ -223,7 +223,7 @@ class AdminDashboard extends Component {
           </div>
         </div>
         <Add getMeals={this.getMeals} />
-        <Addtomenu
+        <AddToMenu
           handleAddMenu={this.handleAddMenu}
           checked={this.checked}
           days={days}

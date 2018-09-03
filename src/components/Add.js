@@ -10,6 +10,7 @@ class Add extends Component {
   };
   handleNewMeal = event => {
     const { meal_name, price } = this.state;
+    // mtd to stop the default action of an element
     event.preventDefault();
     //create new meal
     axiosInstance
