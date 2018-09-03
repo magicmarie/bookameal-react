@@ -1,9 +1,9 @@
 import React from "react";
-import axios from "axios";
 import { notify } from "react-notify-toast";
 import jwtDecode from "jwt-decode";
 import { Link } from "react-router-dom";
 import { AppContext } from "../appContext";
+import axiosInstance from "./common/Apicalls";
 
 class Login extends React.Component {
   state = {
@@ -15,8 +15,8 @@ class Login extends React.Component {
   handleLogin = event => {
     event.preventDefault();
     const { email, password } = this.state;
-    axios
-      .post("/api/v1/auth/login ", { email, password })
+    axiosInstance
+      .post("/auth/login ", { email, password })
       .then(response => {
         // save token to localstorage, decode to get is_admin value
         localStorage.setItem("token", response.data.token);

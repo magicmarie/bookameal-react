@@ -1,7 +1,7 @@
 import React from "react";
-import axios from "axios";
 import { notify } from "react-notify-toast";
 import { Link } from "react-router-dom";
+import axiosInstance from "./common/Apicalls";
 
 class Signup extends React.Component {
   state = {
@@ -15,8 +15,8 @@ class Signup extends React.Component {
   handleSignup = event => {
     event.preventDefault();
     const { name, email, password, is_admin, errors } = this.state;
-    axios
-      .post("/api/v1/auth/signup", { name, email, password, is_admin, errors })
+    axiosInstance
+      .post("/auth/signup", { name, email, password, is_admin, errors })
       .then(response => {
         notify.show(response.data.message, "success", 2500);
         this.props.history.push("/login");
