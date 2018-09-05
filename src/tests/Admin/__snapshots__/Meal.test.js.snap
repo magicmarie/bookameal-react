@@ -1,0 +1,606 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdminMealCard component should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Meal />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="card-body text-center"
+>
+        <div
+                className="card-text"
+        >
+                 
+        </div>
+        <div
+                className="card-text"
+        />
+        <hr />
+        <div
+                className="row1"
+        >
+                <Link
+                        aria-hidden="false"
+                        className="mealcard fa fa-plus icon"
+                        data-target="#addToMenuModal"
+                        data-toggle="modal"
+                        onClick={[Function]}
+                        replace={false}
+                        title="add to menu"
+                        to="#"
+                />
+                <Link
+                        className="fa fa-edit icon mealcard"
+                        data-target="#EditModalundefined"
+                        data-toggle="modal"
+                        replace={false}
+                        title="edit meal"
+                        to="#"
+                />
+                <Link
+                        className="fa fa-trash icon mealcard"
+                        data-target="#deleteModalundefined"
+                        data-toggle="modal"
+                        replace={false}
+                        title="delete meal"
+                        to="#"
+                />
+        </div>
+        <DeleteMeal
+                ConfirmDelete={undefined}
+                id={undefined}
+                meal_name={undefined}
+        />
+        <Edit
+                EditMeal={undefined}
+                id={undefined}
+                meal_name={undefined}
+                message={undefined}
+                price={undefined}
+        />
+</div>,
+      "className": "card mb-2 meal",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="card-text"
+>
+             
+</div>,
+          <div
+            className="card-text"
+/>,
+          <hr />,
+          <div
+            className="row1"
+>
+            <Link
+                        aria-hidden="false"
+                        className="mealcard fa fa-plus icon"
+                        data-target="#addToMenuModal"
+                        data-toggle="modal"
+                        onClick={[Function]}
+                        replace={false}
+                        title="add to menu"
+                        to="#"
+            />
+            <Link
+                        className="fa fa-edit icon mealcard"
+                        data-target="#EditModalundefined"
+                        data-toggle="modal"
+                        replace={false}
+                        title="edit meal"
+                        to="#"
+            />
+            <Link
+                        className="fa fa-trash icon mealcard"
+                        data-target="#deleteModalundefined"
+                        data-toggle="modal"
+                        replace={false}
+                        title="delete meal"
+                        to="#"
+            />
+</div>,
+          <DeleteMeal
+            ConfirmDelete={undefined}
+            id={undefined}
+            meal_name={undefined}
+/>,
+          <Edit
+            EditMeal={undefined}
+            id={undefined}
+            meal_name={undefined}
+            message={undefined}
+            price={undefined}
+/>,
+        ],
+        "className": "card-body text-center",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+            ],
+            "className": "card-text",
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "card-text",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                aria-hidden="false"
+                className="mealcard fa fa-plus icon"
+                data-target="#addToMenuModal"
+                data-toggle="modal"
+                onClick={[Function]}
+                replace={false}
+                title="add to menu"
+                to="#"
+/>,
+              <Link
+                className="fa fa-edit icon mealcard"
+                data-target="#EditModalundefined"
+                data-toggle="modal"
+                replace={false}
+                title="edit meal"
+                to="#"
+/>,
+              <Link
+                className="fa fa-trash icon mealcard"
+                data-target="#deleteModalundefined"
+                data-toggle="modal"
+                replace={false}
+                title="delete meal"
+                to="#"
+/>,
+            ],
+            "className": "row1",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "aria-hidden": "false",
+                "className": "mealcard fa fa-plus icon",
+                "data-target": "#addToMenuModal",
+                "data-toggle": "modal",
+                "onClick": [Function],
+                "replace": false,
+                "title": "add to menu",
+                "to": "#",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "fa fa-edit icon mealcard",
+                "data-target": "#EditModalundefined",
+                "data-toggle": "modal",
+                "replace": false,
+                "title": "edit meal",
+                "to": "#",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "fa fa-trash icon mealcard",
+                "data-target": "#deleteModalundefined",
+                "data-toggle": "modal",
+                "replace": false,
+                "title": "delete meal",
+                "to": "#",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "ConfirmDelete": undefined,
+            "id": undefined,
+            "meal_name": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "EditMeal": undefined,
+            "id": undefined,
+            "meal_name": undefined,
+            "message": undefined,
+            "price": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="card-body text-center"
+>
+          <div
+                    className="card-text"
+          >
+                     
+          </div>
+          <div
+                    className="card-text"
+          />
+          <hr />
+          <div
+                    className="row1"
+          >
+                    <Link
+                              aria-hidden="false"
+                              className="mealcard fa fa-plus icon"
+                              data-target="#addToMenuModal"
+                              data-toggle="modal"
+                              onClick={[Function]}
+                              replace={false}
+                              title="add to menu"
+                              to="#"
+                    />
+                    <Link
+                              className="fa fa-edit icon mealcard"
+                              data-target="#EditModalundefined"
+                              data-toggle="modal"
+                              replace={false}
+                              title="edit meal"
+                              to="#"
+                    />
+                    <Link
+                              className="fa fa-trash icon mealcard"
+                              data-target="#deleteModalundefined"
+                              data-toggle="modal"
+                              replace={false}
+                              title="delete meal"
+                              to="#"
+                    />
+          </div>
+          <DeleteMeal
+                    ConfirmDelete={undefined}
+                    id={undefined}
+                    meal_name={undefined}
+          />
+          <Edit
+                    EditMeal={undefined}
+                    id={undefined}
+                    meal_name={undefined}
+                    message={undefined}
+                    price={undefined}
+          />
+</div>,
+        "className": "card mb-2 meal",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="card-text"
+>
+               
+</div>,
+            <div
+              className="card-text"
+/>,
+            <hr />,
+            <div
+              className="row1"
+>
+              <Link
+                            aria-hidden="false"
+                            className="mealcard fa fa-plus icon"
+                            data-target="#addToMenuModal"
+                            data-toggle="modal"
+                            onClick={[Function]}
+                            replace={false}
+                            title="add to menu"
+                            to="#"
+              />
+              <Link
+                            className="fa fa-edit icon mealcard"
+                            data-target="#EditModalundefined"
+                            data-toggle="modal"
+                            replace={false}
+                            title="edit meal"
+                            to="#"
+              />
+              <Link
+                            className="fa fa-trash icon mealcard"
+                            data-target="#deleteModalundefined"
+                            data-toggle="modal"
+                            replace={false}
+                            title="delete meal"
+                            to="#"
+              />
+</div>,
+            <DeleteMeal
+              ConfirmDelete={undefined}
+              id={undefined}
+              meal_name={undefined}
+/>,
+            <Edit
+              EditMeal={undefined}
+              id={undefined}
+              meal_name={undefined}
+              message={undefined}
+              price={undefined}
+/>,
+          ],
+          "className": "card-body text-center",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                undefined,
+              ],
+              "className": "card-text",
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              undefined,
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "card-text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "hr",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  aria-hidden="false"
+                  className="mealcard fa fa-plus icon"
+                  data-target="#addToMenuModal"
+                  data-toggle="modal"
+                  onClick={[Function]}
+                  replace={false}
+                  title="add to menu"
+                  to="#"
+/>,
+                <Link
+                  className="fa fa-edit icon mealcard"
+                  data-target="#EditModalundefined"
+                  data-toggle="modal"
+                  replace={false}
+                  title="edit meal"
+                  to="#"
+/>,
+                <Link
+                  className="fa fa-trash icon mealcard"
+                  data-target="#deleteModalundefined"
+                  data-toggle="modal"
+                  replace={false}
+                  title="delete meal"
+                  to="#"
+/>,
+              ],
+              "className": "row1",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "aria-hidden": "false",
+                  "className": "mealcard fa fa-plus icon",
+                  "data-target": "#addToMenuModal",
+                  "data-toggle": "modal",
+                  "onClick": [Function],
+                  "replace": false,
+                  "title": "add to menu",
+                  "to": "#",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "className": "fa fa-edit icon mealcard",
+                  "data-target": "#EditModalundefined",
+                  "data-toggle": "modal",
+                  "replace": false,
+                  "title": "edit meal",
+                  "to": "#",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "className": "fa fa-trash icon mealcard",
+                  "data-target": "#deleteModalundefined",
+                  "data-toggle": "modal",
+                  "replace": false,
+                  "title": "delete meal",
+                  "to": "#",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "ConfirmDelete": undefined,
+              "id": undefined,
+              "meal_name": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "EditMeal": undefined,
+              "id": undefined,
+              "meal_name": undefined,
+              "message": undefined,
+              "price": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

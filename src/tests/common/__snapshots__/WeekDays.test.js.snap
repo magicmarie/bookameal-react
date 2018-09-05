@@ -1,0 +1,280 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeekDays component User creates account successfully 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Days />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": "0",
+    "nodeType": "host",
+    "props": Object {
+      "children": <button
+        className="btn btn-block btn-lg"
+        data-day="monday"
+        onClick={[Function]}
+>
+        Monday
+</button>,
+      "className": "list-group-item",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Monday",
+        "className": "btn btn-block btn-lg",
+        "data-day": "monday",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": "Monday",
+      "type": "button",
+    },
+    "type": "li",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": "0",
+      "nodeType": "host",
+      "props": Object {
+        "children": <button
+          className="btn btn-block btn-lg"
+          data-day="monday"
+          onClick={[Function]}
+>
+          Monday
+</button>,
+        "className": "list-group-item",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Monday",
+          "className": "btn btn-block btn-lg",
+          "data-day": "monday",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Monday",
+        "type": "button",
+      },
+      "type": "li",
+    },
+    Object {
+      "instance": null,
+      "key": "1",
+      "nodeType": "host",
+      "props": Object {
+        "children": <button
+          className="btn btn-block btn-lg"
+          data-day="tuesday"
+          onClick={[Function]}
+>
+          Tuesday
+</button>,
+        "className": "list-group-item",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Tuesday",
+          "className": "btn btn-block btn-lg",
+          "data-day": "tuesday",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Tuesday",
+        "type": "button",
+      },
+      "type": "li",
+    },
+    Object {
+      "instance": null,
+      "key": "2",
+      "nodeType": "host",
+      "props": Object {
+        "children": <button
+          className="btn btn-block btn-lg"
+          data-day="wednesday"
+          onClick={[Function]}
+>
+          Wednesday
+</button>,
+        "className": "list-group-item",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Wednesday",
+          "className": "btn btn-block btn-lg",
+          "data-day": "wednesday",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Wednesday",
+        "type": "button",
+      },
+      "type": "li",
+    },
+    Object {
+      "instance": null,
+      "key": "3",
+      "nodeType": "host",
+      "props": Object {
+        "children": <button
+          className="btn btn-block btn-lg"
+          data-day="thursday"
+          onClick={[Function]}
+>
+          Thursday
+</button>,
+        "className": "list-group-item",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Thursday",
+          "className": "btn btn-block btn-lg",
+          "data-day": "thursday",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Thursday",
+        "type": "button",
+      },
+      "type": "li",
+    },
+    Object {
+      "instance": null,
+      "key": "4",
+      "nodeType": "host",
+      "props": Object {
+        "children": <button
+          className="btn btn-block btn-lg"
+          data-day="friday"
+          onClick={[Function]}
+>
+          Friday
+</button>,
+        "className": "list-group-item",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Friday",
+          "className": "btn btn-block btn-lg",
+          "data-day": "friday",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Friday",
+        "type": "button",
+      },
+      "type": "li",
+    },
+    Object {
+      "instance": null,
+      "key": "5",
+      "nodeType": "host",
+      "props": Object {
+        "children": <button
+          className="btn btn-block btn-lg"
+          data-day="saturday"
+          onClick={[Function]}
+>
+          Saturday
+</button>,
+        "className": "list-group-item",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Saturday",
+          "className": "btn btn-block btn-lg",
+          "data-day": "saturday",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Saturday",
+        "type": "button",
+      },
+      "type": "li",
+    },
+    Object {
+      "instance": null,
+      "key": "6",
+      "nodeType": "host",
+      "props": Object {
+        "children": <button
+          className="btn btn-block btn-lg"
+          data-day="sunday"
+          onClick={[Function]}
+>
+          Sunday
+</button>,
+        "className": "list-group-item",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Sunday",
+          "className": "btn btn-block btn-lg",
+          "data-day": "sunday",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Sunday",
+        "type": "button",
+      },
+      "type": "li",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
