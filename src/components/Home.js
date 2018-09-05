@@ -16,10 +16,10 @@ const Home = () => (
         customer account or a caterer account. You are welcome!
       </p>
       <div className="">
-        <Link className="btn button button-main" to="/signup">
+        <Link className="btn button button-main" href="/signup" to="/signup">
           Signup
         </Link>
-        <Link className="btn button button-secondary" to="/login">
+        <Link className="btn button button-secondary" href="/login" to="/login">
           Login
         </Link>
       </div>

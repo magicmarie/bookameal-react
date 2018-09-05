@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-//import PropTypes from "prop-types";
 
-//Pagination component to be reused in other components where pagination is needed.
+// Pagination component to be reused in other components where pagination is needed.
 
 class Pagination extends Component {
   // static propTypes = {
@@ -33,7 +32,7 @@ class Pagination extends Component {
   render() {
     const { pages, currentPage, nextPage, previousPage } = this.props;
 
-    //   generating the pages
+    // generating the pages
     const totalpages = Array.from({ length: pages }).map((item, index) => (
       <li
         className={`page-item${index + 1 === currentPage ? " active" : ""}`}

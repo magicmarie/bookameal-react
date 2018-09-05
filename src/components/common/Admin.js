@@ -4,7 +4,7 @@ import { Redirect, Route } from "react-router-dom";
 import jwtDecode from "jwt-decode";
 
 const AdminRoute = ({ component: Component, ...rest }) => {
-  //check the localStorage for the token: if missing, redirect to login.
+  // check the localStorage for the token: if missing, redirect to login.
   // if exists, decode the token and check for is_admin value = True.
   // if True, load the component, else redirect to user
   const token = localStorage.getItem("token");

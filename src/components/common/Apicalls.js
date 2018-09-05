@@ -1,9 +1,9 @@
 import axios from "axios";
 
-//get token from localstorage to be used on all routes once logged in
+// get token from localstorage to be used on all routes once logged in
 // append the baseURL and headers
 const axiosInstance = axios.create({
-  baseURL: "https://book-a-meal-api-db.herokuapp.com/api/v1",
+  baseURL: "http://localhost:5000/api/v1",
   headers: { token: `${localStorage.getItem("token")}` }
 });
 
