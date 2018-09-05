@@ -1,0 +1,187 @@
+@import "bootstrap.min";
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-image: url("../images/image1.jpeg");
+  /* fixes image repeats */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.button {
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+  border-radius: 1.5rem;
+  padding: 0.5rem 2rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #fff;
+  margin: 40px;
+}
+
+.button:hover {
+  outline: 0;
+  cursor: pointer;
+  box-shadow: 0 0 0 0.3rem rgba(0, 0, 0, 0.25);
+}
+
+.button.button-main {
+  color: #fff;
+  background-color: #7070da;
+  border-color: #7070da;
+}
+
+.button.button-secondary {
+  color: #7070da;
+  border-color: #7070da;
+}
+
+.button .meal-list {
+  margin: 5px;
+  background-color: #eff4f7;
+  border: #b9d7ea 1px solid;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.meal-button {
+  margin-left: 10px;
+}
+
+/* Add style to the top navigation */
+.topnav {
+  background-color: #7070da;
+  margin-bottom: 15px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+h4 {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.description {
+  text-align: center;
+  padding: 2rem;
+  font-size: 22px;
+}
+
+.header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: block;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.menu-item .price {
+  padding: 0.25em 0.4em;
+  flex: 0 0 01;
+  font-size: 80%;
+  font-weight: 10000;
+  padding: 15px;
+  line-height: 1;
+  text-align: center;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #7070da;
+}
+
+.menu-item .add {
+  color: #7070da;
+}
+
+.menu-item {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 2px;
+  background-color: #fff;
+  font-size: 1.25rem;
+  flex: 0 0 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.centered {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 2px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-signin-heading {
+  margin-bottom: 30px;
+  font-weight: normal;
+  color: #007bff;
+}
+
+.footer {
+  position: fixed;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #7070da;
+  color: #fff;
+  text-align: center;
+}
+
+.list-group-item {
+  padding: 0 !important;
+}
+
+.meal {
+  margin-right: 20px;
+  background: #eee;
+  margin-left: 10px;
+  min-height: 8rem;
+}
+
+.mealcard {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.icon {
+  font-size: 20px;
+  color: #4978a7;
+}
+
+.row1 {
+  margin: auto;
+  align-items: center;
+}
+
+.vl {
+  border-left: 2px solid #2b2b2b;
+  height: 700px;
+}
