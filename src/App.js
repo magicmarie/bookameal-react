@@ -16,6 +16,7 @@ import UsersOrders from "./components/User/UsersOrders";
 import AdminOrders from "./components/Admin/AdminOrders";
 import NotFound from "./components/common/NotFound";
 import AppProvider from "./appContext";
+import UserCart from "./components/User/UserCart";
 
 const App = () => (
   // allows Consumers to subscribe to context changes
@@ -32,6 +33,7 @@ const App = () => (
         <AdminRoute path="/adminmenu" exact component={AdminMenu} />
         <AuthRoute path="/usersorders" exact component={UsersOrders} />
         <AdminRoute path="/adminorders" exact component={AdminOrders} />
+        <AuthRoute path="/usercart" exact component={UserCart} />
         <Route exact component={NotFound} />
       </Switch>
     </div>

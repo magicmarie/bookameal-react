@@ -7,6 +7,13 @@ import Add from "./Add";
 import AddToMenu from "./AddToMenu";
 import Pagination from "../common/Pagination";
 
+/**
+ *@param {evt} e
+ *@param {number} id
+ *@param {string} day
+ * @class AdminDashboard
+ * @extends {Component}
+ */
 class AdminDashboard extends Component {
   state = {
     meals: [],
@@ -17,10 +24,24 @@ class AdminDashboard extends Component {
     nextPage: null,
     previousPage: null,
     currentPage: null,
-    pages: null,
-    totalCount: null
+    pages: null
   };
-  //get all meals created by admin
+
+  // always called before the component's first render
+  // fetches the meals list
+  /**
+   *@returns {null} null
+   * @memberof AdminDashboard
+   */
+  componentDidMount() {
+    this.getMeals();
+  }
+
+  // get all meals created by admin
+  /**
+   *@returns {null} null
+   * @memberof AdminDashboard
+   */
   getMeals = () => {
     // create a variable for page to be current page
     const page = this.state.currentPage || 1;
@@ -32,18 +53,14 @@ class AdminDashboard extends Component {
           meals,
           nextPage,
           pages,
-          perPage,
-          previousPage,
-          totalCount
+          previousPage
         } = response.data.meal_items;
         this.setState({
           currentPage,
           meals,
           nextPage,
           pages,
-          perPage,
           previousPage,
-          totalCount,
           loaded: true
         });
       })
@@ -63,13 +80,11 @@ class AdminDashboard extends Component {
       });
   };
 
-  // always called before the component's first render
-  // fetches the meals list
-  componentDidMount() {
-    this.getMeals();
-  }
+  setMealId = id => {
+    this.setState({ mealId: id });
+  };
 
-  //delete meal from meals list: close modal, show success message, get all meals
+  // delete meal from meals list: close modal, show success message, get all meals
   ConfirmDelete = id => {
     axiosInstance.delete(`/meals/${id}`).then(response => {
       notify.show(response.data.message, "success", 2500);
@@ -78,7 +93,7 @@ class AdminDashboard extends Component {
     });
   };
 
-  //edit meal on meals list
+  // edit meal on meals list
   EditMeal = (id, meal_name, price) => {
     axiosInstance
       .put(`/meals/${id}`, {
@@ -113,10 +128,7 @@ class AdminDashboard extends Component {
     }
   };
 
-  setMealId = id => {
-    this.setState({ mealId: id });
-  };
-  //pagination
+  // pagination
   changePage = selectedPage => {
     this.setState(
       {
@@ -126,7 +138,7 @@ class AdminDashboard extends Component {
     );
   };
 
-  //add meal to menu
+  // add meal to menu
   handleAddMenu = () => {
     this.setState({ isMealSet: false });
     const { mealId, days } = this.state;
@@ -155,6 +167,11 @@ class AdminDashboard extends Component {
     });
     this.setState({ isMealSet: true });
   };
+
+  /**
+   * @returns {any} rendered data
+   * @memberof AdminDashboard
+   */
   render() {
     const {
       meals,

@@ -11,7 +11,7 @@ const Meal = props => (
       <div className="card-text">{props.price}</div>
       <hr />
       <div className="row1">
-        <Link
+        <button
           to="#"
           data-toggle="modal"
           className="mealcard fa
@@ -21,14 +21,14 @@ const Meal = props => (
           title="add to menu"
           onClick={() => props.setMealId(props.id)}
         />
-        <Link
+        <button
           to="#"
           data-toggle="modal"
           title="edit meal"
           data-target={`#EditModal${props.id}`}
           className="fa fa-edit icon mealcard"
         />
-        <Link
+        <button
           to="#"
           className="fa fa-trash icon mealcard"
           data-toggle="modal"

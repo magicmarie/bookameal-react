@@ -2,18 +2,28 @@
 import React, { Component } from "react";
 import jwtDecode from "jwt-decode";
 
-// 
 export const AppContext = React.createContext();
 
+/**
+ *@param {token} token
+ * @class AppProvider
+ * @extends {Component}
+ */
 class AppProvider extends Component {
   state = {
     isAdmin: false,
     isLoggedIn: false,
     isUser: false,
     email: "",
-    logout: () => {}
+    logout: () => {},
+    cart_items: []
   };
 
+  componentDidMount = () => {
+    const token = localStorage.getItem("token");
+    this.handleToken(token);
+    this.setState({ logout: this.logout, login: this.login });
+  };
   logout = () => {
     localStorage.removeItem("token");
     this.setState({
@@ -40,12 +50,10 @@ class AppProvider extends Component {
     }
   };
 
-  componentDidMount = () => {
-    const token = localStorage.getItem("token");
-    this.handleToken(token);
-    this.setState({ logout: this.logout, login: this.login });
-  };
-
+  /**
+   * @returns {any} appcontext
+   * @memberof AppProvider
+   */
   render() {
     return (
       <AppContext.Provider value={this.state}>

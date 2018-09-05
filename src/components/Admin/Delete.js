@@ -1,6 +1,6 @@
 import React from "react";
 
-//delete meal modal
+// delete meal modal
 const DeleteMeal = props => (
   <div>
     <div id={`deleteModal${props.id}`} className="modal fade">

@@ -16,9 +16,8 @@ const UserMenuItem = props => (
         <p>
           <button
             to="#"
-            className="add"
-            title="make an order"
-            // onClick={() => props.handleAddOrder(props.id, props.mealId)}
+            className="btn add"
+            title="add to cart"
             onClick={() =>
               props.handleAddCart(
                 props.mealId,

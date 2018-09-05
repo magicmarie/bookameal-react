@@ -70,6 +70,11 @@ ShallowWrapper {
                               exact={true}
                               path="/adminorders"
                     />
+                    <AuthRoute
+                              component={[Function]}
+                              exact={true}
+                              path="/usercart"
+                    />
                     <Route
                               component={[Function]}
                               exact={true}
@@ -145,6 +150,11 @@ ShallowWrapper {
                             exact={true}
                             path="/adminorders"
               />
+              <AuthRoute
+                            component={[Function]}
+                            exact={true}
+                            path="/usercart"
+              />
               <Route
                             component={[Function]}
                             exact={true}
@@ -216,6 +226,11 @@ ShallowWrapper {
                   component={[Function]}
                   exact={true}
                   path="/adminorders"
+/>,
+                <AuthRoute
+                  component={[Function]}
+                  exact={true}
+                  path="/usercart"
 />,
                 <Route
                   component={[Function]}
@@ -335,6 +350,19 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/usercart",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
                 "nodeType": "class",
                 "props": Object {
                   "component": [Function],
@@ -422,6 +450,11 @@ ShallowWrapper {
                                     exact={true}
                                     path="/adminorders"
                         />
+                        <AuthRoute
+                                    component={[Function]}
+                                    exact={true}
+                                    path="/usercart"
+                        />
                         <Route
                                     component={[Function]}
                                     exact={true}
@@ -497,6 +530,11 @@ ShallowWrapper {
                                 exact={true}
                                 path="/adminorders"
                 />
+                <AuthRoute
+                                component={[Function]}
+                                exact={true}
+                                path="/usercart"
+                />
                 <Route
                                 component={[Function]}
                                 exact={true}
@@ -568,6 +606,11 @@ ShallowWrapper {
                     component={[Function]}
                     exact={true}
                     path="/adminorders"
+/>,
+                  <AuthRoute
+                    component={[Function]}
+                    exact={true}
+                    path="/usercart"
 />,
                   <Route
                     component={[Function]}
@@ -679,6 +722,19 @@ ShallowWrapper {
                     "component": [Function],
                     "exact": true,
                     "path": "/adminorders",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "component": [Function],
+                    "exact": true,
+                    "path": "/usercart",
                   },
                   "ref": null,
                   "rendered": null,

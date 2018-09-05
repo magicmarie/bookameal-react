@@ -2,22 +2,36 @@ import React, { Component } from "react";
 import { notify } from "react-notify-toast";
 import axiosInstance from "../common/Apicalls";
 
+/**
+ *@param {Event} event
+ * @class Add
+ * @extends {Component}
+ */
 class Add extends Component {
   state = {
     meal_name: "",
     price: "",
     message: ""
   };
+
+  onChange = event =>
+    this.setState({ [event.target.name]: event.target.value });
+
+  /**
+   *@param {Event} event
+   *@returns {null} null
+   * @memberof Add
+   */
   handleNewMeal = event => {
     const { meal_name, price } = this.state;
     // mtd to stop the default action of an element
     event.preventDefault();
-    //create new meal
+    // create new meal
     axiosInstance
       .post("/meals", { meal_name, price })
       .then(response => {
         this.reset();
-        //meal created: show success message, close the modal and update th meals list
+        // meal created: show success message, close the modal and update th meals list
         notify.show(response.data.message, "success", 2500);
         document.getElementById(`closeAddModal`).click();
         this.props.getMeals();
@@ -31,8 +45,6 @@ class Add extends Component {
         }
       });
   };
-  onChange = event =>
-    this.setState({ [event.target.name]: event.target.value });
 
   reset = () =>
     this.setState({
@@ -41,6 +53,10 @@ class Add extends Component {
       message: ""
     });
 
+  /**
+   * @returns {div} renders a div
+   * @memberof Add
+   */
   render() {
     return (
       <div>

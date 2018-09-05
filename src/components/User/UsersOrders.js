@@ -17,7 +17,7 @@ const Order = props => (
         {props.adminName}
       </div>
       <hr />
-      <Link
+      <button
         to="#"
         className="fa fa-trash icon mealcard"
         data-toggle="modal"
@@ -34,6 +34,10 @@ const Order = props => (
   </div>
 );
 
+/**
+ * @class UserOrders
+ * @extends {Component}
+ */
 class UserOrders extends Component {
   state = {
     orders: [],
@@ -41,19 +45,18 @@ class UserOrders extends Component {
     nextPage: null,
     previousPage: null,
     currentPage: null,
-    pages: null,
-    totalCount: null
+    pages: null
   };
 
-  //delete order: close modal, show success message, get the menu
-  ConfirmDeleteOrder = order_id => {
-    axiosInstance.delete(`/orders/${order_id}`).then(response => {
-      notify.show(response.data.message, "success", 2500);
-      document.getElementById(`cancelModal${order_id}`).click();
-      this.getUserOrders();
-    });
-  };
-  //get user orders
+  /**
+   *@returns {orders} orders
+   * @memberof UserOrders
+   */
+  componentDidMount() {
+    this.getUserOrders();
+  }
+
+  // get user orders
   getUserOrders = () => {
     const page = this.state.currentPage || 1;
 
@@ -65,18 +68,14 @@ class UserOrders extends Component {
           orders,
           nextPage,
           pages,
-          perPage,
-          previousPage,
-          totalCount
+          previousPage
         } = response.data.Orders;
         this.setState({
           currentPage,
           orders,
           nextPage,
           pages,
-          perPage,
           previousPage,
-          totalCount,
           loaded: true
         });
       })
@@ -95,7 +94,17 @@ class UserOrders extends Component {
         }
       });
   };
-  //pagination
+
+  // delete order: close modal, show success message, get the menu
+  ConfirmDeleteOrder = order_id => {
+    axiosInstance.delete(`/orders/${order_id}`).then(response => {
+      notify.show(response.data.message, "success", 2500);
+      document.getElementById(`cancelModal${order_id}`).click();
+      this.getUserOrders();
+    });
+  };
+
+  // pagination
   changePage = selectedPage => {
     this.setState(
       {
@@ -104,10 +113,13 @@ class UserOrders extends Component {
       () => this.getUserOrders()
     );
   };
-  componentDidMount() {
-    this.getUserOrders();
-  }
 
+  /**
+   *
+   *
+   * @returns {any} rendered items
+   * @memberof UserOrders
+   */
   render() {
     const {
       orders,

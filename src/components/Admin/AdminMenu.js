@@ -5,6 +5,12 @@ import axiosInstance from "../common/Apicalls";
 import Menu from "./Menu";
 import WeekDays from "../common/WeekDays";
 
+/**
+ *
+ *@param {string} day
+ * @class AdminMenu
+ * @extends {Component}
+ */
 class AdminMenu extends Component {
   state = {
     menus: [],
@@ -14,7 +20,20 @@ class AdminMenu extends Component {
       name: ""
     }
   };
+
+  /**
+   *@returns {menus} menus
+   * @memberof AdminMenu
+   */
+  componentDidMount() {
+    this.getMenus();
+  }
+
   // get menu: admin side
+  /**
+   *@returns {null} null
+   * @memberof AdminMenu
+   */
   getMenus = () => {
     axiosInstance
       .get("/admin-menus")
@@ -26,7 +45,7 @@ class AdminMenu extends Component {
         this.setState({
           menus: response.data.menus,
           loaded: true,
-          currentMenu: currentMenu
+          currentMenu
         });
       })
       .catch(error => {
@@ -45,10 +64,6 @@ class AdminMenu extends Component {
       });
   };
 
-  componentDidMount() {
-    this.getMenus();
-  }
-
   getCurrentDay = () => {
     const numberDay = new Date().getDay();
     const days = [
@@ -66,13 +81,12 @@ class AdminMenu extends Component {
 
   getMenu = day => {
     day = day.charAt(0).toUpperCase() + day.slice(1);
-    //manipulate the menus array from the state to get currentMenu
+    // manipulate the menus array from the state to get currentMenu
     const { menus } = this.state;
     const currentMenu = menus.find(menu => day === menu.name);
     this.setState({ currentDay: day, currentMenu });
   };
-
-  //delete meal from the menu: close modal, show success message, get the menu
+  // delete meal from the menu: close modal, show success message, get the menu
   ConfirmDeleteMeal = id => {
     axiosInstance.delete(`/menu/${id}`).then(response => {
       notify.show(response.data.message, "success", 2500);
@@ -81,6 +95,10 @@ class AdminMenu extends Component {
     });
   };
 
+  /**
+   * @returns {any} rendered items
+   * @memberof AdminMenu
+   */
   render() {
     const { currentMenu, loaded } = this.state;
     const menuDetails =

@@ -3,6 +3,11 @@ import { notify } from "react-notify-toast";
 import { Link } from "react-router-dom";
 import axiosInstance from "../common/Apicalls";
 
+/**
+ *@param {Event} event
+ * @class Signup
+ * @extends {React.Component}
+ */
 class Signup extends React.Component {
   state = {
     name: "",
@@ -11,6 +16,20 @@ class Signup extends React.Component {
     is_admin: false,
     errors: {}
   };
+
+  onChange = event => {
+    // if name is is_admin, do this
+    if (event.target.name === "is_admin") {
+      this.setState({
+        is_admin: event.target.checked
+      });
+    } else {
+      this.setState({
+        [event.target.name]: event.target.value
+      });
+    }
+  };
+
   // sign up
   handleSignup = event => {
     event.preventDefault();
@@ -30,19 +49,10 @@ class Signup extends React.Component {
       });
   };
 
-  onChange = event => {
-    // if name is is_admin, do this
-    if (event.target.name === "is_admin") {
-      this.setState({
-        is_admin: event.target.checked
-      });
-    } else {
-      this.setState({
-        [event.target.name]: event.target.value
-      });
-    }
-  };
-
+  /**
+   * @returns {any} rendered items
+   * @memberof Signup
+   */
   render() {
     const { email, name, password, is_admin } = this.state;
     return (
@@ -110,7 +120,10 @@ class Signup extends React.Component {
               <p />
               <p className="text-center">
                 Already have an account?
-                <Link to="/login"> Login</Link>
+                <Link href="/login" to="/login">
+                  {" "}
+                  Login
+                </Link>
               </p>
             </form>
           </div>

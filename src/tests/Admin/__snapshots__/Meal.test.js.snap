@@ -31,29 +31,26 @@ ShallowWrapper {
         <div
                 className="row1"
         >
-                <Link
+                <button
                         aria-hidden="false"
                         className="mealcard fa fa-plus icon"
                         data-target="#addToMenuModal"
                         data-toggle="modal"
                         onClick={[Function]}
-                        replace={false}
                         title="add to menu"
                         to="#"
                 />
-                <Link
+                <button
                         className="fa fa-edit icon mealcard"
                         data-target="#EditModalundefined"
                         data-toggle="modal"
-                        replace={false}
                         title="edit meal"
                         to="#"
                 />
-                <Link
+                <button
                         className="fa fa-trash icon mealcard"
                         data-target="#deleteModalundefined"
                         data-toggle="modal"
-                        replace={false}
                         title="delete meal"
                         to="#"
                 />
@@ -92,29 +89,26 @@ ShallowWrapper {
           <div
             className="row1"
 >
-            <Link
+            <button
                         aria-hidden="false"
                         className="mealcard fa fa-plus icon"
                         data-target="#addToMenuModal"
                         data-toggle="modal"
                         onClick={[Function]}
-                        replace={false}
                         title="add to menu"
                         to="#"
             />
-            <Link
+            <button
                         className="fa fa-edit icon mealcard"
                         data-target="#EditModalundefined"
                         data-toggle="modal"
-                        replace={false}
                         title="edit meal"
                         to="#"
             />
-            <Link
+            <button
                         className="fa fa-trash icon mealcard"
                         data-target="#deleteModalundefined"
                         data-toggle="modal"
-                        replace={false}
                         title="delete meal"
                         to="#"
             />
@@ -181,29 +175,26 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <Link
+              <button
                 aria-hidden="false"
                 className="mealcard fa fa-plus icon"
                 data-target="#addToMenuModal"
                 data-toggle="modal"
                 onClick={[Function]}
-                replace={false}
                 title="add to menu"
                 to="#"
 />,
-              <Link
+              <button
                 className="fa fa-edit icon mealcard"
                 data-target="#EditModalundefined"
                 data-toggle="modal"
-                replace={false}
                 title="edit meal"
                 to="#"
 />,
-              <Link
+              <button
                 className="fa fa-trash icon mealcard"
                 data-target="#deleteModalundefined"
                 data-toggle="modal"
-                replace={false}
                 title="delete meal"
                 to="#"
 />,
@@ -215,52 +206,49 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
                 "aria-hidden": "false",
                 "className": "mealcard fa fa-plus icon",
                 "data-target": "#addToMenuModal",
                 "data-toggle": "modal",
                 "onClick": [Function],
-                "replace": false,
                 "title": "add to menu",
                 "to": "#",
               },
               "ref": null,
               "rendered": null,
-              "type": [Function],
+              "type": "button",
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
                 "className": "fa fa-edit icon mealcard",
                 "data-target": "#EditModalundefined",
                 "data-toggle": "modal",
-                "replace": false,
                 "title": "edit meal",
                 "to": "#",
               },
               "ref": null,
               "rendered": null,
-              "type": [Function],
+              "type": "button",
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
                 "className": "fa fa-trash icon mealcard",
                 "data-target": "#deleteModalundefined",
                 "data-toggle": "modal",
-                "replace": false,
                 "title": "delete meal",
                 "to": "#",
               },
               "ref": null,
               "rendered": null,
-              "type": [Function],
+              "type": "button",
             },
           ],
           "type": "div",
@@ -319,29 +307,26 @@ ShallowWrapper {
           <div
                     className="row1"
           >
-                    <Link
+                    <button
                               aria-hidden="false"
                               className="mealcard fa fa-plus icon"
                               data-target="#addToMenuModal"
                               data-toggle="modal"
                               onClick={[Function]}
-                              replace={false}
                               title="add to menu"
                               to="#"
                     />
-                    <Link
+                    <button
                               className="fa fa-edit icon mealcard"
                               data-target="#EditModalundefined"
                               data-toggle="modal"
-                              replace={false}
                               title="edit meal"
                               to="#"
                     />
-                    <Link
+                    <button
                               className="fa fa-trash icon mealcard"
                               data-target="#deleteModalundefined"
                               data-toggle="modal"
-                              replace={false}
                               title="delete meal"
                               to="#"
                     />
@@ -380,29 +365,26 @@ ShallowWrapper {
             <div
               className="row1"
 >
-              <Link
+              <button
                             aria-hidden="false"
                             className="mealcard fa fa-plus icon"
                             data-target="#addToMenuModal"
                             data-toggle="modal"
                             onClick={[Function]}
-                            replace={false}
                             title="add to menu"
                             to="#"
               />
-              <Link
+              <button
                             className="fa fa-edit icon mealcard"
                             data-target="#EditModalundefined"
                             data-toggle="modal"
-                            replace={false}
                             title="edit meal"
                             to="#"
               />
-              <Link
+              <button
                             className="fa fa-trash icon mealcard"
                             data-target="#deleteModalundefined"
                             data-toggle="modal"
-                            replace={false}
                             title="delete meal"
                             to="#"
               />
@@ -469,29 +451,26 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <Link
+                <button
                   aria-hidden="false"
                   className="mealcard fa fa-plus icon"
                   data-target="#addToMenuModal"
                   data-toggle="modal"
                   onClick={[Function]}
-                  replace={false}
                   title="add to menu"
                   to="#"
 />,
-                <Link
+                <button
                   className="fa fa-edit icon mealcard"
                   data-target="#EditModalundefined"
                   data-toggle="modal"
-                  replace={false}
                   title="edit meal"
                   to="#"
 />,
-                <Link
+                <button
                   className="fa fa-trash icon mealcard"
                   data-target="#deleteModalundefined"
                   data-toggle="modal"
-                  replace={false}
                   title="delete meal"
                   to="#"
 />,
@@ -503,52 +482,49 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "host",
                 "props": Object {
                   "aria-hidden": "false",
                   "className": "mealcard fa fa-plus icon",
                   "data-target": "#addToMenuModal",
                   "data-toggle": "modal",
                   "onClick": [Function],
-                  "replace": false,
                   "title": "add to menu",
                   "to": "#",
                 },
                 "ref": null,
                 "rendered": null,
-                "type": [Function],
+                "type": "button",
               },
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "host",
                 "props": Object {
                   "className": "fa fa-edit icon mealcard",
                   "data-target": "#EditModalundefined",
                   "data-toggle": "modal",
-                  "replace": false,
                   "title": "edit meal",
                   "to": "#",
                 },
                 "ref": null,
                 "rendered": null,
-                "type": [Function],
+                "type": "button",
               },
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "host",
                 "props": Object {
                   "className": "fa fa-trash icon mealcard",
                   "data-target": "#deleteModalundefined",
                   "data-toggle": "modal",
-                  "replace": false,
                   "title": "delete meal",
                   "to": "#",
                 },
                 "ref": null,
                 "rendered": null,
-                "type": [Function],
+                "type": "button",
               },
             ],
             "type": "div",

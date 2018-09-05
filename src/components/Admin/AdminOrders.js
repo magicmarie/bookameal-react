@@ -21,6 +21,10 @@ const Order = props => (
   </div>
 );
 
+/**
+ * @class AdminDashboard
+ * @extends {Component}
+ */
 class AdminDashboard extends Component {
   state = {
     total: null,
@@ -29,10 +33,20 @@ class AdminDashboard extends Component {
     nextPage: null,
     previousPage: null,
     currentPage: null,
-    pages: null,
-    totalCount: null
+    pages: null
   };
-  //get all orders from admin's meals
+
+  // always called before the component's first render
+  // fetches the orders list
+  /**
+   *@returns {orders} orders
+   * @memberof AdminDashboard
+   */
+  componentWillMount() {
+    this.getUserOrders();
+  }
+
+  // get all orders from admin's meals
   getUserOrders = () => {
     const page = this.state.currentPage || 1;
     axiosInstance
@@ -44,9 +58,7 @@ class AdminDashboard extends Component {
           orders,
           nextPage,
           pages,
-          perPage,
-          previousPage,
-          totalCount
+          previousPage
         } = response.data.order_items;
         this.setState({
           total,
@@ -54,9 +66,7 @@ class AdminDashboard extends Component {
           orders,
           nextPage,
           pages,
-          perPage,
           previousPage,
-          totalCount,
           loaded: true
         });
       })
@@ -75,7 +85,8 @@ class AdminDashboard extends Component {
         }
       });
   };
-  //pagination
+
+  // pagination
   changePage = selectedPage => {
     this.setState(
       {
@@ -85,11 +96,10 @@ class AdminDashboard extends Component {
     );
   };
 
-  // always called before the component's first render
-  // fetches the orders list
-  componentWillMount() {
-    this.getUserOrders();
-  }
+  /**
+   * @returns {any} rendered items
+   * @memberof AdminDashboard
+   */
   render() {
     const {
       total,

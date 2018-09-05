@@ -2,15 +2,13 @@ import React, { Component } from "react";
 
 // Pagination component to be reused in other components where pagination is needed.
 
+/**
+ *
+ *@param {Event} event
+ * @class Pagination
+ * @extends {Component}
+ */
 class Pagination extends Component {
-  // static propTypes = {
-  //   pages: PropTypes.number,
-  //   currentPage: PropTypes.number,
-  //   nextPage: PropTypes.number,
-  //   previousPage: PropTypes.number,
-  //   changePage: PropTypes.func.isRequired
-  // };
-
   static defaultProps = {
     nextPage: null,
     previousPage: null,
@@ -29,6 +27,10 @@ class Pagination extends Component {
     this.props.changePage(Number(event.target.dataset.page));
   };
 
+  /**
+   * @returns {any} rendered items
+   * @memberof Pagination
+   */
   render() {
     const { pages, currentPage, nextPage, previousPage } = this.props;
 

@@ -4,15 +4,40 @@ import { notify } from "react-notify-toast";
 import axiosInstance from "../common/Apicalls";
 import WeekDays from "../common/WeekDays";
 import UserMenuItem from "./UserMenuItem";
+import getCurrentDay from "../common/CurrentDay";
 
+/**
+ * @param {number} meal_id
+ * @param {string} meal_name
+ * @param {number} price
+ * @param {string} adminName
+ * @class UserDashboard
+ * @extends {Component}
+ */
 class UserDashboard extends Component {
   state = {
     menus: [],
     loaded: false,
     today: "",
-    order_items: []
+    cart_items: []
   };
-  //get menu: customer side
+
+  /**
+   *@returns {menus} menus
+   * @memberof UserDashboard
+   */
+  componentDidMount() {
+    const today = getCurrentDay();
+    this.getMenus(today);
+    this.setState({ today });
+  }
+
+  // get menu: customer side
+  /**
+   *@returns {null} null
+   *@param {string} menu_day
+   * @memberof UserDashboard
+   */
   getMenus = menu_day => {
     axiosInstance
       .get(`/user-menus/${menu_day}`)
@@ -39,75 +64,33 @@ class UserDashboard extends Component {
       });
   };
 
-  //post order from menu: user
-  handleAddOrder = (id, meal_id) => {
-    axiosInstance
-      .post(`/orders/${id}/${meal_id}`)
-      .then(response => {
-        notify.show(response.data.message, "success", 2500);
-      })
-      .catch(error => {
-        if (error.response) {
-          const { status } = error.response;
-          if (status === 404) {
-            this.setState({
-              orders: []
-            });
-          }
-        } else if (error.request) {
-          notify.show("Wrong request", "error", 2500);
-        }
-      });
-  };
-  handleAddCart = (meal_id, meal_name, price, adminName) => {
-    // console.log(mealId, mealName, price, adminName);
-    const { order_items } = this.state;
-    const orderItem = {
-      meal_id,
-      meal_name,
-      price,
-      adminName
-    };
-    order_items.push(orderItem);
-    console.log(order_items);
-  };
-  componentDidMount() {
-    const today = this.getCurrentDay();
-    this.getMenus(today);
-    this.setState({ today });
-  }
-
-  getCurrentDay = () => {
-    const numberDay = new Date().getDay();
-    const days = [
-      { key: 1, name: "Monday" },
-      { key: 2, name: "Tuesday" },
-      { key: 3, name: "Wednesday" },
-      { key: 4, name: "Thursday" },
-      { key: 5, name: "Friday" },
-      { key: 6, name: "Saturday" },
-      { key: 7, name: "Sunday" }
-    ];
-    const today = days.find(day => day.key === numberDay);
-    return today.name;
-  };
-
   getMenu = day => {
     day = day.charAt(0).toUpperCase() + day.slice(1);
     const { menus } = this.state;
     this.setState({ currentDay: day, menus });
   };
-  render() {
-    const { loaded, menus, today, order_items } = this.state;
-    // const orderItems =
-    // order_items.length === 0 ?(
-    //   <div>No orders made yet</div>
-    // ): (
-    //   order_items.map(item, index) =>(
-    //     <div></div>
-    //   )
 
-    // )
+  handleAddCart = (meal_id, meal_name, price, adminName) => {
+    const { cart_items } = this.state;
+    const cartItem = {
+      meal_id,
+      meal_name,
+      price,
+      adminName
+    };
+    cart_items.push(cartItem);
+    console.log("cart", cart_items);
+    notify.show("Added to your Cart", "success", 2000);
+  };
+
+  /**
+   *
+   *
+   * @returns {any} rendered items
+   * @memberof UserDashboard
+   */
+  render() {
+    const { loaded, menus, today } = this.state;
     const menuItems =
       menus.length === 0 ? (
         <div>No Menu Found</div>
@@ -129,7 +112,6 @@ class UserDashboard extends Component {
                 adminName={menu.userName}
                 key={meal.id}
                 handleAddCart={this.handleAddCart}
-                // handleAddOrder={this.handleAddOrder}
               />
             ))}
           </div>
@@ -146,32 +128,13 @@ class UserDashboard extends Component {
           </ul>
         </div>
         <div className="col-md-10">
-          <div className="row">
-            <div className="col-md-6">
-              <h4 className="header text-center">
-                {today}
-                's Menus
-              </h4>
-              <Loader loaded={loaded}>
-                <div>{menuItems}</div>
-              </Loader>
-            </div>
-            <div className="col-md-6">
-              <h4 className="header text-center">Orders</h4>
-              <ul className="">
-                <li className="">
-                  <div className="row">
-                    <div className="col-sm-2">1</div>
-                    <div className="col-sm-4">name</div>
-                    <div className="col-sm-2">qty</div>
-                    <div className="col-sm-2">10000</div>
-                    <div className="col-sm-2">10000</div>
-                  </div>
-                </li>
-                <hr />
-              </ul>
-            </div>
-          </div>
+          <h4 className="header text-center">
+            {today}
+            's Menus
+          </h4>
+          <Loader loaded={loaded}>
+            <div>{menuItems}</div>
+          </Loader>
         </div>
       </div>
     );

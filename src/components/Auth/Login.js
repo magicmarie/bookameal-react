@@ -5,12 +5,21 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../../appContext";
 import axiosInstance from "../common/Apicalls";
 
+/**
+ *@param {Event} event
+ * @class Login
+ * @extends {React.Component}
+ */
 class Login extends React.Component {
   state = {
     email: "",
     password: "",
     errors: {}
   };
+
+  onChange = event =>
+    this.setState({ [event.target.name]: event.target.value });
+
   // login
   handleLogin = event => {
     event.preventDefault();
@@ -41,9 +50,10 @@ class Login extends React.Component {
       });
   };
 
-  onChange = event =>
-    this.setState({ [event.target.name]: event.target.value });
-
+  /**
+   * @returns {any} rendered items
+   * @memberof Login
+   */
   render() {
     const { email, password } = this.state;
     return (
@@ -83,8 +93,11 @@ class Login extends React.Component {
               </div>
               <p />
               <p className="text-center">
-                Don't have an account yet?
-                <Link to="/signup"> Sign Up</Link>
+                Do not have an account yet?
+                <Link href="/signup" to="/signup">
+                  {" "}
+                  Sign Up
+                </Link>
               </p>
             </form>
           </div>

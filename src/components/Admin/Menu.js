@@ -9,7 +9,7 @@ const Menu = props => (
       <div className="card-text"> {props.mealName}</div>
       <div className="card-text">{props.price}</div>
       <hr />
-      <Link
+      <button
         to="#"
         className="fa fa-trash icon mealcard"
         data-toggle="modal"

@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 
+/**
+ * @param {Event} event
+ * @class Edit
+ * @extends {Component}
+ */
 class Edit extends Component {
   state = {
     meal_name: "",
@@ -7,15 +12,26 @@ class Edit extends Component {
     message: ""
   };
 
+  /**
+   *@returns {mealdetails} name, price
+   * @memberof Edit
+   */
+  componentWillMount() {
+    this.setState({ meal_name: this.props.meal_name, price: this.props.price });
+  }
+
+  onChange = event =>
+    this.setState({ [event.target.name]: event.target.value });
+
   handleEditMeal = event => {
     event.preventDefault();
     this.props.EditMeal(this.props.id, this.state.meal_name, this.state.price);
   };
-  onChange = event =>
-    this.setState({ [event.target.name]: event.target.value });
-  componentWillMount() {
-    this.setState({ meal_name: this.props.meal_name, price: this.props.price });
-  }
+
+  /**
+   * @returns {div} div
+   * @memberof Edit
+   */
   render() {
     return (
       <div>

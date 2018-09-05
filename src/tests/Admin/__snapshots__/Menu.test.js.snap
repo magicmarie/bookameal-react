@@ -28,11 +28,10 @@ ShallowWrapper {
                 className="card-text"
         />
         <hr />
-        <Link
+        <button
                 className="fa fa-trash icon mealcard"
                 data-target="#deleteFromMenuModalundefined"
                 data-toggle="modal"
-                replace={false}
                 title="delete meal"
                 to="#"
         />
@@ -60,11 +59,10 @@ ShallowWrapper {
             className="card-text"
 />,
           <hr />,
-          <Link
+          <button
             className="fa fa-trash icon mealcard"
             data-target="#deleteFromMenuModalundefined"
             data-toggle="modal"
-            replace={false}
             title="delete meal"
             to="#"
 />,
@@ -120,18 +118,17 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
             "className": "fa fa-trash icon mealcard",
             "data-target": "#deleteFromMenuModalundefined",
             "data-toggle": "modal",
-            "replace": false,
             "title": "delete meal",
             "to": "#",
           },
           "ref": null,
           "rendered": null,
-          "type": [Function],
+          "type": "button",
         },
         Object {
           "instance": null,
@@ -169,11 +166,10 @@ ShallowWrapper {
                     className="card-text"
           />
           <hr />
-          <Link
+          <button
                     className="fa fa-trash icon mealcard"
                     data-target="#deleteFromMenuModalundefined"
                     data-toggle="modal"
-                    replace={false}
                     title="delete meal"
                     to="#"
           />
@@ -201,11 +197,10 @@ ShallowWrapper {
               className="card-text"
 />,
             <hr />,
-            <Link
+            <button
               className="fa fa-trash icon mealcard"
               data-target="#deleteFromMenuModalundefined"
               data-toggle="modal"
-              replace={false}
               title="delete meal"
               to="#"
 />,
@@ -261,18 +256,17 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
               "className": "fa fa-trash icon mealcard",
               "data-target": "#deleteFromMenuModalundefined",
               "data-toggle": "modal",
-              "replace": false,
               "title": "delete meal",
               "to": "#",
             },
             "ref": null,
             "rendered": null,
-            "type": [Function],
+            "type": "button",
           },
           Object {
             "instance": null,
