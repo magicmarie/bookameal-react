@@ -1,0 +1,370 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Home />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="col-md-8 text-center"
+>
+        <h1>
+                Book-A-Meal
+        </h1>
+        <p
+                className="description "
+        >
+                An application that allows customers to make food orders and helps the food vendor know what the customers want to eat. You can create a customer account or a caterer account. You are welcome!
+        </p>
+        <div
+                className=""
+        >
+                <Link
+                        className="btn button button-main"
+                        href="/signup"
+                        replace={false}
+                        to="/signup"
+                >
+                        Signup
+                </Link>
+                <Link
+                        className="btn button button-secondary"
+                        href="/login"
+                        replace={false}
+                        to="/login"
+                >
+                        Login
+                </Link>
+        </div>
+</div>,
+      "className": "row justify-content-md-center",
+      "data-gr-c-s-loaded": "true",
+      "id": "landing-page",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Book-A-Meal
+</h1>,
+          <p
+            className="description "
+>
+            An application that allows customers to make food orders and helps the food vendor know what the customers want to eat. You can create a customer account or a caterer account. You are welcome!
+</p>,
+          <div
+            className=""
+>
+            <Link
+                        className="btn button button-main"
+                        href="/signup"
+                        replace={false}
+                        to="/signup"
+            >
+                        Signup
+            </Link>
+            <Link
+                        className="btn button button-secondary"
+                        href="/login"
+                        replace={false}
+                        to="/login"
+            >
+                        Login
+            </Link>
+</div>,
+        ],
+        "className": "col-md-8 text-center",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Book-A-Meal",
+          },
+          "ref": null,
+          "rendered": "Book-A-Meal",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "An application that allows customers to make food orders and helps the food vendor know what the customers want to eat. You can create a customer account or a caterer account. You are welcome!",
+            "className": "description ",
+          },
+          "ref": null,
+          "rendered": "An application that allows customers to make food orders and helps the food vendor know what the customers want to eat. You can create a customer account or a caterer account. You are welcome!",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                className="btn button button-main"
+                href="/signup"
+                replace={false}
+                to="/signup"
+>
+                Signup
+</Link>,
+              <Link
+                className="btn button button-secondary"
+                href="/login"
+                replace={false}
+                to="/login"
+>
+                Login
+</Link>,
+            ],
+            "className": "",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Signup",
+                "className": "btn button button-main",
+                "href": "/signup",
+                "replace": false,
+                "to": "/signup",
+              },
+              "ref": null,
+              "rendered": "Signup",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Login",
+                "className": "btn button button-secondary",
+                "href": "/login",
+                "replace": false,
+                "to": "/login",
+              },
+              "ref": null,
+              "rendered": "Login",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="col-md-8 text-center"
+>
+          <h1>
+                    Book-A-Meal
+          </h1>
+          <p
+                    className="description "
+          >
+                    An application that allows customers to make food orders and helps the food vendor know what the customers want to eat. You can create a customer account or a caterer account. You are welcome!
+          </p>
+          <div
+                    className=""
+          >
+                    <Link
+                              className="btn button button-main"
+                              href="/signup"
+                              replace={false}
+                              to="/signup"
+                    >
+                              Signup
+                    </Link>
+                    <Link
+                              className="btn button button-secondary"
+                              href="/login"
+                              replace={false}
+                              to="/login"
+                    >
+                              Login
+                    </Link>
+          </div>
+</div>,
+        "className": "row justify-content-md-center",
+        "data-gr-c-s-loaded": "true",
+        "id": "landing-page",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Book-A-Meal
+</h1>,
+            <p
+              className="description "
+>
+              An application that allows customers to make food orders and helps the food vendor know what the customers want to eat. You can create a customer account or a caterer account. You are welcome!
+</p>,
+            <div
+              className=""
+>
+              <Link
+                            className="btn button button-main"
+                            href="/signup"
+                            replace={false}
+                            to="/signup"
+              >
+                            Signup
+              </Link>
+              <Link
+                            className="btn button button-secondary"
+                            href="/login"
+                            replace={false}
+                            to="/login"
+              >
+                            Login
+              </Link>
+</div>,
+          ],
+          "className": "col-md-8 text-center",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Book-A-Meal",
+            },
+            "ref": null,
+            "rendered": "Book-A-Meal",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "An application that allows customers to make food orders and helps the food vendor know what the customers want to eat. You can create a customer account or a caterer account. You are welcome!",
+              "className": "description ",
+            },
+            "ref": null,
+            "rendered": "An application that allows customers to make food orders and helps the food vendor know what the customers want to eat. You can create a customer account or a caterer account. You are welcome!",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  className="btn button button-main"
+                  href="/signup"
+                  replace={false}
+                  to="/signup"
+>
+                  Signup
+</Link>,
+                <Link
+                  className="btn button button-secondary"
+                  href="/login"
+                  replace={false}
+                  to="/login"
+>
+                  Login
+</Link>,
+              ],
+              "className": "",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Signup",
+                  "className": "btn button button-main",
+                  "href": "/signup",
+                  "replace": false,
+                  "to": "/signup",
+                },
+                "ref": null,
+                "rendered": "Signup",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Login",
+                  "className": "btn button button-secondary",
+                  "href": "/login",
+                  "replace": false,
+                  "to": "/login",
+                },
+                "ref": null,
+                "rendered": "Login",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
