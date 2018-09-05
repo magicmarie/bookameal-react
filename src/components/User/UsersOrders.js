@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Loader from "react-loader";
-import { Link } from "react-router-dom";
 import { notify } from "react-notify-toast";
 import axiosInstance from "../common/Apicalls";
 import Delete from "./DeleteOrder";

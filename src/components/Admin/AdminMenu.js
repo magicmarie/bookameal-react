@@ -4,6 +4,7 @@ import { notify } from "react-notify-toast";
 import axiosInstance from "../common/Apicalls";
 import Menu from "./Menu";
 import WeekDays from "../common/WeekDays";
+import getCurrentDay from "../common/CurrentDay";
 
 /**
  *
@@ -38,7 +39,7 @@ class AdminMenu extends Component {
     axiosInstance
       .get("/admin-menus")
       .then(response => {
-        const today = this.getCurrentDay();
+        const today = getCurrentDay();
         const currentMenu = response.data.menus.find(
           menu => today === menu.name
         );
@@ -62,21 +63,6 @@ class AdminMenu extends Component {
           notify.show("Wrong request", "warning", 2500);
         }
       });
-  };
-
-  getCurrentDay = () => {
-    const numberDay = new Date().getDay();
-    const days = [
-      { key: 1, name: "Monday" },
-      { key: 2, name: "Tuesday" },
-      { key: 3, name: "Wednesday" },
-      { key: 4, name: "Thursday" },
-      { key: 5, name: "Friday" },
-      { key: 6, name: "Saturday" },
-      { key: 7, name: "Sunday" }
-    ];
-    const today = days.find(day => day.key === numberDay);
-    return today.name;
   };
 
   getMenu = day => {
