@@ -119,10 +119,12 @@ ShallowWrapper {
                         >
                                 Already have an account?
                                 <Link
+                                        href="/login"
                                         replace={false}
                                         to="/login"
                                 >
-                                         Login
+                                         
+                                        Login
                                 </Link>
                         </p>
                 </form>
@@ -236,10 +238,12 @@ ShallowWrapper {
                     >
                               Already have an account?
                               <Link
+                                        href="/login"
                                         replace={false}
                                         to="/login"
                               >
-                                         Login
+                                         
+                                        Login
                               </Link>
                     </p>
           </form>
@@ -349,10 +353,12 @@ ShallowWrapper {
             >
                         Already have an account?
                         <Link
+                                    href="/login"
                                     replace={false}
                                     to="/login"
                         >
-                                     Login
+                                     
+                                    Login
                         </Link>
             </p>
 </form>,
@@ -459,10 +465,12 @@ ShallowWrapper {
 >
                 Already have an account?
                 <Link
+                                href="/login"
                                 replace={false}
                                 to="/login"
                 >
-                                 Login
+                                 
+                                Login
                 </Link>
 </p>,
             ],
@@ -768,10 +776,12 @@ ShallowWrapper {
                 "children": Array [
                   "Already have an account?",
                   <Link
+                    href="/login"
                     replace={false}
                     to="/login"
 >
-                     Login
+                     
+                    Login
 </Link>,
                 ],
                 "className": "text-center",
@@ -784,12 +794,19 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": " Login",
+                    "children": Array [
+                      " ",
+                      "Login",
+                    ],
+                    "href": "/login",
                     "replace": false,
                     "to": "/login",
                   },
                   "ref": null,
-                  "rendered": " Login",
+                  "rendered": Array [
+                    " ",
+                    "Login",
+                  ],
                   "type": [Function],
                 },
               ],
@@ -913,10 +930,12 @@ ShallowWrapper {
                               >
                                         Already have an account?
                                         <Link
+                                                  href="/login"
                                                   replace={false}
                                                   to="/login"
                                         >
-                                                   Login
+                                                   
+                                                  Login
                                         </Link>
                               </p>
                     </form>
@@ -1030,10 +1049,12 @@ ShallowWrapper {
                         >
                                     Already have an account?
                                     <Link
+                                                href="/login"
                                                 replace={false}
                                                 to="/login"
                                     >
-                                                 Login
+                                                 
+                                                Login
                                     </Link>
                         </p>
             </form>
@@ -1143,10 +1164,12 @@ ShallowWrapper {
               >
                             Already have an account?
                             <Link
+                                          href="/login"
                                           replace={false}
                                           to="/login"
                             >
-                                           Login
+                                           
+                                          Login
                             </Link>
               </p>
 </form>,
@@ -1253,10 +1276,12 @@ ShallowWrapper {
 >
                   Already have an account?
                   <Link
+                                    href="/login"
                                     replace={false}
                                     to="/login"
                   >
-                                     Login
+                                     
+                                    Login
                   </Link>
 </p>,
               ],
@@ -1562,10 +1587,12 @@ ShallowWrapper {
                   "children": Array [
                     "Already have an account?",
                     <Link
+                      href="/login"
                       replace={false}
                       to="/login"
 >
-                       Login
+                       
+                      Login
 </Link>,
                   ],
                   "className": "text-center",
@@ -1578,12 +1605,19 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": " Login",
+                      "children": Array [
+                        " ",
+                        "Login",
+                      ],
+                      "href": "/login",
                       "replace": false,
                       "to": "/login",
                     },
                     "ref": null,
-                    "rendered": " Login",
+                    "rendered": Array [
+                      " ",
+                      "Login",
+                    ],
                     "type": [Function],
                   },
                 ],
