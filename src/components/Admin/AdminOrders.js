@@ -9,8 +9,9 @@ const Order = props => (
     <div className="row">
       <div className="col-md-4">{props.mealName}</div>
       <div className="price col-md-2">{props.price}</div>
-      <div className="col-md-3 text-center">{props.customerName}</div>
-      <div className="col-sm-3 text-center">
+      <div className="col-md-2 text-center">{props.customerName}</div>
+      <div className="col-md-2">{props.quantity}</div>
+      <div className="col-sm-2 text-center">
         <select>
           <option value="Delivered">Delivered</option>
           <option value="Not delivered">Not delivered</option>
@@ -122,6 +123,7 @@ class AdminDashboard extends Component {
               mealName={order.meal_name}
               price={order.price}
               customerName={order.customerName}
+              quantity={order.quantity}
             />
           </div>
         ))

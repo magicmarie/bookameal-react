@@ -3,7 +3,9 @@
 exports[`EditMeal component renders successfully 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Edit />,
+  Symbol(enzyme.__unrendered__): <Edit
+    EditMeal={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -69,6 +71,7 @@ ShallowWrapper {
                                                 </label>
                                                 <input
                                                         className="form-control"
+                                                        id="name"
                                                         name="meal_name"
                                                         onChange={[Function]}
                                                         required={true}
@@ -169,6 +172,7 @@ ShallowWrapper {
                                                   </label>
                                                   <input
                                                             className="form-control"
+                                                            id="name"
                                                             name="meal_name"
                                                             onChange={[Function]}
                                                             required={true}
@@ -266,6 +270,7 @@ ShallowWrapper {
                                                 </label>
                                                 <input
                                                             className="form-control"
+                                                            id="name"
                                                             name="meal_name"
                                                             onChange={[Function]}
                                                             required={true}
@@ -358,6 +363,7 @@ ShallowWrapper {
                                                 </label>
                                                 <input
                                                                 className="form-control"
+                                                                id="name"
                                                                 name="meal_name"
                                                                 onChange={[Function]}
                                                                 required={true}
@@ -507,6 +513,7 @@ ShallowWrapper {
                                         </label>
                                         <input
                                                             className="form-control"
+                                                            id="name"
                                                             name="meal_name"
                                                             onChange={[Function]}
                                                             required={true}
@@ -571,6 +578,7 @@ ShallowWrapper {
                         </label>
                         <input
                                                 className="form-control"
+                                                id="name"
                                                 name="meal_name"
                                                 onChange={[Function]}
                                                 required={true}
@@ -630,6 +638,7 @@ ShallowWrapper {
 </label>,
                           <input
                             className="form-control"
+                            id="name"
                             name="meal_name"
                             onChange={[Function]}
                             required={true}
@@ -659,6 +668,7 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "className": "form-control",
+                            "id": "name",
                             "name": "meal_name",
                             "onChange": [Function],
                             "required": true,
@@ -858,6 +868,7 @@ ShallowWrapper {
                                                             </label>
                                                             <input
                                                                       className="form-control"
+                                                                      id="name"
                                                                       name="meal_name"
                                                                       onChange={[Function]}
                                                                       required={true}
@@ -958,6 +969,7 @@ ShallowWrapper {
                                                             </label>
                                                             <input
                                                                         className="form-control"
+                                                                        id="name"
                                                                         name="meal_name"
                                                                         onChange={[Function]}
                                                                         required={true}
@@ -1055,6 +1067,7 @@ ShallowWrapper {
                                                         </label>
                                                         <input
                                                                       className="form-control"
+                                                                      id="name"
                                                                       name="meal_name"
                                                                       onChange={[Function]}
                                                                       required={true}
@@ -1147,6 +1160,7 @@ ShallowWrapper {
                                                       </label>
                                                       <input
                                                                         className="form-control"
+                                                                        id="name"
                                                                         name="meal_name"
                                                                         onChange={[Function]}
                                                                         required={true}
@@ -1296,6 +1310,7 @@ ShallowWrapper {
                                             </label>
                                             <input
                                                                   className="form-control"
+                                                                  id="name"
                                                                   name="meal_name"
                                                                   onChange={[Function]}
                                                                   required={true}
@@ -1360,6 +1375,7 @@ ShallowWrapper {
                           </label>
                           <input
                                                     className="form-control"
+                                                    id="name"
                                                     name="meal_name"
                                                     onChange={[Function]}
                                                     required={true}
@@ -1419,6 +1435,7 @@ ShallowWrapper {
 </label>,
                             <input
                               className="form-control"
+                              id="name"
                               name="meal_name"
                               onChange={[Function]}
                               required={true}
@@ -1448,6 +1465,7 @@ ShallowWrapper {
                             "nodeType": "host",
                             "props": Object {
                               "className": "form-control",
+                              "id": "name",
                               "name": "meal_name",
                               "onChange": [Function],
                               "required": true,

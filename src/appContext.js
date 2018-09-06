@@ -75,7 +75,6 @@ class AppProvider extends Component {
   };
   // delete item form cart
   deleteFromCart = mealId => {
-    console.log(mealId);
     const cart = this.getCart();
     const newCart = cart.filter(item => item.meal_id !== mealId);
     sessionStorage.setItem("cart", JSON.stringify(newCart));

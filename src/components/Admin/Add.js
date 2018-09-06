@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { notify } from "react-notify-toast";
-import axiosInstance from "../common/Apicalls";
+import PropTypes from "prop-types";
+import { postNewMeal } from "./helper";
 
 /**
  *@param {Event} event
@@ -26,32 +26,18 @@ class Add extends Component {
     const { meal_name, price } = this.state;
     // mtd to stop the default action of an element
     event.preventDefault();
-    // create new meal
-    axiosInstance
-      .post("/meals", { meal_name, price })
-      .then(response => {
-        this.reset();
-        // meal created: show success message, close the modal and update th meals list
-        notify.show(response.data.message, "success", 2500);
-        document.getElementById(`closeAddModal`).click();
-        this.props.getMeals();
-      })
-      // meal not created, show errors
-      .catch(error => {
-        if (error.response) {
-          this.setState({ message: error.response.data.message });
-        } else if (error.request) {
-          notify.show("Network error", "error", 2500);
-        }
-      });
+    postNewMeal({ meal_name, price }, this);
+    this.refs.modalClose.click();
+    this.props.getMeals();
   };
 
-  reset = () =>
+  reset = () => {
     this.setState({
       meal_name: "",
       price: "",
       message: ""
     });
+  };
 
   /**
    * @returns {div} renders a div
@@ -123,6 +109,7 @@ class Add extends Component {
                   </div>
                   <div>
                     <button
+                      ref="modalClose"
                       type="button"
                       className="btn btn-secondary"
                       data-dismiss="modal"
@@ -144,4 +131,8 @@ class Add extends Component {
     );
   }
 }
+
+Add.propTypes = {
+  postNewMeal: PropTypes.func.isRequired
+};
 export default Add;

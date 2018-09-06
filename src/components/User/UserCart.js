@@ -49,7 +49,9 @@ class UserCart extends React.Component {
   makeOrder = () => {
     const items = this.props.context.getCart();
     axiosInstance.post("/orders", { meals: items }).then(res => {
-      console.log(res);
+      // Redirect to  orders
+      this.props.context.clearCart();
+      this.props.history.push("/usersorders");
     });
   };
 
@@ -88,9 +90,9 @@ class UserCart extends React.Component {
           <table className="table table-bordered table-hover">
             <thead className="thead-light">
               <tr>
+                <th scope="col">Caterer</th>
                 <th scope="col">Meal</th>
                 <th scope="col">Quantity</th>
-                <th scope="col">Caterer</th>
                 <th>Unit Price(UGX)</th>
                 <th scope="col">Sub Total(UGX)</th>
                 <th scope="col">Cancel</th>

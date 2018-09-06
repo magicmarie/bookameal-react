@@ -67,9 +67,8 @@ class UserDashboard extends Component {
   };
 
   handleAddCart = (meal_id, meal_name, price, adminName, id) => {
-    console.log(meal_id, adminName);
     const cartItem = {
-      id,
+      menu_id: id,
       meal_id,
       meal_name,
       price,
@@ -87,7 +86,6 @@ class UserDashboard extends Component {
    */
   render() {
     const { loaded, menus, today } = this.state;
-    console.log(menus);
     const menuItems =
       menus.length === 0 ? (
         <div>No Menu Found</div>

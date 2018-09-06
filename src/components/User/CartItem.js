@@ -3,6 +3,7 @@ import React from "react";
 // cart item card: customer side
 const CartItem = props => (
   <tr>
+    <td>{props.adminName}</td>
     <td>{props.mealName}</td>
     <td>
       <select
@@ -22,7 +23,7 @@ const CartItem = props => (
         <option value="10">10</option>
       </select>
     </td>
-    <td>{props.adminName}</td>
+
     <td>UGX {props.price}</td>
     <td>UGX {props.quantity * props.price}</td>
     <td>

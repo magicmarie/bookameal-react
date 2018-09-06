@@ -82,6 +82,7 @@ class Edit extends Component {
                       value={this.state.meal_name}
                       required
                       className="form-control"
+                      id="name"
                     />
                   </div>
                   <div className="form-group">

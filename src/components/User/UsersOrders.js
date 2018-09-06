@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Loader from "react-loader";
 import { notify } from "react-notify-toast";
 import axiosInstance from "../common/Apicalls";
-import Delete from "./DeleteOrder";
 import Pagination from "../common/Pagination";
 
 // order: customer side
@@ -15,21 +14,7 @@ const Order = props => (
         Caterer:
         {props.adminName}
       </div>
-      <hr />
-      <button
-        to="#"
-        className="fa fa-trash icon mealcard"
-        data-toggle="modal"
-        aria-hidden="true"
-        title="delete order"
-        data-target={`#deleteOrderModal${props.id}`}
-      />
     </div>
-    <Delete
-      id={props.id}
-      meal_name={props.mealName}
-      ConfirmDeleteOrder={props.ConfirmDeleteOrder}
-    />
   </div>
 );
 

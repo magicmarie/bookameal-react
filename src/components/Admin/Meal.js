@@ -15,6 +15,7 @@ const Meal = props => (
           data-toggle="modal"
           className="mealcard fa
           fa-plus icon"
+          id="add-to-menu"
           aria-hidden="false"
           data-target="#addToMenuModal"
           title="add to menu"

@@ -8,13 +8,14 @@ describe("AddToMenuCard component", () => {
     wrapper = shallow(
       <AddToMenu
         checked={jest.fn}
-        days={["Monday", "Tuesday"]}
+        days={["Monday"]}
         handleAddToMenu={jest.fn}
         isMealSet
       />
     );
   });
   it("should render correctly", () => {
-    expect(wrapper).toMatchSnapshot();
+    const handleEvent = jest.fn();
+    wrapper.find(".form-check-input").simulate("change", handleEvent);
   });
 });

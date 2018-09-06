@@ -8,9 +8,9 @@ import AddToMenu from "./AddToMenu";
 import Pagination from "../common/Pagination";
 
 /**
- *@param {evt} e
  *@param {number} id
  *@param {string} day
+ *@param {evt} e
  * @class AdminDashboard
  * @extends {Component}
  */
