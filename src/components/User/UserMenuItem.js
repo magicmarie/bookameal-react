@@ -23,7 +23,8 @@ const UserMenuItem = props => (
                 props.mealId,
                 props.mealName,
                 props.price,
-                props.adminName
+                props.adminName,
+                props.id
               )
             }
           >

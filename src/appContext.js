@@ -10,20 +10,84 @@ export const AppContext = React.createContext();
  * @extends {Component}
  */
 class AppProvider extends Component {
-  state = {
-    isAdmin: false,
-    isLoggedIn: false,
-    isUser: false,
-    email: "",
-    logout: () => {},
-    cart_items: []
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      isAdmin: false,
+      isLoggedIn: false,
+      isUser: false,
+      email: "",
+      logout: this.logout,
+      login: this.login,
+      setCart: this.setCart,
+      clearCart: this.clearCart,
+      getCart: this.getCart,
+      cartItems: []
+    };
+  }
 
   componentDidMount = () => {
     const token = localStorage.getItem("token");
     this.handleToken(token);
-    this.setState({ logout: this.logout, login: this.login });
+    this.setState({
+      logout: this.logout,
+      login: this.login,
+      setCart: this.setCart,
+      clearCart: this.clearCart,
+      getCart: this.getCart,
+      setQuantity: this.setQuantity,
+      deleteFromCart: this.deleteFromCart
+    });
   };
+
+  setCart = item => {
+    let cart;
+    item = { ...item, quantity: 1 };
+    const jsonCart = sessionStorage.getItem("cart");
+    if (jsonCart === null) {
+      cart = [];
+      cart.push(item);
+    } else {
+      cart = JSON.parse(jsonCart);
+      cart.push(item);
+    }
+    sessionStorage.setItem("cart", JSON.stringify(cart));
+  };
+
+  getCart = () => {
+    const cart = sessionStorage.getItem("cart");
+    if (cart === null) {
+      return [];
+    }
+    return JSON.parse(cart);
+  };
+
+  setQuantity = (mealId, quantity) => {
+    const cart = this.getCart();
+    const newCart = cart.map(item => {
+      if (item.meal_id === mealId) {
+        item.quantity = quantity;
+      }
+      return item;
+    });
+    sessionStorage.setItem("cart", JSON.stringify(newCart));
+    window.location.reload();
+  };
+  // delete item form cart
+  deleteFromCart = mealId => {
+    console.log(mealId);
+    const cart = this.getCart();
+    const newCart = cart.filter(item => item.meal_id !== mealId);
+    sessionStorage.setItem("cart", JSON.stringify(newCart));
+    window.location.reload();
+  };
+
+  clearCart = () => sessionStorage.removeItem("cart");
+
+  login = token => {
+    this.handleToken(token);
+  };
+
   logout = () => {
     localStorage.removeItem("token");
     this.setState({
@@ -32,10 +96,6 @@ class AppProvider extends Component {
       isUser: false,
       email: ""
     });
-  };
-
-  login = token => {
-    this.handleToken(token);
   };
 
   handleToken = token => {

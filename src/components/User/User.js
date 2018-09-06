@@ -5,12 +5,9 @@ import axiosInstance from "../common/Apicalls";
 import WeekDays from "../common/WeekDays";
 import UserMenuItem from "./UserMenuItem";
 import getCurrentDay from "../common/CurrentDay";
+import { AppContext } from "../../appContext";
 
 /**
- * @param {number} meal_id
- * @param {string} meal_name
- * @param {number} price
- * @param {string} adminName
  * @class UserDashboard
  * @extends {Component}
  */
@@ -18,8 +15,7 @@ class UserDashboard extends Component {
   state = {
     menus: [],
     loaded: false,
-    today: "",
-    cart_items: []
+    today: ""
   };
 
   /**
@@ -70,16 +66,16 @@ class UserDashboard extends Component {
     this.setState({ currentDay: day, menus });
   };
 
-  handleAddCart = (meal_id, meal_name, price, adminName) => {
-    const { cart_items } = this.state;
+  handleAddCart = (meal_id, meal_name, price, adminName, id) => {
+    console.log(meal_id, adminName);
     const cartItem = {
+      id,
       meal_id,
       meal_name,
       price,
       adminName
     };
-    cart_items.push(cartItem);
-    console.log("cart", cart_items);
+    this.props.context.setCart(cartItem);
     notify.show("Added to your Cart", "success", 2000);
   };
 
@@ -91,6 +87,7 @@ class UserDashboard extends Component {
    */
   render() {
     const { loaded, menus, today } = this.state;
+    console.log(menus);
     const menuItems =
       menus.length === 0 ? (
         <div>No Menu Found</div>
@@ -140,4 +137,8 @@ class UserDashboard extends Component {
     );
   }
 }
-export default UserDashboard;
+export default React.forwardRef((props, ref) => (
+  <AppContext.Consumer>
+    {context => <UserDashboard {...props} context={context} ref={ref} />}
+  </AppContext.Consumer>
+));
