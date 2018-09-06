@@ -7,7 +7,7 @@ describe("WeekDays component", () => {
   beforeEach(() => {
     wrapper = shallow(<WeekDays />);
   });
-  it("User creates account successfully", () => {
+  it("renders succesfully", () => {
     expect(wrapper).toMatchSnapshot();
   });
 });

@@ -46,7 +46,12 @@ ShallowWrapper {
                               path="/login"
                     />
                     <AuthRoute
-                              component={[Function]}
+                              component={
+                                        Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "render": [Function],
+                                                }
+                              }
                               exact={true}
                               path="/user"
                     />
@@ -71,7 +76,12 @@ ShallowWrapper {
                               path="/adminorders"
                     />
                     <AuthRoute
-                              component={[Function]}
+                              component={
+                                        Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "render": [Function],
+                                                }
+                              }
                               exact={true}
                               path="/usercart"
                     />
@@ -126,7 +136,12 @@ ShallowWrapper {
                             path="/login"
               />
               <AuthRoute
-                            component={[Function]}
+                            component={
+                                          Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "render": [Function],
+                                                      }
+                            }
                             exact={true}
                             path="/user"
               />
@@ -151,7 +166,12 @@ ShallowWrapper {
                             path="/adminorders"
               />
               <AuthRoute
-                            component={[Function]}
+                            component={
+                                          Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "render": [Function],
+                                                      }
+                            }
                             exact={true}
                             path="/usercart"
               />
@@ -203,7 +223,12 @@ ShallowWrapper {
                   path="/login"
 />,
                 <AuthRoute
-                  component={[Function]}
+                  component={
+                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "render": [Function],
+                                                    }
+                  }
                   exact={true}
                   path="/user"
 />,
@@ -228,7 +253,12 @@ ShallowWrapper {
                   path="/adminorders"
 />,
                 <AuthRoute
-                  component={[Function]}
+                  component={
+                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "render": [Function],
+                                                    }
+                  }
                   exact={true}
                   path="/usercart"
 />,
@@ -287,7 +317,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "component": [Function],
+                  "component": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
                   "exact": true,
                   "path": "/user",
                 },
@@ -352,7 +385,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "component": [Function],
+                  "component": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
                   "exact": true,
                   "path": "/usercart",
                 },
@@ -426,7 +462,12 @@ ShallowWrapper {
                                     path="/login"
                         />
                         <AuthRoute
-                                    component={[Function]}
+                                    component={
+                                                Object {
+                                                            "$$typeof": Symbol(react.forward_ref),
+                                                            "render": [Function],
+                                                          }
+                                    }
                                     exact={true}
                                     path="/user"
                         />
@@ -451,7 +492,12 @@ ShallowWrapper {
                                     path="/adminorders"
                         />
                         <AuthRoute
-                                    component={[Function]}
+                                    component={
+                                                Object {
+                                                            "$$typeof": Symbol(react.forward_ref),
+                                                            "render": [Function],
+                                                          }
+                                    }
                                     exact={true}
                                     path="/usercart"
                         />
@@ -506,7 +552,12 @@ ShallowWrapper {
                                 path="/login"
                 />
                 <AuthRoute
-                                component={[Function]}
+                                component={
+                                                Object {
+                                                                "$$typeof": Symbol(react.forward_ref),
+                                                                "render": [Function],
+                                                              }
+                                }
                                 exact={true}
                                 path="/user"
                 />
@@ -531,7 +582,12 @@ ShallowWrapper {
                                 path="/adminorders"
                 />
                 <AuthRoute
-                                component={[Function]}
+                                component={
+                                                Object {
+                                                                "$$typeof": Symbol(react.forward_ref),
+                                                                "render": [Function],
+                                                              }
+                                }
                                 exact={true}
                                 path="/usercart"
                 />
@@ -583,7 +639,12 @@ ShallowWrapper {
                     path="/login"
 />,
                   <AuthRoute
-                    component={[Function]}
+                    component={
+                                        Object {
+                                                            "$$typeof": Symbol(react.forward_ref),
+                                                            "render": [Function],
+                                                          }
+                    }
                     exact={true}
                     path="/user"
 />,
@@ -608,7 +669,12 @@ ShallowWrapper {
                     path="/adminorders"
 />,
                   <AuthRoute
-                    component={[Function]}
+                    component={
+                                        Object {
+                                                            "$$typeof": Symbol(react.forward_ref),
+                                                            "render": [Function],
+                                                          }
+                    }
                     exact={true}
                     path="/usercart"
 />,
@@ -667,7 +733,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "component": [Function],
+                    "component": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
                     "exact": true,
                     "path": "/user",
                   },
@@ -732,7 +801,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "component": [Function],
+                    "component": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
                     "exact": true,
                     "path": "/usercart",
                   },
