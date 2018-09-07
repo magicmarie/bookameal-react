@@ -1,14 +1,13 @@
 import React from "react";
 import { shallow } from "enzyme";
-import User from "../../components/User/User";
+import AdminMenu from "../../components/Admin/AdminMenu";
 
-describe("UserDashboard component", () => {
+describe("AdminMenu component", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<User/>);
+    wrapper = shallow(<AdminMenu />);
   });
   it("renders successfully", () => {
     expect(wrapper).toMatchSnapshot();
   });
 });
-

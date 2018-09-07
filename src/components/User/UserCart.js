@@ -77,7 +77,6 @@ class UserCart extends React.Component {
             mealName={order.meal_name}
             price={order.price}
             adminName={order.adminName}
-            handleAddOrder={this.handleAddOrder}
             onChange={this.onChange}
             removeItem={this.props.context.deleteFromCart}
           />

@@ -6,6 +6,8 @@ export const AppContext = React.createContext();
 
 /**
  *@param {token} token
+ *@param {any} item
+ * @param {number} quantity
  * @class AppProvider
  * @extends {Component}
  */

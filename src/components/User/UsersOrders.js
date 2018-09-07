@@ -7,12 +7,23 @@ import Pagination from "../common/Pagination";
 // order: customer side
 const Order = props => (
   <div className="card mb-2 meal">
-    <div className="card-body text-center">
-      <div className="card-text">{props.mealName}</div>
-      <div className="card-text">{props.price}</div>
+    <div className="card-body">
       <div className="card-text">
-        Caterer:
+        <strong>Caterer: </strong>
         {props.adminName}
+      </div>
+      <div className="card-text">
+        <strong>Meal name: </strong>
+        {props.mealName}
+      </div>
+      <div className="card-text">
+        <strong>Price: </strong>
+        {props.price}
+        UGX
+      </div>
+      <div className="card-text">
+        <strong>Quantity: </strong>
+        {props.quantity}
       </div>
     </div>
   </div>
@@ -123,6 +134,7 @@ class UserOrders extends Component {
               id={order.id}
               mealName={order.meal_name}
               price={order.price}
+              quantity={order.quantity}
               adminName={order.adminName}
               ConfirmDeleteOrder={this.ConfirmDeleteOrder}
             />

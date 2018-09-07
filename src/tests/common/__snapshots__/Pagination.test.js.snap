@@ -4,10 +4,12 @@ exports[`Pagination component renders successfully 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Pagination
-    currentPage={null}
-    nextPage={null}
-    pages={null}
-    previousPage={null}
+    changePage={[Function]}
+    currentPage={9}
+    event={[Function]}
+    nextPage={10}
+    pages={10}
+    previousPage={8}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -26,23 +28,144 @@ ShallowWrapper {
         className="pagination"
 >
         <li
-                className="page-item disabled"
+                className="page-item"
         >
                 <a
                         className="page-link"
-                        data-page={null}
+                        data-page={8}
                         href="!#"
+                        id="previous"
                         onClick={[Function]}
                 >
                         Previous
                 </a>
         </li>
         <li
-                className="page-item disabled"
+                className="page-item"
+        >
+                <a
+                        className="page-link"
+                        data-page={1}
+                        href="!#"
+                        onClick={[Function]}
+                >
+                        1
+                </a>
+        </li>
+        <li
+                className="page-item"
+        >
+                <a
+                        className="page-link"
+                        data-page={2}
+                        href="!#"
+                        onClick={[Function]}
+                >
+                        2
+                </a>
+        </li>
+        <li
+                className="page-item"
+        >
+                <a
+                        className="page-link"
+                        data-page={3}
+                        href="!#"
+                        onClick={[Function]}
+                >
+                        3
+                </a>
+        </li>
+        <li
+                className="page-item"
+        >
+                <a
+                        className="page-link"
+                        data-page={4}
+                        href="!#"
+                        onClick={[Function]}
+                >
+                        4
+                </a>
+        </li>
+        <li
+                className="page-item"
+        >
+                <a
+                        className="page-link"
+                        data-page={5}
+                        href="!#"
+                        onClick={[Function]}
+                >
+                        5
+                </a>
+        </li>
+        <li
+                className="page-item"
+        >
+                <a
+                        className="page-link"
+                        data-page={6}
+                        href="!#"
+                        onClick={[Function]}
+                >
+                        6
+                </a>
+        </li>
+        <li
+                className="page-item"
+        >
+                <a
+                        className="page-link"
+                        data-page={7}
+                        href="!#"
+                        onClick={[Function]}
+                >
+                        7
+                </a>
+        </li>
+        <li
+                className="page-item"
+        >
+                <a
+                        className="page-link"
+                        data-page={8}
+                        href="!#"
+                        onClick={[Function]}
+                >
+                        8
+                </a>
+        </li>
+        <li
+                className="page-item active"
+        >
+                <a
+                        className="page-link"
+                        data-page={9}
+                        href="!#"
+                        onClick={[Function]}
+                >
+                        9
+                </a>
+        </li>
+        <li
+                className="page-item"
+        >
+                <a
+                        className="page-link"
+                        data-page={10}
+                        href="!#"
+                        onClick={[Function]}
+                >
+                        10
+                </a>
+        </li>
+        <li
+                className="page-item"
         >
                 <a
                         className="page-link mb-4"
-                        data-page={null}
+                        data-page={10}
                         href="!#"
                         onClick={[Function]}
                 >
@@ -59,24 +182,146 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <li
-            className="page-item disabled"
+            className="page-item"
 >
             <a
                         className="page-link"
-                        data-page={null}
+                        data-page={8}
                         href="!#"
+                        id="previous"
                         onClick={[Function]}
             >
                         Previous
             </a>
 </li>,
-          Array [],
+          Array [
+            <li
+              className="page-item"
+>
+              <a
+                            className="page-link"
+                            data-page={1}
+                            href="!#"
+                            onClick={[Function]}
+              >
+                            1
+              </a>
+</li>,
+            <li
+              className="page-item"
+>
+              <a
+                            className="page-link"
+                            data-page={2}
+                            href="!#"
+                            onClick={[Function]}
+              >
+                            2
+              </a>
+</li>,
+            <li
+              className="page-item"
+>
+              <a
+                            className="page-link"
+                            data-page={3}
+                            href="!#"
+                            onClick={[Function]}
+              >
+                            3
+              </a>
+</li>,
+            <li
+              className="page-item"
+>
+              <a
+                            className="page-link"
+                            data-page={4}
+                            href="!#"
+                            onClick={[Function]}
+              >
+                            4
+              </a>
+</li>,
+            <li
+              className="page-item"
+>
+              <a
+                            className="page-link"
+                            data-page={5}
+                            href="!#"
+                            onClick={[Function]}
+              >
+                            5
+              </a>
+</li>,
+            <li
+              className="page-item"
+>
+              <a
+                            className="page-link"
+                            data-page={6}
+                            href="!#"
+                            onClick={[Function]}
+              >
+                            6
+              </a>
+</li>,
+            <li
+              className="page-item"
+>
+              <a
+                            className="page-link"
+                            data-page={7}
+                            href="!#"
+                            onClick={[Function]}
+              >
+                            7
+              </a>
+</li>,
+            <li
+              className="page-item"
+>
+              <a
+                            className="page-link"
+                            data-page={8}
+                            href="!#"
+                            onClick={[Function]}
+              >
+                            8
+              </a>
+</li>,
+            <li
+              className="page-item active"
+>
+              <a
+                            className="page-link"
+                            data-page={9}
+                            href="!#"
+                            onClick={[Function]}
+              >
+                            9
+              </a>
+</li>,
+            <li
+              className="page-item"
+>
+              <a
+                            className="page-link"
+                            data-page={10}
+                            href="!#"
+                            onClick={[Function]}
+              >
+                            10
+              </a>
+</li>,
+          ],
           <li
-            className="page-item disabled"
+            className="page-item"
 >
             <a
                         className="page-link mb-4"
-                        data-page={null}
+                        data-page={10}
                         href="!#"
                         onClick={[Function]}
             >
@@ -95,13 +340,14 @@ ShallowWrapper {
           "props": Object {
             "children": <a
               className="page-link"
-              data-page={null}
+              data-page={8}
               href="!#"
+              id="previous"
               onClick={[Function]}
 >
               Previous
 </a>,
-            "className": "page-item disabled",
+            "className": "page-item",
           },
           "ref": null,
           "rendered": Object {
@@ -111,12 +357,343 @@ ShallowWrapper {
             "props": Object {
               "children": "Previous",
               "className": "page-link",
-              "data-page": null,
+              "data-page": 8,
               "href": "!#",
+              "id": "previous",
               "onClick": [Function],
             },
             "ref": null,
             "rendered": "Previous",
+            "type": "a",
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className="page-link"
+              data-page={1}
+              href="!#"
+              onClick={[Function]}
+>
+              1
+</a>,
+            "className": "page-item",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 1,
+              "className": "page-link",
+              "data-page": 1,
+              "href": "!#",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": 1,
+            "type": "a",
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className="page-link"
+              data-page={2}
+              href="!#"
+              onClick={[Function]}
+>
+              2
+</a>,
+            "className": "page-item",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 2,
+              "className": "page-link",
+              "data-page": 2,
+              "href": "!#",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": 2,
+            "type": "a",
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className="page-link"
+              data-page={3}
+              href="!#"
+              onClick={[Function]}
+>
+              3
+</a>,
+            "className": "page-item",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 3,
+              "className": "page-link",
+              "data-page": 3,
+              "href": "!#",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": 3,
+            "type": "a",
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className="page-link"
+              data-page={4}
+              href="!#"
+              onClick={[Function]}
+>
+              4
+</a>,
+            "className": "page-item",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 4,
+              "className": "page-link",
+              "data-page": 4,
+              "href": "!#",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": 4,
+            "type": "a",
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "4",
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className="page-link"
+              data-page={5}
+              href="!#"
+              onClick={[Function]}
+>
+              5
+</a>,
+            "className": "page-item",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 5,
+              "className": "page-link",
+              "data-page": 5,
+              "href": "!#",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": 5,
+            "type": "a",
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "5",
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className="page-link"
+              data-page={6}
+              href="!#"
+              onClick={[Function]}
+>
+              6
+</a>,
+            "className": "page-item",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 6,
+              "className": "page-link",
+              "data-page": 6,
+              "href": "!#",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": 6,
+            "type": "a",
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "6",
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className="page-link"
+              data-page={7}
+              href="!#"
+              onClick={[Function]}
+>
+              7
+</a>,
+            "className": "page-item",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 7,
+              "className": "page-link",
+              "data-page": 7,
+              "href": "!#",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": 7,
+            "type": "a",
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "7",
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className="page-link"
+              data-page={8}
+              href="!#"
+              onClick={[Function]}
+>
+              8
+</a>,
+            "className": "page-item",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 8,
+              "className": "page-link",
+              "data-page": 8,
+              "href": "!#",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": 8,
+            "type": "a",
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "8",
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className="page-link"
+              data-page={9}
+              href="!#"
+              onClick={[Function]}
+>
+              9
+</a>,
+            "className": "page-item active",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 9,
+              "className": "page-link",
+              "data-page": 9,
+              "href": "!#",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": 9,
+            "type": "a",
+          },
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "9",
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className="page-link"
+              data-page={10}
+              href="!#"
+              onClick={[Function]}
+>
+              10
+</a>,
+            "className": "page-item",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 10,
+              "className": "page-link",
+              "data-page": 10,
+              "href": "!#",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": 10,
             "type": "a",
           },
           "type": "li",
@@ -128,13 +705,13 @@ ShallowWrapper {
           "props": Object {
             "children": <a
               className="page-link mb-4"
-              data-page={null}
+              data-page={10}
               href="!#"
               onClick={[Function]}
 >
               Next
 </a>,
-            "className": "page-item disabled",
+            "className": "page-item",
           },
           "ref": null,
           "rendered": Object {
@@ -144,7 +721,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Next",
               "className": "page-link mb-4",
-              "data-page": null,
+              "data-page": 10,
               "href": "!#",
               "onClick": [Function],
             },
@@ -170,23 +747,144 @@ ShallowWrapper {
           className="pagination"
 >
           <li
-                    className="page-item disabled"
+                    className="page-item"
           >
                     <a
                               className="page-link"
-                              data-page={null}
+                              data-page={8}
                               href="!#"
+                              id="previous"
                               onClick={[Function]}
                     >
                               Previous
                     </a>
           </li>
           <li
-                    className="page-item disabled"
+                    className="page-item"
+          >
+                    <a
+                              className="page-link"
+                              data-page={1}
+                              href="!#"
+                              onClick={[Function]}
+                    >
+                              1
+                    </a>
+          </li>
+          <li
+                    className="page-item"
+          >
+                    <a
+                              className="page-link"
+                              data-page={2}
+                              href="!#"
+                              onClick={[Function]}
+                    >
+                              2
+                    </a>
+          </li>
+          <li
+                    className="page-item"
+          >
+                    <a
+                              className="page-link"
+                              data-page={3}
+                              href="!#"
+                              onClick={[Function]}
+                    >
+                              3
+                    </a>
+          </li>
+          <li
+                    className="page-item"
+          >
+                    <a
+                              className="page-link"
+                              data-page={4}
+                              href="!#"
+                              onClick={[Function]}
+                    >
+                              4
+                    </a>
+          </li>
+          <li
+                    className="page-item"
+          >
+                    <a
+                              className="page-link"
+                              data-page={5}
+                              href="!#"
+                              onClick={[Function]}
+                    >
+                              5
+                    </a>
+          </li>
+          <li
+                    className="page-item"
+          >
+                    <a
+                              className="page-link"
+                              data-page={6}
+                              href="!#"
+                              onClick={[Function]}
+                    >
+                              6
+                    </a>
+          </li>
+          <li
+                    className="page-item"
+          >
+                    <a
+                              className="page-link"
+                              data-page={7}
+                              href="!#"
+                              onClick={[Function]}
+                    >
+                              7
+                    </a>
+          </li>
+          <li
+                    className="page-item"
+          >
+                    <a
+                              className="page-link"
+                              data-page={8}
+                              href="!#"
+                              onClick={[Function]}
+                    >
+                              8
+                    </a>
+          </li>
+          <li
+                    className="page-item active"
+          >
+                    <a
+                              className="page-link"
+                              data-page={9}
+                              href="!#"
+                              onClick={[Function]}
+                    >
+                              9
+                    </a>
+          </li>
+          <li
+                    className="page-item"
+          >
+                    <a
+                              className="page-link"
+                              data-page={10}
+                              href="!#"
+                              onClick={[Function]}
+                    >
+                              10
+                    </a>
+          </li>
+          <li
+                    className="page-item"
           >
                     <a
                               className="page-link mb-4"
-                              data-page={null}
+                              data-page={10}
                               href="!#"
                               onClick={[Function]}
                     >
@@ -203,24 +901,146 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <li
-              className="page-item disabled"
+              className="page-item"
 >
               <a
                             className="page-link"
-                            data-page={null}
+                            data-page={8}
                             href="!#"
+                            id="previous"
                             onClick={[Function]}
               >
                             Previous
               </a>
 </li>,
-            Array [],
+            Array [
+              <li
+                className="page-item"
+>
+                <a
+                                className="page-link"
+                                data-page={1}
+                                href="!#"
+                                onClick={[Function]}
+                >
+                                1
+                </a>
+</li>,
+              <li
+                className="page-item"
+>
+                <a
+                                className="page-link"
+                                data-page={2}
+                                href="!#"
+                                onClick={[Function]}
+                >
+                                2
+                </a>
+</li>,
+              <li
+                className="page-item"
+>
+                <a
+                                className="page-link"
+                                data-page={3}
+                                href="!#"
+                                onClick={[Function]}
+                >
+                                3
+                </a>
+</li>,
+              <li
+                className="page-item"
+>
+                <a
+                                className="page-link"
+                                data-page={4}
+                                href="!#"
+                                onClick={[Function]}
+                >
+                                4
+                </a>
+</li>,
+              <li
+                className="page-item"
+>
+                <a
+                                className="page-link"
+                                data-page={5}
+                                href="!#"
+                                onClick={[Function]}
+                >
+                                5
+                </a>
+</li>,
+              <li
+                className="page-item"
+>
+                <a
+                                className="page-link"
+                                data-page={6}
+                                href="!#"
+                                onClick={[Function]}
+                >
+                                6
+                </a>
+</li>,
+              <li
+                className="page-item"
+>
+                <a
+                                className="page-link"
+                                data-page={7}
+                                href="!#"
+                                onClick={[Function]}
+                >
+                                7
+                </a>
+</li>,
+              <li
+                className="page-item"
+>
+                <a
+                                className="page-link"
+                                data-page={8}
+                                href="!#"
+                                onClick={[Function]}
+                >
+                                8
+                </a>
+</li>,
+              <li
+                className="page-item active"
+>
+                <a
+                                className="page-link"
+                                data-page={9}
+                                href="!#"
+                                onClick={[Function]}
+                >
+                                9
+                </a>
+</li>,
+              <li
+                className="page-item"
+>
+                <a
+                                className="page-link"
+                                data-page={10}
+                                href="!#"
+                                onClick={[Function]}
+                >
+                                10
+                </a>
+</li>,
+            ],
             <li
-              className="page-item disabled"
+              className="page-item"
 >
               <a
                             className="page-link mb-4"
-                            data-page={null}
+                            data-page={10}
                             href="!#"
                             onClick={[Function]}
               >
@@ -239,13 +1059,14 @@ ShallowWrapper {
             "props": Object {
               "children": <a
                 className="page-link"
-                data-page={null}
+                data-page={8}
                 href="!#"
+                id="previous"
                 onClick={[Function]}
 >
                 Previous
 </a>,
-              "className": "page-item disabled",
+              "className": "page-item",
             },
             "ref": null,
             "rendered": Object {
@@ -255,12 +1076,343 @@ ShallowWrapper {
               "props": Object {
                 "children": "Previous",
                 "className": "page-link",
-                "data-page": null,
+                "data-page": 8,
                 "href": "!#",
+                "id": "previous",
                 "onClick": [Function],
               },
               "ref": null,
               "rendered": "Previous",
+              "type": "a",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="page-link"
+                data-page={1}
+                href="!#"
+                onClick={[Function]}
+>
+                1
+</a>,
+              "className": "page-item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 1,
+                "className": "page-link",
+                "data-page": 1,
+                "href": "!#",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": 1,
+              "type": "a",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="page-link"
+                data-page={2}
+                href="!#"
+                onClick={[Function]}
+>
+                2
+</a>,
+              "className": "page-item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 2,
+                "className": "page-link",
+                "data-page": 2,
+                "href": "!#",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": 2,
+              "type": "a",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="page-link"
+                data-page={3}
+                href="!#"
+                onClick={[Function]}
+>
+                3
+</a>,
+              "className": "page-item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 3,
+                "className": "page-link",
+                "data-page": 3,
+                "href": "!#",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": 3,
+              "type": "a",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="page-link"
+                data-page={4}
+                href="!#"
+                onClick={[Function]}
+>
+                4
+</a>,
+              "className": "page-item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 4,
+                "className": "page-link",
+                "data-page": 4,
+                "href": "!#",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": 4,
+              "type": "a",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="page-link"
+                data-page={5}
+                href="!#"
+                onClick={[Function]}
+>
+                5
+</a>,
+              "className": "page-item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 5,
+                "className": "page-link",
+                "data-page": 5,
+                "href": "!#",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": 5,
+              "type": "a",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "5",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="page-link"
+                data-page={6}
+                href="!#"
+                onClick={[Function]}
+>
+                6
+</a>,
+              "className": "page-item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 6,
+                "className": "page-link",
+                "data-page": 6,
+                "href": "!#",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": 6,
+              "type": "a",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "6",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="page-link"
+                data-page={7}
+                href="!#"
+                onClick={[Function]}
+>
+                7
+</a>,
+              "className": "page-item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 7,
+                "className": "page-link",
+                "data-page": 7,
+                "href": "!#",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": 7,
+              "type": "a",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "7",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="page-link"
+                data-page={8}
+                href="!#"
+                onClick={[Function]}
+>
+                8
+</a>,
+              "className": "page-item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 8,
+                "className": "page-link",
+                "data-page": 8,
+                "href": "!#",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": 8,
+              "type": "a",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "8",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="page-link"
+                data-page={9}
+                href="!#"
+                onClick={[Function]}
+>
+                9
+</a>,
+              "className": "page-item active",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 9,
+                "className": "page-link",
+                "data-page": 9,
+                "href": "!#",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": 9,
+              "type": "a",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "9",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="page-link"
+                data-page={10}
+                href="!#"
+                onClick={[Function]}
+>
+                10
+</a>,
+              "className": "page-item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 10,
+                "className": "page-link",
+                "data-page": 10,
+                "href": "!#",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": 10,
               "type": "a",
             },
             "type": "li",
@@ -272,13 +1424,13 @@ ShallowWrapper {
             "props": Object {
               "children": <a
                 className="page-link mb-4"
-                data-page={null}
+                data-page={10}
                 href="!#"
                 onClick={[Function]}
 >
                 Next
 </a>,
-              "className": "page-item disabled",
+              "className": "page-item",
             },
             "ref": null,
             "rendered": Object {
@@ -288,7 +1440,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "Next",
                 "className": "page-link mb-4",
-                "data-page": null,
+                "data-page": 10,
                 "href": "!#",
                 "onClick": [Function],
               },

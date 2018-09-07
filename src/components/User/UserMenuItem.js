@@ -3,7 +3,7 @@ import React from "react";
 // menu card: customer side
 const UserMenuItem = props => (
   <div className="menu-item">
-    <div className="row">
+    <div className="row menuitem">
       <div className="col-sm-6">
         <p>{props.mealName}</p>
       </div>

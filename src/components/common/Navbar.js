@@ -96,8 +96,9 @@ const Navbar = () => (
                 <li className="nav-item">
                   <NavLink
                     className="nav-link"
+                    id="logUout"
                     activeClassName="active"
-                    to="#logout"
+                    to="#"
                     onClick={() => context.logout()}
                   >
                     Log Out

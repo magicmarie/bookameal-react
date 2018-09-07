@@ -1,0 +1,600 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdminDashboard component renders successfully 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AdminDashboard />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <button
+          className="btn btn-primary"
+          data-target="#addModal"
+          data-toggle="modal"
+          type="button"
+>
+          New Meal
+</button>,
+        <hr />,
+        <div
+          className="row"
+>
+          <div
+                    className="col meal-list"
+          >
+                    <h2
+                              className="header text-center"
+                    >
+                              Meals List
+                    </h2>
+                    <Unknown
+                              component="div"
+                              loaded={false}
+                              loadedClassName="loadedContent"
+                              parentClassName="loader"
+                    >
+                              <div
+                                        className="row"
+                              >
+                                        <div>
+                                                  No Meals Found
+                                        </div>
+                              </div>
+                    </Unknown>
+                    <Pagination
+                              changePage={[Function]}
+                              currentPage={null}
+                              nextPage={null}
+                              pages={null}
+                              previousPage={null}
+                    />
+          </div>
+</div>,
+        <Add
+          getMeals={[Function]}
+/>,
+        <AddMenuModal
+          checked={[Function]}
+          days={
+                    Array [
+                              "Monday",
+                              "Tuesday",
+                              "Wednesday",
+                              "Thursday",
+                              "Friday",
+                              "Saturday",
+                              "Sunday",
+                            ]
+          }
+          handleAddMenu={[Function]}
+          isMealSet={true}
+/>,
+      ],
+      "className": "container-fluid",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "New Meal",
+          "className": "btn btn-primary",
+          "data-target": "#addModal",
+          "data-toggle": "modal",
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": "New Meal",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="col meal-list"
+>
+            <h2
+                        className="header text-center"
+            >
+                        Meals List
+            </h2>
+            <Unknown
+                        component="div"
+                        loaded={false}
+                        loadedClassName="loadedContent"
+                        parentClassName="loader"
+            >
+                        <div
+                                    className="row"
+                        >
+                                    <div>
+                                                No Meals Found
+                                    </div>
+                        </div>
+            </Unknown>
+            <Pagination
+                        changePage={[Function]}
+                        currentPage={null}
+                        nextPage={null}
+                        pages={null}
+                        previousPage={null}
+            />
+</div>,
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2
+                className="header text-center"
+>
+                Meals List
+</h2>,
+              <Unknown
+                component="div"
+                loaded={false}
+                loadedClassName="loadedContent"
+                parentClassName="loader"
+>
+                <div
+                                className="row"
+                >
+                                <div>
+                                                No Meals Found
+                                </div>
+                </div>
+</Unknown>,
+              <Pagination
+                changePage={[Function]}
+                currentPage={null}
+                nextPage={null}
+                pages={null}
+                previousPage={null}
+/>,
+            ],
+            "className": "col meal-list",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Meals List",
+                "className": "header text-center",
+              },
+              "ref": null,
+              "rendered": "Meals List",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <div
+                  className="row"
+>
+                  <div>
+                                    No Meals Found
+                  </div>
+</div>,
+                "component": "div",
+                "loaded": false,
+                "loadedClassName": "loadedContent",
+                "parentClassName": "loader",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div>
+                    No Meals Found
+</div>,
+                  "className": "row",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "No Meals Found",
+                  },
+                  "ref": null,
+                  "rendered": "No Meals Found",
+                  "type": "div",
+                },
+                "type": "div",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "changePage": [Function],
+                "currentPage": null,
+                "nextPage": null,
+                "pages": null,
+                "previousPage": null,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "getMeals": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "checked": [Function],
+          "days": Array [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+          "handleAddMenu": [Function],
+          "isMealSet": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="btn btn-primary"
+            data-target="#addModal"
+            data-toggle="modal"
+            type="button"
+>
+            New Meal
+</button>,
+          <hr />,
+          <div
+            className="row"
+>
+            <div
+                        className="col meal-list"
+            >
+                        <h2
+                                    className="header text-center"
+                        >
+                                    Meals List
+                        </h2>
+                        <Unknown
+                                    component="div"
+                                    loaded={false}
+                                    loadedClassName="loadedContent"
+                                    parentClassName="loader"
+                        >
+                                    <div
+                                                className="row"
+                                    >
+                                                <div>
+                                                            No Meals Found
+                                                </div>
+                                    </div>
+                        </Unknown>
+                        <Pagination
+                                    changePage={[Function]}
+                                    currentPage={null}
+                                    nextPage={null}
+                                    pages={null}
+                                    previousPage={null}
+                        />
+            </div>
+</div>,
+          <Add
+            getMeals={[Function]}
+/>,
+          <AddMenuModal
+            checked={[Function]}
+            days={
+                        Array [
+                                    "Monday",
+                                    "Tuesday",
+                                    "Wednesday",
+                                    "Thursday",
+                                    "Friday",
+                                    "Saturday",
+                                    "Sunday",
+                                  ]
+            }
+            handleAddMenu={[Function]}
+            isMealSet={true}
+/>,
+        ],
+        "className": "container-fluid",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "New Meal",
+            "className": "btn btn-primary",
+            "data-target": "#addModal",
+            "data-toggle": "modal",
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": "New Meal",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="col meal-list"
+>
+              <h2
+                            className="header text-center"
+              >
+                            Meals List
+              </h2>
+              <Unknown
+                            component="div"
+                            loaded={false}
+                            loadedClassName="loadedContent"
+                            parentClassName="loader"
+              >
+                            <div
+                                          className="row"
+                            >
+                                          <div>
+                                                        No Meals Found
+                                          </div>
+                            </div>
+              </Unknown>
+              <Pagination
+                            changePage={[Function]}
+                            currentPage={null}
+                            nextPage={null}
+                            pages={null}
+                            previousPage={null}
+              />
+</div>,
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2
+                  className="header text-center"
+>
+                  Meals List
+</h2>,
+                <Unknown
+                  component="div"
+                  loaded={false}
+                  loadedClassName="loadedContent"
+                  parentClassName="loader"
+>
+                  <div
+                                    className="row"
+                  >
+                                    <div>
+                                                      No Meals Found
+                                    </div>
+                  </div>
+</Unknown>,
+                <Pagination
+                  changePage={[Function]}
+                  currentPage={null}
+                  nextPage={null}
+                  pages={null}
+                  previousPage={null}
+/>,
+              ],
+              "className": "col meal-list",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Meals List",
+                  "className": "header text-center",
+                },
+                "ref": null,
+                "rendered": "Meals List",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <div
+                    className="row"
+>
+                    <div>
+                                        No Meals Found
+                    </div>
+</div>,
+                  "component": "div",
+                  "loaded": false,
+                  "loadedClassName": "loadedContent",
+                  "parentClassName": "loader",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <div>
+                      No Meals Found
+</div>,
+                    "className": "row",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "No Meals Found",
+                    },
+                    "ref": null,
+                    "rendered": "No Meals Found",
+                    "type": "div",
+                  },
+                  "type": "div",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "changePage": [Function],
+                  "currentPage": null,
+                  "nextPage": null,
+                  "pages": null,
+                  "previousPage": null,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "getMeals": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "checked": [Function],
+            "days": Array [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday",
+            ],
+            "handleAddMenu": [Function],
+            "isMealSet": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

@@ -6,13 +6,17 @@ import Pagination from "../common/Pagination";
 
 const Order = props => (
   <div className="menu-item">
-    <div className="row">
+    <div className="row order">
       <div className="col-md-4">{props.mealName}</div>
       <div className="price col-md-2">{props.price}</div>
       <div className="col-md-2 text-center">{props.customerName}</div>
       <div className="col-md-2">{props.quantity}</div>
-      <div className="col-sm-2 text-center">
-        <select>
+      <div className="col-md-2 text-center">
+        <select
+          // onChange={evt => props.onChange(evt, props.id)}
+          defaultValue="Not delivered"
+          name="delivery"
+        >
           <option value="Delivered">Delivered</option>
           <option value="Not delivered">Not delivered</option>
           <option value="In progress">In progress</option>
@@ -46,6 +50,23 @@ class AdminDashboard extends Component {
   componentWillMount() {
     this.getUserOrders();
   }
+
+  // onChange = (evt, id) => {
+  //   const delivery = evt.target.value;
+  //   this.setDelivery(id, delivery);
+  // };
+
+  // setDelivery = (id, delivery) => {
+  //   let q = this.getUserOrders();
+  //   const newDelivery = q.map(item => {
+  //     if (item.id === id) {
+  //       item.delivery = delivery;
+  //     }
+  //     return item;
+  //   });
+  //   this.setItem("new", JSON.stringify(newDelivery));
+  //   window.location.reload();
+  // };
 
   // get all orders from admin's meals
   getUserOrders = () => {
@@ -124,6 +145,7 @@ class AdminDashboard extends Component {
               price={order.price}
               customerName={order.customerName}
               quantity={order.quantity}
+              onChange={this.onChange}
             />
           </div>
         ))

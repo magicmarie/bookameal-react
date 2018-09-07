@@ -61,6 +61,7 @@ class Pagination extends Component {
               data-page={previousPage}
               onClick={this.changePage}
               href="!#"
+              id="previous"
             >
               Previous
             </a>

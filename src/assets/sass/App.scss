@@ -101,7 +101,7 @@ h4 {
 }
 
 .menu-item {
-  padding: 1rem 1rem;
+  padding: 0rem 1rem;
   margin-bottom: 1px;
   background-color: #ffffff96;
   flex: 0 0 1;
@@ -112,15 +112,7 @@ h4 {
 
 .menu-item :hover {
   background-color: #ffffff;
-}
-
-.centered {
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-  padding: 2px;
-  display: flex;
-  justify-content: space-around;
+  border-radius: 7px;
 }
 
 .form-signin-heading {
@@ -173,4 +165,13 @@ h4 {
 
 .menu {
   margin-bottom: 1rem;
+}
+
+div.row.menuitem {
+  border-radius: 7px;
+  padding-top: 15px;
+}
+
+.order {
+  height: 42px;
 }
