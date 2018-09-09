@@ -1,9 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Login component User creates account successfully 1`] = `
+exports[`login should render successfully 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown />,
+  Symbol(enzyme.__unrendered__): <Login
+    context={
+        Object {
+            "login": [Function],
+          }
+    }
+    history={
+        Object {
+            "push": [Function],
+          }
+    }
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -14,55 +25,1033 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": <div
+        className="col-md-5"
+>
+        <div
+                className="jumbotron"
+        >
+                <form
+                        onSubmit={[Function]}
+                >
+                        <h2
+                                className="text-center form-signin-heading"
+                        >
+                                Log in to your account
+                        </h2>
+                        <div
+                                className="form-group"
+                        >
+                                <label
+                                        htmlFor="email"
+                                >
+                                        Email
+                                </label>
+                                <input
+                                        className="form-control"
+                                        name="email"
+                                        onChange={[Function]}
+                                        required={true}
+                                        type="email"
+                                        value=""
+                                />
+                        </div>
+                        <div
+                                className="form-group"
+                        >
+                                <label
+                                        htmlFor="password"
+                                >
+                                        Password
+                                </label>
+                                <input
+                                        className="form-control"
+                                        name="password"
+                                        onChange={[Function]}
+                                        required={true}
+                                        type="password"
+                                        value=""
+                                />
+                        </div>
+                        <div>
+                                <button
+                                        className="btn btn-primary btn-block"
+                                        type="submit"
+                                >
+                                        Login
+                                </button>
+                        </div>
+                        <p />
+                        <p
+                                className="text-center"
+                        >
+                                Do not have an account yet?
+                                <Link
+                                        href="/signup"
+                                        replace={false}
+                                        to="/signup"
+                                >
+                                         
+                                        Sign Up
+                                </Link>
+                        </p>
+                </form>
+        </div>
+</div>,
+      "className": "row justify-content-md-center",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "Consumer": [Circular],
-      "Provider": Object {
-        "$$typeof": Symbol(react.provider),
-        "_context": [Circular],
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="jumbotron"
+>
+          <form
+                    onSubmit={[Function]}
+          >
+                    <h2
+                              className="text-center form-signin-heading"
+                    >
+                              Log in to your account
+                    </h2>
+                    <div
+                              className="form-group"
+                    >
+                              <label
+                                        htmlFor="email"
+                              >
+                                        Email
+                              </label>
+                              <input
+                                        className="form-control"
+                                        name="email"
+                                        onChange={[Function]}
+                                        required={true}
+                                        type="email"
+                                        value=""
+                              />
+                    </div>
+                    <div
+                              className="form-group"
+                    >
+                              <label
+                                        htmlFor="password"
+                              >
+                                        Password
+                              </label>
+                              <input
+                                        className="form-control"
+                                        name="password"
+                                        onChange={[Function]}
+                                        required={true}
+                                        type="password"
+                                        value=""
+                              />
+                    </div>
+                    <div>
+                              <button
+                                        className="btn btn-primary btn-block"
+                                        type="submit"
+                              >
+                                        Login
+                              </button>
+                    </div>
+                    <p />
+                    <p
+                              className="text-center"
+                    >
+                              Do not have an account yet?
+                              <Link
+                                        href="/signup"
+                                        replace={false}
+                                        to="/signup"
+                              >
+                                         
+                                        Sign Up
+                              </Link>
+                    </p>
+          </form>
+</div>,
+        "className": "col-md-5",
       },
-      "_calculateChangedBits": null,
-      "_changedBits": 0,
-      "_changedBits2": 0,
-      "_currentRenderer": null,
-      "_currentRenderer2": null,
-      "_currentValue": undefined,
-      "_currentValue2": undefined,
-      "_defaultValue": undefined,
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <form
+            onSubmit={[Function]}
+>
+            <h2
+                        className="text-center form-signin-heading"
+            >
+                        Log in to your account
+            </h2>
+            <div
+                        className="form-group"
+            >
+                        <label
+                                    htmlFor="email"
+                        >
+                                    Email
+                        </label>
+                        <input
+                                    className="form-control"
+                                    name="email"
+                                    onChange={[Function]}
+                                    required={true}
+                                    type="email"
+                                    value=""
+                        />
+            </div>
+            <div
+                        className="form-group"
+            >
+                        <label
+                                    htmlFor="password"
+                        >
+                                    Password
+                        </label>
+                        <input
+                                    className="form-control"
+                                    name="password"
+                                    onChange={[Function]}
+                                    required={true}
+                                    type="password"
+                                    value=""
+                        />
+            </div>
+            <div>
+                        <button
+                                    className="btn btn-primary btn-block"
+                                    type="submit"
+                        >
+                                    Login
+                        </button>
+            </div>
+            <p />
+            <p
+                        className="text-center"
+            >
+                        Do not have an account yet?
+                        <Link
+                                    href="/signup"
+                                    replace={false}
+                                    to="/signup"
+                        >
+                                     
+                                    Sign Up
+                        </Link>
+            </p>
+</form>,
+          "className": "jumbotron",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2
+                className="text-center form-signin-heading"
+>
+                Log in to your account
+</h2>,
+              <div
+                className="form-group"
+>
+                <label
+                                htmlFor="email"
+                >
+                                Email
+                </label>
+                <input
+                                className="form-control"
+                                name="email"
+                                onChange={[Function]}
+                                required={true}
+                                type="email"
+                                value=""
+                />
+</div>,
+              <div
+                className="form-group"
+>
+                <label
+                                htmlFor="password"
+                >
+                                Password
+                </label>
+                <input
+                                className="form-control"
+                                name="password"
+                                onChange={[Function]}
+                                required={true}
+                                type="password"
+                                value=""
+                />
+</div>,
+              <div>
+                <button
+                                className="btn btn-primary btn-block"
+                                type="submit"
+                >
+                                Login
+                </button>
+</div>,
+              <p />,
+              <p
+                className="text-center"
+>
+                Do not have an account yet?
+                <Link
+                                href="/signup"
+                                replace={false}
+                                to="/signup"
+                >
+                                 
+                                Sign Up
+                </Link>
+</p>,
+            ],
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Log in to your account",
+                "className": "text-center form-signin-heading",
+              },
+              "ref": null,
+              "rendered": "Log in to your account",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <label
+                    htmlFor="email"
+>
+                    Email
+</label>,
+                  <input
+                    className="form-control"
+                    name="email"
+                    onChange={[Function]}
+                    required={true}
+                    type="email"
+                    value=""
+/>,
+                ],
+                "className": "form-group",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Email",
+                    "htmlFor": "email",
+                  },
+                  "ref": null,
+                  "rendered": "Email",
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "form-control",
+                    "name": "email",
+                    "onChange": [Function],
+                    "required": true,
+                    "type": "email",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <label
+                    htmlFor="password"
+>
+                    Password
+</label>,
+                  <input
+                    className="form-control"
+                    name="password"
+                    onChange={[Function]}
+                    required={true}
+                    type="password"
+                    value=""
+/>,
+                ],
+                "className": "form-group",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Password",
+                    "htmlFor": "password",
+                  },
+                  "ref": null,
+                  "rendered": "Password",
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "form-control",
+                    "name": "password",
+                    "onChange": [Function],
+                    "required": true,
+                    "type": "password",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="btn btn-primary btn-block"
+                  type="submit"
+>
+                  Login
+</button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Login",
+                  "className": "btn btn-primary btn-block",
+                  "type": "submit",
+                },
+                "ref": null,
+                "rendered": "Login",
+                "type": "button",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Do not have an account yet?",
+                  <Link
+                    href="/signup"
+                    replace={false}
+                    to="/signup"
+>
+                     
+                    Sign Up
+</Link>,
+                ],
+                "className": "text-center",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Do not have an account yet?",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Sign Up",
+                    ],
+                    "href": "/signup",
+                    "replace": false,
+                    "to": "/signup",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Sign Up",
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "form",
+        },
+        "type": "div",
+      },
+      "type": "div",
     },
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": <div
+          className="col-md-5"
+>
+          <div
+                    className="jumbotron"
+          >
+                    <form
+                              onSubmit={[Function]}
+                    >
+                              <h2
+                                        className="text-center form-signin-heading"
+                              >
+                                        Log in to your account
+                              </h2>
+                              <div
+                                        className="form-group"
+                              >
+                                        <label
+                                                  htmlFor="email"
+                                        >
+                                                  Email
+                                        </label>
+                                        <input
+                                                  className="form-control"
+                                                  name="email"
+                                                  onChange={[Function]}
+                                                  required={true}
+                                                  type="email"
+                                                  value=""
+                                        />
+                              </div>
+                              <div
+                                        className="form-group"
+                              >
+                                        <label
+                                                  htmlFor="password"
+                                        >
+                                                  Password
+                                        </label>
+                                        <input
+                                                  className="form-control"
+                                                  name="password"
+                                                  onChange={[Function]}
+                                                  required={true}
+                                                  type="password"
+                                                  value=""
+                                        />
+                              </div>
+                              <div>
+                                        <button
+                                                  className="btn btn-primary btn-block"
+                                                  type="submit"
+                                        >
+                                                  Login
+                                        </button>
+                              </div>
+                              <p />
+                              <p
+                                        className="text-center"
+                              >
+                                        Do not have an account yet?
+                                        <Link
+                                                  href="/signup"
+                                                  replace={false}
+                                                  to="/signup"
+                                        >
+                                                   
+                                                  Sign Up
+                                        </Link>
+                              </p>
+                    </form>
+          </div>
+</div>,
+        "className": "row justify-content-md-center",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="jumbotron"
+>
+            <form
+                        onSubmit={[Function]}
+            >
+                        <h2
+                                    className="text-center form-signin-heading"
+                        >
+                                    Log in to your account
+                        </h2>
+                        <div
+                                    className="form-group"
+                        >
+                                    <label
+                                                htmlFor="email"
+                                    >
+                                                Email
+                                    </label>
+                                    <input
+                                                className="form-control"
+                                                name="email"
+                                                onChange={[Function]}
+                                                required={true}
+                                                type="email"
+                                                value=""
+                                    />
+                        </div>
+                        <div
+                                    className="form-group"
+                        >
+                                    <label
+                                                htmlFor="password"
+                                    >
+                                                Password
+                                    </label>
+                                    <input
+                                                className="form-control"
+                                                name="password"
+                                                onChange={[Function]}
+                                                required={true}
+                                                type="password"
+                                                value=""
+                                    />
+                        </div>
+                        <div>
+                                    <button
+                                                className="btn btn-primary btn-block"
+                                                type="submit"
+                                    >
+                                                Login
+                                    </button>
+                        </div>
+                        <p />
+                        <p
+                                    className="text-center"
+                        >
+                                    Do not have an account yet?
+                                    <Link
+                                                href="/signup"
+                                                replace={false}
+                                                to="/signup"
+                                    >
+                                                 
+                                                Sign Up
+                                    </Link>
+                        </p>
+            </form>
+</div>,
+          "className": "col-md-5",
         },
-        "_calculateChangedBits": null,
-        "_changedBits": 0,
-        "_changedBits2": 0,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": undefined,
-        "_currentValue2": undefined,
-        "_defaultValue": undefined,
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <form
+              onSubmit={[Function]}
+>
+              <h2
+                            className="text-center form-signin-heading"
+              >
+                            Log in to your account
+              </h2>
+              <div
+                            className="form-group"
+              >
+                            <label
+                                          htmlFor="email"
+                            >
+                                          Email
+                            </label>
+                            <input
+                                          className="form-control"
+                                          name="email"
+                                          onChange={[Function]}
+                                          required={true}
+                                          type="email"
+                                          value=""
+                            />
+              </div>
+              <div
+                            className="form-group"
+              >
+                            <label
+                                          htmlFor="password"
+                            >
+                                          Password
+                            </label>
+                            <input
+                                          className="form-control"
+                                          name="password"
+                                          onChange={[Function]}
+                                          required={true}
+                                          type="password"
+                                          value=""
+                            />
+              </div>
+              <div>
+                            <button
+                                          className="btn btn-primary btn-block"
+                                          type="submit"
+                            >
+                                          Login
+                            </button>
+              </div>
+              <p />
+              <p
+                            className="text-center"
+              >
+                            Do not have an account yet?
+                            <Link
+                                          href="/signup"
+                                          replace={false}
+                                          to="/signup"
+                            >
+                                           
+                                          Sign Up
+                            </Link>
+              </p>
+</form>,
+            "className": "jumbotron",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2
+                  className="text-center form-signin-heading"
+>
+                  Log in to your account
+</h2>,
+                <div
+                  className="form-group"
+>
+                  <label
+                                    htmlFor="email"
+                  >
+                                    Email
+                  </label>
+                  <input
+                                    className="form-control"
+                                    name="email"
+                                    onChange={[Function]}
+                                    required={true}
+                                    type="email"
+                                    value=""
+                  />
+</div>,
+                <div
+                  className="form-group"
+>
+                  <label
+                                    htmlFor="password"
+                  >
+                                    Password
+                  </label>
+                  <input
+                                    className="form-control"
+                                    name="password"
+                                    onChange={[Function]}
+                                    required={true}
+                                    type="password"
+                                    value=""
+                  />
+</div>,
+                <div>
+                  <button
+                                    className="btn btn-primary btn-block"
+                                    type="submit"
+                  >
+                                    Login
+                  </button>
+</div>,
+                <p />,
+                <p
+                  className="text-center"
+>
+                  Do not have an account yet?
+                  <Link
+                                    href="/signup"
+                                    replace={false}
+                                    to="/signup"
+                  >
+                                     
+                                    Sign Up
+                  </Link>
+</p>,
+              ],
+              "onSubmit": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Log in to your account",
+                  "className": "text-center form-signin-heading",
+                },
+                "ref": null,
+                "rendered": "Log in to your account",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <label
+                      htmlFor="email"
+>
+                      Email
+</label>,
+                    <input
+                      className="form-control"
+                      name="email"
+                      onChange={[Function]}
+                      required={true}
+                      type="email"
+                      value=""
+/>,
+                  ],
+                  "className": "form-group",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Email",
+                      "htmlFor": "email",
+                    },
+                    "ref": null,
+                    "rendered": "Email",
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "form-control",
+                      "name": "email",
+                      "onChange": [Function],
+                      "required": true,
+                      "type": "email",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <label
+                      htmlFor="password"
+>
+                      Password
+</label>,
+                    <input
+                      className="form-control"
+                      name="password"
+                      onChange={[Function]}
+                      required={true}
+                      type="password"
+                      value=""
+/>,
+                  ],
+                  "className": "form-group",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Password",
+                      "htmlFor": "password",
+                    },
+                    "ref": null,
+                    "rendered": "Password",
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "form-control",
+                      "name": "password",
+                      "onChange": [Function],
+                      "required": true,
+                      "type": "password",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <button
+                    className="btn btn-primary btn-block"
+                    type="submit"
+>
+                    Login
+</button>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Login",
+                    "className": "btn btn-primary btn-block",
+                    "type": "submit",
+                  },
+                  "ref": null,
+                  "rendered": "Login",
+                  "type": "button",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Do not have an account yet?",
+                    <Link
+                      href="/signup"
+                      replace={false}
+                      to="/signup"
+>
+                       
+                      Sign Up
+</Link>,
+                  ],
+                  "className": "text-center",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Do not have an account yet?",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "Sign Up",
+                      ],
+                      "href": "/signup",
+                      "replace": false,
+                      "to": "/signup",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "Sign Up",
+                    ],
+                    "type": [Function],
+                  },
+                ],
+                "type": "p",
+              },
+            ],
+            "type": "form",
+          },
+          "type": "div",
+        },
+        "type": "div",
       },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

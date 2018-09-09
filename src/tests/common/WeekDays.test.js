@@ -1,13 +1,24 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { mount } from "enzyme";
 import WeekDays from "../../components/common/WeekDays";
 
 describe("WeekDays component", () => {
   let wrapper;
+  let mockFn;
   beforeEach(() => {
-    wrapper = shallow(<WeekDays />);
+    mockFn = jest.fn();
+    wrapper = mount(<WeekDays getMenu={mockFn} />);
   });
   it("renders succesfully", () => {
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it("should show meals on clicking", () => {
+    wrapper
+      .find("#monday")
+      .first()
+      .simulate("click");
+
+    expect(mockFn.mock.calls.length).toBe(1);
   });
 });

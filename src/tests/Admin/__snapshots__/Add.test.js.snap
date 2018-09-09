@@ -3,7 +3,10 @@
 exports[`AddMeal component renders successfully 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Add />,
+  Symbol(enzyme.__unrendered__): <Add
+    getMeals={[Function]}
+    reset={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -768,7 +771,7 @@ ShallowWrapper {
                             "onClick": [Function],
                             "type": "button",
                           },
-                          "ref": "modalClose",
+                          "ref": null,
                           "rendered": "Close",
                           "type": "button",
                         },
@@ -1561,7 +1564,7 @@ ShallowWrapper {
                               "onClick": [Function],
                               "type": "button",
                             },
-                            "ref": "modalClose",
+                            "ref": null,
                             "rendered": "Close",
                             "type": "button",
                           },

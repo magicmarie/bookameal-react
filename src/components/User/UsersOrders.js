@@ -77,26 +77,13 @@ class UserOrders extends Component {
       .catch(error => {
         if (error.response) {
           const { status } = error.response;
-          if (status === 404) {
-            this.setState({
-              orders: []
-            });
-          } else if (status === 401) {
+          if (status === 401) {
             localStorage.removeItem("token");
           }
         } else if (error.request) {
           notify.show("Wrong request", "warning", 2500);
         }
       });
-  };
-
-  // delete order: close modal, show success message, get the menu
-  ConfirmDeleteOrder = order_id => {
-    axiosInstance.delete(`/orders/${order_id}`).then(response => {
-      notify.show(response.data.message, "success", 2500);
-      document.getElementById(`cancelModal${order_id}`).click();
-      this.getUserOrders();
-    });
   };
 
   // pagination

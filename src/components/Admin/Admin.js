@@ -33,9 +33,9 @@ class AdminDashboard extends Component {
    *@returns {null} null
    * @memberof AdminDashboard
    */
-  componentDidMount() {
+  componentDidMount = () => {
     this.getMeals();
-  }
+  };
 
   // get all meals created by admin
   /**
@@ -67,11 +67,7 @@ class AdminDashboard extends Component {
       .catch(error => {
         if (error.response) {
           const { status } = error.response;
-          if (status === 404) {
-            this.setState({
-              meals: []
-            });
-          } else if (status === 401) {
+          if (status === 401) {
             localStorage.removeItem("token");
           }
         } else if (error.request) {
@@ -113,8 +109,6 @@ class AdminDashboard extends Component {
       .catch(error => {
         if (error.response) {
           this.setState({ message: error.response.data.message });
-        } else if (error.request) {
-          notify.show("Network error", "error", 2500);
         }
       });
   };
@@ -151,17 +145,7 @@ class AdminDashboard extends Component {
         })
         .catch(error => {
           if (error.response) {
-            const { status } = error.response;
-            if (status === 404) {
-              this.setState({
-                menu: []
-              });
-            }
-            if (status === 409) {
-              notify.show(error.response.data.message, "error", 2500);
-            }
-          } else if (error.request) {
-            notify.show("Network error", "error", 2500);
+            notify.show(error.response.data.message, "error", 2500);
           }
         });
     });
@@ -200,7 +184,7 @@ class AdminDashboard extends Component {
           <div className="col-md-3 col-lg-3" key={meal.id}>
             <Meal
               handleAddMenu={this.handleAddMenu}
-              ConfirmDelete={() => this.ConfirmDelete(meal.id)}
+              ConfirmDelete={this.ConfirmDelete}
               EditMeal={this.EditMeal}
               id={meal.id}
               setMealId={this.setMealId}

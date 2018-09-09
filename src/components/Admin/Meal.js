@@ -30,6 +30,7 @@ const Meal = props => (
         />
         <button
           to="#"
+          id="delete"
           className="fa fa-trash icon mealcard"
           data-toggle="modal"
           title="delete meal"

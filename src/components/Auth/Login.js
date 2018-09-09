@@ -10,7 +10,7 @@ import axiosInstance from "../common/Apicalls";
  * @class Login
  * @extends {React.Component}
  */
-class Login extends React.Component {
+export class Login extends React.Component {
   state = {
     email: "",
     password: "",
@@ -25,27 +25,20 @@ class Login extends React.Component {
     event.preventDefault();
     const { email, password } = this.state;
     axiosInstance
-      .post("/auth/login ", { email, password })
+      .post("/auth/login", { email, password })
       .then(response => {
         // save token to localstorage, decode to get is_admin value
         localStorage.setItem("token", response.data.token);
         this.props.context.login(response.data.token);
         const decoded = jwtDecode(response.data.token);
         // admin/caterer
-        if (decoded.is_admin === "True") {
-          notify.show(response.data.message, "success", 2000);
-          this.props.history.push("/admin");
-          // customer
-        } else {
-          notify.show(response.data.message, "success", 2000);
-          this.props.history.push("/user");
-        }
+        notify.show(response.data.message, "success", 2000);
+        const redirectUrl = decoded.is_admin === "True" ? "/admin" : "/user";
+        this.props.history.push(redirectUrl);
       })
       .catch(error => {
         if (error.response) {
           notify.show(error.response.data.message, "error", 2500);
-        } else if (error.request) {
-          notify.show("Network error", "error", 2500);
         }
       });
   };

@@ -6,7 +6,7 @@
 
 Book A Meal is a web application that allows customers to make food orders and helps the food vendor to know what the customers want to eat.
 
-_Client App consumes the api at this githup repo ... and API documentation and Live production follow this ..._
+Client App consumes the api at this githup repo [here](https://github.com/magicmarie/book_a_meal) and API documentation and Live production follow this [url](https://book-a-meal-api-db.herokuapp.com/apidocs/#)
 
 ## Installation
 
@@ -20,13 +20,13 @@ $ cd bookameal-react
 Then install the the necessary dependecies
 
 ```
-$ npm install
+$ yarn add
 ```
 
 Start the server
 
 ```
-$ npm start
+$ yarn start
 ```
 
 Then navigate to http://localhost:3000 to run the app in your browser on your local machine.
@@ -36,15 +36,15 @@ Then navigate to http://localhost:3000 to run the app in your browser on your lo
 Type the command below at your terminal/console/command prompt to run tests.
 
 ```
-$ npm test
+$ yarn test
 ```
 
 ## For test coverage
 
 ```
-$ npm test -- -coverage
+$ yarn test -- -coverage
 ```
 
 ## Live APP
 
-Follow this ... to see the app in live production
+Follow this [link](https://book-a-meal-react.herokuapp.com/) to see the app in live production

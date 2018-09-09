@@ -11,7 +11,7 @@ import { AppContext } from "../../appContext";
  * @class UserDashboard
  * @extends {Component}
  */
-class UserDashboard extends Component {
+export class UserDashboard extends Component {
   state = {
     menus: [],
     loaded: false,
@@ -47,11 +47,7 @@ class UserDashboard extends Component {
       .catch(error => {
         if (error.response) {
           const { status } = error.response;
-          if (status === 404) {
-            this.setState({
-              menus: []
-            });
-          } else if (status === 401) {
+          if (status === 401) {
             localStorage.removeItem("token");
           }
         } else if (error.request) {
@@ -66,6 +62,14 @@ class UserDashboard extends Component {
     this.setState({ currentDay: day, menus });
   };
 
+  /**
+   *@param meal_id
+   *@param meal_name
+   *@param adminName
+   *@param id
+   *@returns {null} null
+   * @memberof UserDashboard
+   */
   handleAddCart = (meal_id, meal_name, price, adminName, id) => {
     const cartItem = {
       menu_id: id,

@@ -12,11 +12,7 @@ const Order = props => (
       <div className="col-md-2 text-center">{props.customerName}</div>
       <div className="col-md-2">{props.quantity}</div>
       <div className="col-md-2 text-center">
-        <select
-          // onChange={evt => props.onChange(evt, props.id)}
-          defaultValue="Not delivered"
-          name="delivery"
-        >
+        <select defaultValue="Not delivered" name="delivery">
           <option value="Delivered">Delivered</option>
           <option value="Not delivered">Not delivered</option>
           <option value="In progress">In progress</option>
@@ -32,7 +28,6 @@ const Order = props => (
  */
 class AdminDashboard extends Component {
   state = {
-    total: null,
     orders: [],
     loaded: false,
     nextPage: null,
@@ -50,24 +45,6 @@ class AdminDashboard extends Component {
   componentWillMount() {
     this.getUserOrders();
   }
-
-  // onChange = (evt, id) => {
-  //   const delivery = evt.target.value;
-  //   this.setDelivery(id, delivery);
-  // };
-
-  // setDelivery = (id, delivery) => {
-  //   let q = this.getUserOrders();
-  //   const newDelivery = q.map(item => {
-  //     if (item.id === id) {
-  //       item.delivery = delivery;
-  //     }
-  //     return item;
-  //   });
-  //   this.setItem("new", JSON.stringify(newDelivery));
-  //   window.location.reload();
-  // };
-
   // get all orders from admin's meals
   getUserOrders = () => {
     const page = this.state.currentPage || 1;
@@ -75,7 +52,6 @@ class AdminDashboard extends Component {
       .get("/orders", { params: { page } })
       .then(response => {
         const {
-          total,
           currentPage,
           orders,
           nextPage,
@@ -83,7 +59,6 @@ class AdminDashboard extends Component {
           previousPage
         } = response.data.order_items;
         this.setState({
-          total,
           currentPage,
           orders,
           nextPage,
@@ -95,11 +70,7 @@ class AdminDashboard extends Component {
       .catch(error => {
         if (error.response) {
           const { status } = error.response;
-          if (status === 404) {
-            this.setState({
-              orders: []
-            });
-          } else if (status === 401) {
+          if (status === 401) {
             localStorage.removeItem("token");
           }
         } else if (error.request) {

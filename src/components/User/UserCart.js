@@ -9,7 +9,7 @@ import CartItem from "./CartItem";
  * @class UserCart
  * @extends {React.Component}
  */
-class UserCart extends React.Component {
+export class UserCart extends React.Component {
   state = {
     loaded: true
   };
@@ -25,31 +25,11 @@ class UserCart extends React.Component {
     this.props.context.setQuantity(mealId, quantity);
   };
 
-  // post order from menu: user
-  handleAddOrder = (id, meal_id, quantity) => {
-    axiosInstance
-      .post(`/orders/${id}/${meal_id}/${quantity}`)
-      .then(response => {
-        notify.show(response.data.message, "success", 2500);
-      })
-      .catch(error => {
-        if (error.response) {
-          const { status } = error.response;
-          if (status === 404) {
-            this.setState({
-              orders: []
-            });
-          }
-        } else if (error.request) {
-          notify.show("Wrong request", "error", 2500);
-        }
-      });
-  };
-
   makeOrder = () => {
     const items = this.props.context.getCart();
     axiosInstance.post("/orders", { meals: items }).then(res => {
       // Redirect to  orders
+      notify.show("Order made successfully", "success", 2500);
       this.props.context.clearCart();
       this.props.history.push("/usersorders");
     });

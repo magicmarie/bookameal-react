@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { postNewMeal } from "./helper";
-
+import { notify } from "react-notify-toast";
+import axiosInstance from "../common/Apicalls";
 /**
  *@param {Event} event
  * @class Add
@@ -26,9 +25,21 @@ class Add extends Component {
     const { meal_name, price } = this.state;
     // mtd to stop the default action of an element
     event.preventDefault();
-    postNewMeal({ meal_name, price }, this);
-    this.refs.modalClose.click();
-    this.props.getMeals();
+    // create new meal
+    axiosInstance
+      .post("/meals", { meal_name, price })
+      .then(response => {
+        this.reset();
+        notify.show(response.data.message, "success", 2500);
+        document.getElementById("closeAddModal").click();
+        this.props.getMeals();
+      })
+      // meal not created, show errors
+      .catch(error => {
+        if (error.response) {
+          this.setState({ message: error.response.data.message });
+        }
+      });
   };
 
   reset = () => {
@@ -109,7 +120,6 @@ class Add extends Component {
                   </div>
                   <div>
                     <button
-                      ref="modalClose"
                       type="button"
                       className="btn btn-secondary"
                       data-dismiss="modal"
@@ -131,8 +141,4 @@ class Add extends Component {
     );
   }
 }
-
-Add.propTypes = {
-  postNewMeal: PropTypes.func.isRequired
-};
 export default Add;

@@ -43,8 +43,6 @@ class Signup extends React.Component {
       .catch(err => {
         if (err.response) {
           notify.show(err.response.data.message, "error", 2500);
-        } else if (err.request) {
-          notify.show("Network error", "error", 2500);
         }
       });
   };

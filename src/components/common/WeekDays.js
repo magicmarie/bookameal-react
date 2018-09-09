@@ -13,6 +13,7 @@ const Days = ({ getMenu }) => {
   const days = daysList.map((day, i) => (
     <li key={i} className="list-group-item">
       <button
+        id={day.key}
         onClick={() => getMenu(day.key)}
         className="btn btn-block btn-lg"
         data-day={day.key}

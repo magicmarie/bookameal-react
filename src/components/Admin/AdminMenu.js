@@ -52,11 +52,7 @@ class AdminMenu extends Component {
       .catch(error => {
         if (error.response) {
           const { status } = error.response;
-          if (status === 404) {
-            this.setState({
-              menus: []
-            });
-          } else if (status === 401) {
+          if (status === 401) {
             localStorage.removeItem("token");
           }
         } else if (error.request) {
@@ -103,7 +99,6 @@ class AdminMenu extends Component {
           </div>
         ))
       );
-
     return (
       <div className="row">
         <div className="col-md-2">

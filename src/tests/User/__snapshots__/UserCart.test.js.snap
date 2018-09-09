@@ -3,7 +3,19 @@
 exports[`UserCart component renders successfully 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown
+  Symbol(enzyme.__unrendered__): <UserCart
+    context={
+        Object {
+            "clearCart": [Function],
+            "getCart": [Function],
+            "setQuantity": [Function],
+          }
+    }
+    history={
+        Object {
+            "push": [Function],
+          }
+    }
     makeOrder={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -16,55 +28,873 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": Array [
+        <h4
+          className="header text-center"
+>
+          My Cart 
+</h4>,
+        <Unknown
+          component="div"
+          loaded={true}
+          loadedClassName="loadedContent"
+          parentClassName="loader"
+>
+          <table
+                    className="table table-bordered table-hover"
+          >
+                    <thead
+                              className="thead-light"
+                    >
+                              <tr>
+                                        <th
+                                                  scope="col"
+                                        >
+                                                  Caterer
+                                        </th>
+                                        <th
+                                                  scope="col"
+                                        >
+                                                  Meal
+                                        </th>
+                                        <th
+                                                  scope="col"
+                                        >
+                                                  Quantity
+                                        </th>
+                                        <th>
+                                                  Unit Price(UGX)
+                                        </th>
+                                        <th
+                                                  scope="col"
+                                        >
+                                                  Sub Total(UGX)
+                                        </th>
+                                        <th
+                                                  scope="col"
+                                        >
+                                                  Cancel
+                                        </th>
+                              </tr>
+                    </thead>
+                    <tbody>
+                              <CartItem
+                                        adminName="test"
+                                        id={1}
+                                        mealName="test"
+                                        menuId={1}
+                                        onChange={[Function]}
+                                        price={1000}
+                                        quantity={1}
+                                        removeItem={undefined}
+                              />
+                    </tbody>
+          </table>
+          <button
+                    className="btn btn-primary"
+                    disabled={false}
+                    onClick={[Function]}
+          >
+                    Make orders
+          </button>
+</Unknown>,
+      ],
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "Consumer": [Circular],
-      "Provider": Object {
-        "$$typeof": Symbol(react.provider),
-        "_context": [Circular],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "My Cart ",
+          "className": "header text-center",
+        },
+        "ref": null,
+        "rendered": "My Cart ",
+        "type": "h4",
       },
-      "_calculateChangedBits": null,
-      "_changedBits": 0,
-      "_changedBits2": 0,
-      "_currentRenderer": null,
-      "_currentRenderer2": null,
-      "_currentValue": undefined,
-      "_currentValue2": undefined,
-      "_defaultValue": undefined,
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <table
+              className="table table-bordered table-hover"
+>
+              <thead
+                            className="thead-light"
+              >
+                            <tr>
+                                          <th
+                                                        scope="col"
+                                          >
+                                                        Caterer
+                                          </th>
+                                          <th
+                                                        scope="col"
+                                          >
+                                                        Meal
+                                          </th>
+                                          <th
+                                                        scope="col"
+                                          >
+                                                        Quantity
+                                          </th>
+                                          <th>
+                                                        Unit Price(UGX)
+                                          </th>
+                                          <th
+                                                        scope="col"
+                                          >
+                                                        Sub Total(UGX)
+                                          </th>
+                                          <th
+                                                        scope="col"
+                                          >
+                                                        Cancel
+                                          </th>
+                            </tr>
+              </thead>
+              <tbody>
+                            <CartItem
+                                          adminName="test"
+                                          id={1}
+                                          mealName="test"
+                                          menuId={1}
+                                          onChange={[Function]}
+                                          price={1000}
+                                          quantity={1}
+                                          removeItem={undefined}
+                            />
+              </tbody>
+</table>,
+            <button
+              className="btn btn-primary"
+              disabled={false}
+              onClick={[Function]}
+>
+              Make orders
+</button>,
+          ],
+          "component": "div",
+          "loaded": true,
+          "loadedClassName": "loadedContent",
+          "parentClassName": "loader",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <thead
+                  className="thead-light"
+>
+                  <tr>
+                                    <th
+                                                      scope="col"
+                                    >
+                                                      Caterer
+                                    </th>
+                                    <th
+                                                      scope="col"
+                                    >
+                                                      Meal
+                                    </th>
+                                    <th
+                                                      scope="col"
+                                    >
+                                                      Quantity
+                                    </th>
+                                    <th>
+                                                      Unit Price(UGX)
+                                    </th>
+                                    <th
+                                                      scope="col"
+                                    >
+                                                      Sub Total(UGX)
+                                    </th>
+                                    <th
+                                                      scope="col"
+                                    >
+                                                      Cancel
+                                    </th>
+                  </tr>
+</thead>,
+                <tbody>
+                  <CartItem
+                                    adminName="test"
+                                    id={1}
+                                    mealName="test"
+                                    menuId={1}
+                                    onChange={[Function]}
+                                    price={1000}
+                                    quantity={1}
+                                    removeItem={undefined}
+                  />
+</tbody>,
+              ],
+              "className": "table table-bordered table-hover",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <tr>
+                    <th
+                                        scope="col"
+                    >
+                                        Caterer
+                    </th>
+                    <th
+                                        scope="col"
+                    >
+                                        Meal
+                    </th>
+                    <th
+                                        scope="col"
+                    >
+                                        Quantity
+                    </th>
+                    <th>
+                                        Unit Price(UGX)
+                    </th>
+                    <th
+                                        scope="col"
+                    >
+                                        Sub Total(UGX)
+                    </th>
+                    <th
+                                        scope="col"
+                    >
+                                        Cancel
+                    </th>
+</tr>,
+                  "className": "thead-light",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <th
+                        scope="col"
+>
+                        Caterer
+</th>,
+                      <th
+                        scope="col"
+>
+                        Meal
+</th>,
+                      <th
+                        scope="col"
+>
+                        Quantity
+</th>,
+                      <th>
+                        Unit Price(UGX)
+</th>,
+                      <th
+                        scope="col"
+>
+                        Sub Total(UGX)
+</th>,
+                      <th
+                        scope="col"
+>
+                        Cancel
+</th>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Caterer",
+                        "scope": "col",
+                      },
+                      "ref": null,
+                      "rendered": "Caterer",
+                      "type": "th",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Meal",
+                        "scope": "col",
+                      },
+                      "ref": null,
+                      "rendered": "Meal",
+                      "type": "th",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Quantity",
+                        "scope": "col",
+                      },
+                      "ref": null,
+                      "rendered": "Quantity",
+                      "type": "th",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Unit Price(UGX)",
+                      },
+                      "ref": null,
+                      "rendered": "Unit Price(UGX)",
+                      "type": "th",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Sub Total(UGX)",
+                        "scope": "col",
+                      },
+                      "ref": null,
+                      "rendered": "Sub Total(UGX)",
+                      "type": "th",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Cancel",
+                        "scope": "col",
+                      },
+                      "ref": null,
+                      "rendered": "Cancel",
+                      "type": "th",
+                    },
+                  ],
+                  "type": "tr",
+                },
+                "type": "thead",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <CartItem
+                      adminName="test"
+                      id={1}
+                      mealName="test"
+                      menuId={1}
+                      onChange={[Function]}
+                      price={1000}
+                      quantity={1}
+                      removeItem={undefined}
+/>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "0",
+                    "nodeType": "function",
+                    "props": Object {
+                      "adminName": "test",
+                      "id": 1,
+                      "mealName": "test",
+                      "menuId": 1,
+                      "onChange": [Function],
+                      "price": 1000,
+                      "quantity": 1,
+                      "removeItem": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": "tbody",
+              },
+            ],
+            "type": "table",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Make orders",
+              "className": "btn btn-primary",
+              "disabled": false,
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Make orders",
+            "type": "button",
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": Array [
+          <h4
+            className="header text-center"
+>
+            My Cart 
+</h4>,
+          <Unknown
+            component="div"
+            loaded={true}
+            loadedClassName="loadedContent"
+            parentClassName="loader"
+>
+            <table
+                        className="table table-bordered table-hover"
+            >
+                        <thead
+                                    className="thead-light"
+                        >
+                                    <tr>
+                                                <th
+                                                            scope="col"
+                                                >
+                                                            Caterer
+                                                </th>
+                                                <th
+                                                            scope="col"
+                                                >
+                                                            Meal
+                                                </th>
+                                                <th
+                                                            scope="col"
+                                                >
+                                                            Quantity
+                                                </th>
+                                                <th>
+                                                            Unit Price(UGX)
+                                                </th>
+                                                <th
+                                                            scope="col"
+                                                >
+                                                            Sub Total(UGX)
+                                                </th>
+                                                <th
+                                                            scope="col"
+                                                >
+                                                            Cancel
+                                                </th>
+                                    </tr>
+                        </thead>
+                        <tbody>
+                                    <CartItem
+                                                adminName="test"
+                                                id={1}
+                                                mealName="test"
+                                                menuId={1}
+                                                onChange={[Function]}
+                                                price={1000}
+                                                quantity={1}
+                                                removeItem={undefined}
+                                    />
+                        </tbody>
+            </table>
+            <button
+                        className="btn btn-primary"
+                        disabled={false}
+                        onClick={[Function]}
+            >
+                        Make orders
+            </button>
+</Unknown>,
+        ],
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "My Cart ",
+            "className": "header text-center",
+          },
+          "ref": null,
+          "rendered": "My Cart ",
+          "type": "h4",
         },
-        "_calculateChangedBits": null,
-        "_changedBits": 0,
-        "_changedBits2": 0,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": undefined,
-        "_currentValue2": undefined,
-        "_defaultValue": undefined,
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <table
+                className="table table-bordered table-hover"
+>
+                <thead
+                                className="thead-light"
+                >
+                                <tr>
+                                                <th
+                                                                scope="col"
+                                                >
+                                                                Caterer
+                                                </th>
+                                                <th
+                                                                scope="col"
+                                                >
+                                                                Meal
+                                                </th>
+                                                <th
+                                                                scope="col"
+                                                >
+                                                                Quantity
+                                                </th>
+                                                <th>
+                                                                Unit Price(UGX)
+                                                </th>
+                                                <th
+                                                                scope="col"
+                                                >
+                                                                Sub Total(UGX)
+                                                </th>
+                                                <th
+                                                                scope="col"
+                                                >
+                                                                Cancel
+                                                </th>
+                                </tr>
+                </thead>
+                <tbody>
+                                <CartItem
+                                                adminName="test"
+                                                id={1}
+                                                mealName="test"
+                                                menuId={1}
+                                                onChange={[Function]}
+                                                price={1000}
+                                                quantity={1}
+                                                removeItem={undefined}
+                                />
+                </tbody>
+</table>,
+              <button
+                className="btn btn-primary"
+                disabled={false}
+                onClick={[Function]}
+>
+                Make orders
+</button>,
+            ],
+            "component": "div",
+            "loaded": true,
+            "loadedClassName": "loadedContent",
+            "parentClassName": "loader",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <thead
+                    className="thead-light"
+>
+                    <tr>
+                                        <th
+                                                            scope="col"
+                                        >
+                                                            Caterer
+                                        </th>
+                                        <th
+                                                            scope="col"
+                                        >
+                                                            Meal
+                                        </th>
+                                        <th
+                                                            scope="col"
+                                        >
+                                                            Quantity
+                                        </th>
+                                        <th>
+                                                            Unit Price(UGX)
+                                        </th>
+                                        <th
+                                                            scope="col"
+                                        >
+                                                            Sub Total(UGX)
+                                        </th>
+                                        <th
+                                                            scope="col"
+                                        >
+                                                            Cancel
+                                        </th>
+                    </tr>
+</thead>,
+                  <tbody>
+                    <CartItem
+                                        adminName="test"
+                                        id={1}
+                                        mealName="test"
+                                        menuId={1}
+                                        onChange={[Function]}
+                                        price={1000}
+                                        quantity={1}
+                                        removeItem={undefined}
+                    />
+</tbody>,
+                ],
+                "className": "table table-bordered table-hover",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <tr>
+                      <th
+                                            scope="col"
+                      >
+                                            Caterer
+                      </th>
+                      <th
+                                            scope="col"
+                      >
+                                            Meal
+                      </th>
+                      <th
+                                            scope="col"
+                      >
+                                            Quantity
+                      </th>
+                      <th>
+                                            Unit Price(UGX)
+                      </th>
+                      <th
+                                            scope="col"
+                      >
+                                            Sub Total(UGX)
+                      </th>
+                      <th
+                                            scope="col"
+                      >
+                                            Cancel
+                      </th>
+</tr>,
+                    "className": "thead-light",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <th
+                          scope="col"
+>
+                          Caterer
+</th>,
+                        <th
+                          scope="col"
+>
+                          Meal
+</th>,
+                        <th
+                          scope="col"
+>
+                          Quantity
+</th>,
+                        <th>
+                          Unit Price(UGX)
+</th>,
+                        <th
+                          scope="col"
+>
+                          Sub Total(UGX)
+</th>,
+                        <th
+                          scope="col"
+>
+                          Cancel
+</th>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Caterer",
+                          "scope": "col",
+                        },
+                        "ref": null,
+                        "rendered": "Caterer",
+                        "type": "th",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Meal",
+                          "scope": "col",
+                        },
+                        "ref": null,
+                        "rendered": "Meal",
+                        "type": "th",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Quantity",
+                          "scope": "col",
+                        },
+                        "ref": null,
+                        "rendered": "Quantity",
+                        "type": "th",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Unit Price(UGX)",
+                        },
+                        "ref": null,
+                        "rendered": "Unit Price(UGX)",
+                        "type": "th",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Sub Total(UGX)",
+                          "scope": "col",
+                        },
+                        "ref": null,
+                        "rendered": "Sub Total(UGX)",
+                        "type": "th",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Cancel",
+                          "scope": "col",
+                        },
+                        "ref": null,
+                        "rendered": "Cancel",
+                        "type": "th",
+                      },
+                    ],
+                    "type": "tr",
+                  },
+                  "type": "thead",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <CartItem
+                        adminName="test"
+                        id={1}
+                        mealName="test"
+                        menuId={1}
+                        onChange={[Function]}
+                        price={1000}
+                        quantity={1}
+                        removeItem={undefined}
+/>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "0",
+                      "nodeType": "function",
+                      "props": Object {
+                        "adminName": "test",
+                        "id": 1,
+                        "mealName": "test",
+                        "menuId": 1,
+                        "onChange": [Function],
+                        "price": 1000,
+                        "quantity": 1,
+                        "removeItem": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "tbody",
+                },
+              ],
+              "type": "table",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Make orders",
+                "className": "btn btn-primary",
+                "disabled": false,
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Make orders",
+              "type": "button",
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

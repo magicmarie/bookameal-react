@@ -10,4 +10,7 @@ describe("GuestRoute component", () => {
   it("should render correctly", () => {
     expect(wrapper).toMatchSnapshot();
   });
+  it("renders the routes", () => {
+    expect(wrapper.find("Route").length).toEqual(1);
+  });
 });

@@ -1,0 +1,452 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdminMenu component renders successfully 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AdminDashboard />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2
+          className="header text-center"
+>
+          Orders
+</h2>,
+        <div
+          className="card mb-2"
+          style={
+                    Object {
+                              "width": "10rem",
+                            }
+          }
+>
+          <div
+                    className="card-body"
+          >
+                    <h5
+                              className="card-title"
+                    >
+                              Total amount
+                    </h5>
+                    <p
+                              className="card-text"
+                    >
+                              UGX
+                    </p>
+          </div>
+</div>,
+        <Unknown
+          component="div"
+          loaded={false}
+          loadedClassName="loadedContent"
+          parentClassName="loader"
+>
+          <div>
+                    <div>
+                              No orders Found
+                    </div>
+          </div>
+</Unknown>,
+        <Pagination
+          changePage={[Function]}
+          currentPage={null}
+          nextPage={null}
+          pages={null}
+          previousPage={null}
+/>,
+      ],
+      "className": "container-fluid",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Orders",
+          "className": "header text-center",
+        },
+        "ref": null,
+        "rendered": "Orders",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="card-body"
+>
+            <h5
+                        className="card-title"
+            >
+                        Total amount
+            </h5>
+            <p
+                        className="card-text"
+            >
+                        UGX
+            </p>
+</div>,
+          "className": "card mb-2",
+          "style": Object {
+            "width": "10rem",
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h5
+                className="card-title"
+>
+                Total amount
+</h5>,
+              <p
+                className="card-text"
+>
+                UGX
+</p>,
+            ],
+            "className": "card-body",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Total amount",
+                "className": "card-title",
+              },
+              "ref": null,
+              "rendered": "Total amount",
+              "type": "h5",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  undefined,
+                  "UGX",
+                ],
+                "className": "card-text",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+                "UGX",
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <div>
+            <div>
+                        No orders Found
+            </div>
+</div>,
+          "component": "div",
+          "loaded": false,
+          "loadedClassName": "loadedContent",
+          "parentClassName": "loader",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div>
+              No orders Found
+</div>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "No orders Found",
+            },
+            "ref": null,
+            "rendered": "No orders Found",
+            "type": "div",
+          },
+          "type": "div",
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "changePage": [Function],
+          "currentPage": null,
+          "nextPage": null,
+          "pages": null,
+          "previousPage": null,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2
+            className="header text-center"
+>
+            Orders
+</h2>,
+          <div
+            className="card mb-2"
+            style={
+                        Object {
+                                    "width": "10rem",
+                                  }
+            }
+>
+            <div
+                        className="card-body"
+            >
+                        <h5
+                                    className="card-title"
+                        >
+                                    Total amount
+                        </h5>
+                        <p
+                                    className="card-text"
+                        >
+                                    UGX
+                        </p>
+            </div>
+</div>,
+          <Unknown
+            component="div"
+            loaded={false}
+            loadedClassName="loadedContent"
+            parentClassName="loader"
+>
+            <div>
+                        <div>
+                                    No orders Found
+                        </div>
+            </div>
+</Unknown>,
+          <Pagination
+            changePage={[Function]}
+            currentPage={null}
+            nextPage={null}
+            pages={null}
+            previousPage={null}
+/>,
+        ],
+        "className": "container-fluid",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Orders",
+            "className": "header text-center",
+          },
+          "ref": null,
+          "rendered": "Orders",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="card-body"
+>
+              <h5
+                            className="card-title"
+              >
+                            Total amount
+              </h5>
+              <p
+                            className="card-text"
+              >
+                            UGX
+              </p>
+</div>,
+            "className": "card mb-2",
+            "style": Object {
+              "width": "10rem",
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h5
+                  className="card-title"
+>
+                  Total amount
+</h5>,
+                <p
+                  className="card-text"
+>
+                  UGX
+</p>,
+              ],
+              "className": "card-body",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Total amount",
+                  "className": "card-title",
+                },
+                "ref": null,
+                "rendered": "Total amount",
+                "type": "h5",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    undefined,
+                    "UGX",
+                  ],
+                  "className": "card-text",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                  "UGX",
+                ],
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <div>
+              <div>
+                            No orders Found
+              </div>
+</div>,
+            "component": "div",
+            "loaded": false,
+            "loadedClassName": "loadedContent",
+            "parentClassName": "loader",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div>
+                No orders Found
+</div>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "No orders Found",
+              },
+              "ref": null,
+              "rendered": "No orders Found",
+              "type": "div",
+            },
+            "type": "div",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "changePage": [Function],
+            "currentPage": null,
+            "nextPage": null,
+            "pages": null,
+            "previousPage": null,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
