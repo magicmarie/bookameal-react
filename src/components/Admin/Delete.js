@@ -1,4 +1,5 @@
 import React from "react";
+import { CloseModalButton } from "../common/Helper";
 
 // delete meal modal
 const DeleteMeal = props => (
@@ -8,14 +9,7 @@ const DeleteMeal = props => (
         <div className="modal-content">
           <div className="modal-header">
             <h4 className="modal-title">Are you sure?</h4>
-            <button
-              type="button"
-              className="close"
-              data-dismiss="modal"
-              aria-hidden="true"
-            >
-              &times;
-            </button>
+            <CloseModalButton />
           </div>
           <div className="modal-body">
             <p>

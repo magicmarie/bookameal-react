@@ -41,40 +41,25 @@ ShallowWrapper {
                         >
                                 Log in to your account
                         </h2>
-                        <div
-                                className="form-group"
-                        >
-                                <label
-                                        htmlFor="email"
-                                >
-                                        Email
-                                </label>
-                                <input
-                                        className="form-control"
-                                        name="email"
-                                        onChange={[Function]}
-                                        required={true}
-                                        type="email"
-                                        value=""
-                                />
-                        </div>
-                        <div
-                                className="form-group"
-                        >
-                                <label
-                                        htmlFor="password"
-                                >
-                                        Password
-                                </label>
-                                <input
-                                        className="form-control"
-                                        name="password"
-                                        onChange={[Function]}
-                                        required={true}
-                                        type="password"
-                                        value=""
-                                />
-                        </div>
+                        <Unknown
+                                formFields={
+                                        Array [
+                                                Object {
+                                                  "label": "Email",
+                                                  "name": "email",
+                                                  "type": "email",
+                                                  "value": "",
+                                                },
+                                                Object {
+                                                  "label": "Password",
+                                                  "name": "password",
+                                                  "type": "password",
+                                                  "value": "",
+                                                },
+                                              ]
+                                }
+                                onChange={[Function]}
+                        />
                         <div>
                                 <button
                                         className="btn btn-primary btn-block"
@@ -119,40 +104,25 @@ ShallowWrapper {
                     >
                               Log in to your account
                     </h2>
-                    <div
-                              className="form-group"
-                    >
-                              <label
-                                        htmlFor="email"
-                              >
-                                        Email
-                              </label>
-                              <input
-                                        className="form-control"
-                                        name="email"
-                                        onChange={[Function]}
-                                        required={true}
-                                        type="email"
-                                        value=""
-                              />
-                    </div>
-                    <div
-                              className="form-group"
-                    >
-                              <label
-                                        htmlFor="password"
-                              >
-                                        Password
-                              </label>
-                              <input
-                                        className="form-control"
-                                        name="password"
-                                        onChange={[Function]}
-                                        required={true}
-                                        type="password"
-                                        value=""
-                              />
-                    </div>
+                    <Unknown
+                              formFields={
+                                        Array [
+                                                  Object {
+                                                    "label": "Email",
+                                                    "name": "email",
+                                                    "type": "email",
+                                                    "value": "",
+                                                  },
+                                                  Object {
+                                                    "label": "Password",
+                                                    "name": "password",
+                                                    "type": "password",
+                                                    "value": "",
+                                                  },
+                                                ]
+                              }
+                              onChange={[Function]}
+                    />
                     <div>
                               <button
                                         className="btn btn-primary btn-block"
@@ -193,40 +163,25 @@ ShallowWrapper {
             >
                         Log in to your account
             </h2>
-            <div
-                        className="form-group"
-            >
-                        <label
-                                    htmlFor="email"
-                        >
-                                    Email
-                        </label>
-                        <input
-                                    className="form-control"
-                                    name="email"
-                                    onChange={[Function]}
-                                    required={true}
-                                    type="email"
-                                    value=""
-                        />
-            </div>
-            <div
-                        className="form-group"
-            >
-                        <label
-                                    htmlFor="password"
-                        >
-                                    Password
-                        </label>
-                        <input
-                                    className="form-control"
-                                    name="password"
-                                    onChange={[Function]}
-                                    required={true}
-                                    type="password"
-                                    value=""
-                        />
-            </div>
+            <Unknown
+                        formFields={
+                                    Array [
+                                                Object {
+                                                  "label": "Email",
+                                                  "name": "email",
+                                                  "type": "email",
+                                                  "value": "",
+                                                },
+                                                Object {
+                                                  "label": "Password",
+                                                  "name": "password",
+                                                  "type": "password",
+                                                  "value": "",
+                                                },
+                                              ]
+                        }
+                        onChange={[Function]}
+            />
             <div>
                         <button
                                     className="btn btn-primary btn-block"
@@ -264,40 +219,25 @@ ShallowWrapper {
 >
                 Log in to your account
 </h2>,
-              <div
-                className="form-group"
->
-                <label
-                                htmlFor="email"
-                >
-                                Email
-                </label>
-                <input
-                                className="form-control"
-                                name="email"
-                                onChange={[Function]}
-                                required={true}
-                                type="email"
-                                value=""
-                />
-</div>,
-              <div
-                className="form-group"
->
-                <label
-                                htmlFor="password"
-                >
-                                Password
-                </label>
-                <input
-                                className="form-control"
-                                name="password"
-                                onChange={[Function]}
-                                required={true}
-                                type="password"
-                                value=""
-                />
-</div>,
+              <Unknown
+                formFields={
+                                Array [
+                                                Object {
+                                                  "label": "Email",
+                                                  "name": "email",
+                                                  "type": "email",
+                                                  "value": "",
+                                                },
+                                                Object {
+                                                  "label": "Password",
+                                                  "name": "password",
+                                                  "type": "password",
+                                                  "value": "",
+                                                },
+                                              ]
+                }
+                onChange={[Function]}
+/>,
               <div>
                 <button
                                 className="btn btn-primary btn-block"
@@ -340,112 +280,27 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "function",
               "props": Object {
-                "children": Array [
-                  <label
-                    htmlFor="email"
->
-                    Email
-</label>,
-                  <input
-                    className="form-control"
-                    name="email"
-                    onChange={[Function]}
-                    required={true}
-                    type="email"
-                    value=""
-/>,
-                ],
-                "className": "form-group",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Email",
-                    "htmlFor": "email",
-                  },
-                  "ref": null,
-                  "rendered": "Email",
-                  "type": "label",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "form-control",
+                "formFields": Array [
+                  Object {
+                    "label": "Email",
                     "name": "email",
-                    "onChange": [Function],
-                    "required": true,
                     "type": "email",
                     "value": "",
                   },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "input",
-                },
-              ],
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <label
-                    htmlFor="password"
->
-                    Password
-</label>,
-                  <input
-                    className="form-control"
-                    name="password"
-                    onChange={[Function]}
-                    required={true}
-                    type="password"
-                    value=""
-/>,
-                ],
-                "className": "form-group",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Password",
-                    "htmlFor": "password",
-                  },
-                  "ref": null,
-                  "rendered": "Password",
-                  "type": "label",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "form-control",
+                  Object {
+                    "label": "Password",
                     "name": "password",
-                    "onChange": [Function],
-                    "required": true,
                     "type": "password",
                     "value": "",
                   },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "input",
-                },
-              ],
-              "type": "div",
+                ],
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
             },
             Object {
               "instance": null,
@@ -557,40 +412,25 @@ ShallowWrapper {
                               >
                                         Log in to your account
                               </h2>
-                              <div
-                                        className="form-group"
-                              >
-                                        <label
-                                                  htmlFor="email"
-                                        >
-                                                  Email
-                                        </label>
-                                        <input
-                                                  className="form-control"
-                                                  name="email"
-                                                  onChange={[Function]}
-                                                  required={true}
-                                                  type="email"
-                                                  value=""
-                                        />
-                              </div>
-                              <div
-                                        className="form-group"
-                              >
-                                        <label
-                                                  htmlFor="password"
-                                        >
-                                                  Password
-                                        </label>
-                                        <input
-                                                  className="form-control"
-                                                  name="password"
-                                                  onChange={[Function]}
-                                                  required={true}
-                                                  type="password"
-                                                  value=""
-                                        />
-                              </div>
+                              <Unknown
+                                        formFields={
+                                                  Array [
+                                                            Object {
+                                                              "label": "Email",
+                                                              "name": "email",
+                                                              "type": "email",
+                                                              "value": "",
+                                                            },
+                                                            Object {
+                                                              "label": "Password",
+                                                              "name": "password",
+                                                              "type": "password",
+                                                              "value": "",
+                                                            },
+                                                          ]
+                                        }
+                                        onChange={[Function]}
+                              />
                               <div>
                                         <button
                                                   className="btn btn-primary btn-block"
@@ -635,40 +475,25 @@ ShallowWrapper {
                         >
                                     Log in to your account
                         </h2>
-                        <div
-                                    className="form-group"
-                        >
-                                    <label
-                                                htmlFor="email"
-                                    >
-                                                Email
-                                    </label>
-                                    <input
-                                                className="form-control"
-                                                name="email"
-                                                onChange={[Function]}
-                                                required={true}
-                                                type="email"
-                                                value=""
-                                    />
-                        </div>
-                        <div
-                                    className="form-group"
-                        >
-                                    <label
-                                                htmlFor="password"
-                                    >
-                                                Password
-                                    </label>
-                                    <input
-                                                className="form-control"
-                                                name="password"
-                                                onChange={[Function]}
-                                                required={true}
-                                                type="password"
-                                                value=""
-                                    />
-                        </div>
+                        <Unknown
+                                    formFields={
+                                                Array [
+                                                            Object {
+                                                              "label": "Email",
+                                                              "name": "email",
+                                                              "type": "email",
+                                                              "value": "",
+                                                            },
+                                                            Object {
+                                                              "label": "Password",
+                                                              "name": "password",
+                                                              "type": "password",
+                                                              "value": "",
+                                                            },
+                                                          ]
+                                    }
+                                    onChange={[Function]}
+                        />
                         <div>
                                     <button
                                                 className="btn btn-primary btn-block"
@@ -709,40 +534,25 @@ ShallowWrapper {
               >
                             Log in to your account
               </h2>
-              <div
-                            className="form-group"
-              >
-                            <label
-                                          htmlFor="email"
-                            >
-                                          Email
-                            </label>
-                            <input
-                                          className="form-control"
-                                          name="email"
-                                          onChange={[Function]}
-                                          required={true}
-                                          type="email"
-                                          value=""
-                            />
-              </div>
-              <div
-                            className="form-group"
-              >
-                            <label
-                                          htmlFor="password"
-                            >
-                                          Password
-                            </label>
-                            <input
-                                          className="form-control"
-                                          name="password"
-                                          onChange={[Function]}
-                                          required={true}
-                                          type="password"
-                                          value=""
-                            />
-              </div>
+              <Unknown
+                            formFields={
+                                          Array [
+                                                        Object {
+                                                          "label": "Email",
+                                                          "name": "email",
+                                                          "type": "email",
+                                                          "value": "",
+                                                        },
+                                                        Object {
+                                                          "label": "Password",
+                                                          "name": "password",
+                                                          "type": "password",
+                                                          "value": "",
+                                                        },
+                                                      ]
+                            }
+                            onChange={[Function]}
+              />
               <div>
                             <button
                                           className="btn btn-primary btn-block"
@@ -780,40 +590,25 @@ ShallowWrapper {
 >
                   Log in to your account
 </h2>,
-                <div
-                  className="form-group"
->
-                  <label
-                                    htmlFor="email"
-                  >
-                                    Email
-                  </label>
-                  <input
-                                    className="form-control"
-                                    name="email"
-                                    onChange={[Function]}
-                                    required={true}
-                                    type="email"
-                                    value=""
-                  />
-</div>,
-                <div
-                  className="form-group"
->
-                  <label
-                                    htmlFor="password"
-                  >
-                                    Password
-                  </label>
-                  <input
-                                    className="form-control"
-                                    name="password"
-                                    onChange={[Function]}
-                                    required={true}
-                                    type="password"
-                                    value=""
-                  />
-</div>,
+                <Unknown
+                  formFields={
+                                    Array [
+                                                      Object {
+                                                        "label": "Email",
+                                                        "name": "email",
+                                                        "type": "email",
+                                                        "value": "",
+                                                      },
+                                                      Object {
+                                                        "label": "Password",
+                                                        "name": "password",
+                                                        "type": "password",
+                                                        "value": "",
+                                                      },
+                                                    ]
+                  }
+                  onChange={[Function]}
+/>,
                 <div>
                   <button
                                     className="btn btn-primary btn-block"
@@ -856,112 +651,27 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "function",
                 "props": Object {
-                  "children": Array [
-                    <label
-                      htmlFor="email"
->
-                      Email
-</label>,
-                    <input
-                      className="form-control"
-                      name="email"
-                      onChange={[Function]}
-                      required={true}
-                      type="email"
-                      value=""
-/>,
-                  ],
-                  "className": "form-group",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Email",
-                      "htmlFor": "email",
-                    },
-                    "ref": null,
-                    "rendered": "Email",
-                    "type": "label",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "form-control",
+                  "formFields": Array [
+                    Object {
+                      "label": "Email",
                       "name": "email",
-                      "onChange": [Function],
-                      "required": true,
                       "type": "email",
                       "value": "",
                     },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "input",
-                  },
-                ],
-                "type": "div",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <label
-                      htmlFor="password"
->
-                      Password
-</label>,
-                    <input
-                      className="form-control"
-                      name="password"
-                      onChange={[Function]}
-                      required={true}
-                      type="password"
-                      value=""
-/>,
-                  ],
-                  "className": "form-group",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Password",
-                      "htmlFor": "password",
-                    },
-                    "ref": null,
-                    "rendered": "Password",
-                    "type": "label",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "form-control",
+                    Object {
+                      "label": "Password",
                       "name": "password",
-                      "onChange": [Function],
-                      "required": true,
                       "type": "password",
                       "value": "",
                     },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "input",
-                  },
-                ],
-                "type": "div",
+                  ],
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
               },
               Object {
                 "instance": null,

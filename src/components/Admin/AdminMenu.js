@@ -3,8 +3,8 @@ import Loader from "react-loader";
 import { notify } from "react-notify-toast";
 import axiosInstance from "../common/Apicalls";
 import Menu from "./Menu";
-import WeekDays from "../common/WeekDays";
 import getCurrentDay from "../common/CurrentDay";
+import { HelpDiv } from "../common/Helper";
 
 /**
  *
@@ -101,12 +101,7 @@ class AdminMenu extends Component {
       );
     return (
       <div className="row">
-        <div className="col-md-2">
-          <div className="header">Days</div>
-          <ul className="list-group">
-            <WeekDays getMenu={this.getMenu} />
-          </ul>
-        </div>
+        <HelpDiv getMenu={this.getMenu} />
         <div className="vl" />
         <div className="col-md-9 meal-list">
           <h2 className="header text-center">

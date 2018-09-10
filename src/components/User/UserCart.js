@@ -2,8 +2,8 @@ import React from "react";
 import Loader from "react-loader";
 import { notify } from "react-notify-toast";
 import axiosInstance from "../common/Apicalls";
-import { AppContext } from "../../appContext";
 import CartItem from "./CartItem";
+import { contextWrapper } from "../common/Helper";
 
 /**
  * @class UserCart
@@ -92,8 +92,4 @@ export class UserCart extends React.Component {
   }
 }
 
-export default React.forwardRef((props, ref) => (
-  <AppContext.Consumer>
-    {context => <UserCart {...props} context={context} ref={ref} />}
-  </AppContext.Consumer>
-));
+export default contextWrapper(UserCart);

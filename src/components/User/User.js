@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import Loader from "react-loader";
 import { notify } from "react-notify-toast";
 import axiosInstance from "../common/Apicalls";
-import WeekDays from "../common/WeekDays";
 import UserMenuItem from "./UserMenuItem";
 import getCurrentDay from "../common/CurrentDay";
-import { AppContext } from "../../appContext";
+import { HelpDiv, contextWrapper } from "../common/Helper";
 
 /**
  * @class UserDashboard
@@ -56,6 +55,12 @@ export class UserDashboard extends Component {
       });
   };
 
+  /**
+   *
+   *@param {string} day
+   *@returns {null} null
+   * @memberof UserDashboard
+   */
   getMenu = day => {
     day = day.charAt(0).toUpperCase() + day.slice(1);
     const { menus } = this.state;
@@ -119,13 +124,7 @@ export class UserDashboard extends Component {
 
     return (
       <div className="row">
-        <div className="col-md-2">
-          <div className="header text-center">Day</div>
-
-          <ul className="list-group">
-            <WeekDays getMenu={this.getMenus} />
-          </ul>
-        </div>
+        <HelpDiv getMenu={this.getMenu} />
         <div className="col-md-10">
           <h4 className="header text-center">
             {today}
@@ -139,8 +138,4 @@ export class UserDashboard extends Component {
     );
   }
 }
-export default React.forwardRef((props, ref) => (
-  <AppContext.Consumer>
-    {context => <UserDashboard {...props} context={context} ref={ref} />}
-  </AppContext.Consumer>
-));
+export default contextWrapper(UserDashboard);

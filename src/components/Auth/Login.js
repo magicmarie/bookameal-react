@@ -2,8 +2,8 @@ import React from "react";
 import { notify } from "react-notify-toast";
 import jwtDecode from "jwt-decode";
 import { Link } from "react-router-dom";
-import { AppContext } from "../../appContext";
 import axiosInstance from "../common/Apicalls";
+import { contextWrapper, Form } from "../common/Helper";
 
 /**
  *@param {Event} event
@@ -49,6 +49,20 @@ export class Login extends React.Component {
    */
   render() {
     const { email, password } = this.state;
+    const formFields = [
+      {
+        type: "email",
+        name: "email",
+        value: email,
+        label: "Email"
+      },
+      {
+        type: "password",
+        name: "password",
+        value: password,
+        label: "Password"
+      }
+    ];
     return (
       <div className="row justify-content-md-center">
         <div className="col-md-5">
@@ -57,28 +71,7 @@ export class Login extends React.Component {
               <h2 className="text-center form-signin-heading">
                 Log in to your account
               </h2>
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  value={email}
-                  onChange={this.onChange}
-                  name="email"
-                  required
-                  className="form-control"
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="password">Password</label>
-                <input
-                  type="password"
-                  value={password}
-                  onChange={this.onChange}
-                  name="password"
-                  required
-                  className="form-control"
-                />
-              </div>
+              <Form formFields={formFields} onChange={this.onChange} />
               <div>
                 <button type="submit" className="btn btn-primary btn-block">
                   Login
@@ -100,8 +93,4 @@ export class Login extends React.Component {
   }
 }
 
-export default React.forwardRef((props, ref) => (
-  <AppContext.Consumer>
-    {context => <Login {...props} context={context} ref={ref} />}
-  </AppContext.Consumer>
-));
+export default contextWrapper(Login);

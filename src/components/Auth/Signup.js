@@ -2,6 +2,7 @@ import React from "react";
 import { notify } from "react-notify-toast";
 import { Link } from "react-router-dom";
 import axiosInstance from "../common/Apicalls";
+import { Form } from "../common/Helper";
 
 /**
  *@param {Event} event
@@ -53,6 +54,26 @@ class Signup extends React.Component {
    */
   render() {
     const { email, name, password, is_admin } = this.state;
+    const formFields = [
+      {
+        type: "text",
+        name: "name",
+        value: name,
+        label: "Name"
+      },
+      {
+        type: "email",
+        name: "email",
+        value: email,
+        label: "Email"
+      },
+      {
+        type: "password",
+        name: "password",
+        value: password,
+        label: "Password"
+      }
+    ];
     return (
       <div className="row justify-content-md-center">
         <div className="col-md-5">
@@ -61,42 +82,7 @@ class Signup extends React.Component {
               <h3 className=" text-center form-signin-heading">
                 New user, Create an account
               </h3>
-              <div className="form-group ">
-                <label className="label" htmlFor="name">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  value={name}
-                  onChange={this.onChange}
-                  name="name"
-                  required
-                  className="form-control"
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  value={email}
-                  onChange={this.onChange}
-                  name="email"
-                  required
-                  className="form-control"
-                />
-              </div>
-              <div className=" form-group">
-                <label htmlFor="password">Password</label>
-                <input
-                  type="password"
-                  value={password}
-                  onChange={this.onChange}
-                  name="password"
-                  required
-                  className="form-control"
-                />
-              </div>
+              <Form formFields={formFields} onChange={this.onChange} />
               <div className="form-check form-group">
                 <input
                   type="checkbox"

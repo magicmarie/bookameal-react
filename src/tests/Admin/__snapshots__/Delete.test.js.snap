@@ -38,14 +38,7 @@ ShallowWrapper {
                                 >
                                         Are you sure?
                                 </h4>
-                                <button
-                                        aria-hidden="true"
-                                        className="close"
-                                        data-dismiss="modal"
-                                        type="button"
-                                >
-                                        ×
-                                </button>
+                                <Unknown />
                         </div>
                         <div
                                 className="modal-body"
@@ -101,14 +94,7 @@ ShallowWrapper {
                               >
                                         Are you sure?
                               </h4>
-                              <button
-                                        aria-hidden="true"
-                                        className="close"
-                                        data-dismiss="modal"
-                                        type="button"
-                              >
-                                        ×
-                              </button>
+                              <Unknown />
                     </div>
                     <div
                               className="modal-body"
@@ -162,14 +148,7 @@ ShallowWrapper {
                         >
                                     Are you sure?
                         </h4>
-                        <button
-                                    aria-hidden="true"
-                                    className="close"
-                                    data-dismiss="modal"
-                                    type="button"
-                        >
-                                    ×
-                        </button>
+                        <Unknown />
             </div>
             <div
                         className="modal-body"
@@ -219,14 +198,7 @@ ShallowWrapper {
                 >
                                 Are you sure?
                 </h4>
-                <button
-                                aria-hidden="true"
-                                className="close"
-                                data-dismiss="modal"
-                                type="button"
-                >
-                                ×
-                </button>
+                <Unknown />
 </div>,
               <div
                 className="modal-body"
@@ -274,14 +246,7 @@ ShallowWrapper {
 >
                     Are you sure?
 </h4>,
-                  <button
-                    aria-hidden="true"
-                    className="close"
-                    data-dismiss="modal"
-                    type="button"
->
-                    ×
-</button>,
+                  <Unknown />,
                 ],
                 "className": "modal-header",
               },
@@ -302,17 +267,11 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "aria-hidden": "true",
-                    "children": "×",
-                    "className": "close",
-                    "data-dismiss": "modal",
-                    "type": "button",
-                  },
+                  "nodeType": "function",
+                  "props": Object {},
                   "ref": null,
-                  "rendered": "×",
-                  "type": "button",
+                  "rendered": null,
+                  "type": [Function],
                 },
               ],
               "type": "div",
@@ -456,14 +415,7 @@ ShallowWrapper {
                                         >
                                                   Are you sure?
                                         </h4>
-                                        <button
-                                                  aria-hidden="true"
-                                                  className="close"
-                                                  data-dismiss="modal"
-                                                  type="button"
-                                        >
-                                                  ×
-                                        </button>
+                                        <Unknown />
                               </div>
                               <div
                                         className="modal-body"
@@ -519,14 +471,7 @@ ShallowWrapper {
                                     >
                                                 Are you sure?
                                     </h4>
-                                    <button
-                                                aria-hidden="true"
-                                                className="close"
-                                                data-dismiss="modal"
-                                                type="button"
-                                    >
-                                                ×
-                                    </button>
+                                    <Unknown />
                         </div>
                         <div
                                     className="modal-body"
@@ -580,14 +525,7 @@ ShallowWrapper {
                             >
                                           Are you sure?
                             </h4>
-                            <button
-                                          aria-hidden="true"
-                                          className="close"
-                                          data-dismiss="modal"
-                                          type="button"
-                            >
-                                          ×
-                            </button>
+                            <Unknown />
               </div>
               <div
                             className="modal-body"
@@ -637,14 +575,7 @@ ShallowWrapper {
                   >
                                     Are you sure?
                   </h4>
-                  <button
-                                    aria-hidden="true"
-                                    className="close"
-                                    data-dismiss="modal"
-                                    type="button"
-                  >
-                                    ×
-                  </button>
+                  <Unknown />
 </div>,
                 <div
                   className="modal-body"
@@ -692,14 +623,7 @@ ShallowWrapper {
 >
                       Are you sure?
 </h4>,
-                    <button
-                      aria-hidden="true"
-                      className="close"
-                      data-dismiss="modal"
-                      type="button"
->
-                      ×
-</button>,
+                    <Unknown />,
                   ],
                   "className": "modal-header",
                 },
@@ -720,17 +644,11 @@ ShallowWrapper {
                   Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "aria-hidden": "true",
-                      "children": "×",
-                      "className": "close",
-                      "data-dismiss": "modal",
-                      "type": "button",
-                    },
+                    "nodeType": "function",
+                    "props": Object {},
                     "ref": null,
-                    "rendered": "×",
-                    "type": "button",
+                    "rendered": null,
+                    "type": [Function],
                   },
                 ],
                 "type": "div",

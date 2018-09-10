@@ -30,59 +30,31 @@ ShallowWrapper {
                         >
                                 New user, Create an account
                         </h3>
-                        <div
-                                className="form-group "
-                        >
-                                <label
-                                        className="label"
-                                        htmlFor="name"
-                                >
-                                        Name
-                                </label>
-                                <input
-                                        className="form-control"
-                                        id="name"
-                                        name="name"
-                                        onChange={[Function]}
-                                        required={true}
-                                        type="text"
-                                        value=""
-                                />
-                        </div>
-                        <div
-                                className="form-group"
-                        >
-                                <label
-                                        htmlFor="email"
-                                >
-                                        Email
-                                </label>
-                                <input
-                                        className="form-control"
-                                        name="email"
-                                        onChange={[Function]}
-                                        required={true}
-                                        type="email"
-                                        value=""
-                                />
-                        </div>
-                        <div
-                                className=" form-group"
-                        >
-                                <label
-                                        htmlFor="password"
-                                >
-                                        Password
-                                </label>
-                                <input
-                                        className="form-control"
-                                        name="password"
-                                        onChange={[Function]}
-                                        required={true}
-                                        type="password"
-                                        value=""
-                                />
-                        </div>
+                        <Unknown
+                                formFields={
+                                        Array [
+                                                Object {
+                                                  "label": "Name",
+                                                  "name": "name",
+                                                  "type": "text",
+                                                  "value": "",
+                                                },
+                                                Object {
+                                                  "label": "Email",
+                                                  "name": "email",
+                                                  "type": "email",
+                                                  "value": "",
+                                                },
+                                                Object {
+                                                  "label": "Password",
+                                                  "name": "password",
+                                                  "type": "password",
+                                                  "value": "",
+                                                },
+                                              ]
+                                }
+                                onChange={[Function]}
+                        />
                         <div
                                 className="form-check form-group"
                         >
@@ -149,59 +121,31 @@ ShallowWrapper {
                     >
                               New user, Create an account
                     </h3>
-                    <div
-                              className="form-group "
-                    >
-                              <label
-                                        className="label"
-                                        htmlFor="name"
-                              >
-                                        Name
-                              </label>
-                              <input
-                                        className="form-control"
-                                        id="name"
-                                        name="name"
-                                        onChange={[Function]}
-                                        required={true}
-                                        type="text"
-                                        value=""
-                              />
-                    </div>
-                    <div
-                              className="form-group"
-                    >
-                              <label
-                                        htmlFor="email"
-                              >
-                                        Email
-                              </label>
-                              <input
-                                        className="form-control"
-                                        name="email"
-                                        onChange={[Function]}
-                                        required={true}
-                                        type="email"
-                                        value=""
-                              />
-                    </div>
-                    <div
-                              className=" form-group"
-                    >
-                              <label
-                                        htmlFor="password"
-                              >
-                                        Password
-                              </label>
-                              <input
-                                        className="form-control"
-                                        name="password"
-                                        onChange={[Function]}
-                                        required={true}
-                                        type="password"
-                                        value=""
-                              />
-                    </div>
+                    <Unknown
+                              formFields={
+                                        Array [
+                                                  Object {
+                                                    "label": "Name",
+                                                    "name": "name",
+                                                    "type": "text",
+                                                    "value": "",
+                                                  },
+                                                  Object {
+                                                    "label": "Email",
+                                                    "name": "email",
+                                                    "type": "email",
+                                                    "value": "",
+                                                  },
+                                                  Object {
+                                                    "label": "Password",
+                                                    "name": "password",
+                                                    "type": "password",
+                                                    "value": "",
+                                                  },
+                                                ]
+                              }
+                              onChange={[Function]}
+                    />
                     <div
                               className="form-check form-group"
                     >
@@ -264,59 +208,31 @@ ShallowWrapper {
             >
                         New user, Create an account
             </h3>
-            <div
-                        className="form-group "
-            >
-                        <label
-                                    className="label"
-                                    htmlFor="name"
-                        >
-                                    Name
-                        </label>
-                        <input
-                                    className="form-control"
-                                    id="name"
-                                    name="name"
-                                    onChange={[Function]}
-                                    required={true}
-                                    type="text"
-                                    value=""
-                        />
-            </div>
-            <div
-                        className="form-group"
-            >
-                        <label
-                                    htmlFor="email"
-                        >
-                                    Email
-                        </label>
-                        <input
-                                    className="form-control"
-                                    name="email"
-                                    onChange={[Function]}
-                                    required={true}
-                                    type="email"
-                                    value=""
-                        />
-            </div>
-            <div
-                        className=" form-group"
-            >
-                        <label
-                                    htmlFor="password"
-                        >
-                                    Password
-                        </label>
-                        <input
-                                    className="form-control"
-                                    name="password"
-                                    onChange={[Function]}
-                                    required={true}
-                                    type="password"
-                                    value=""
-                        />
-            </div>
+            <Unknown
+                        formFields={
+                                    Array [
+                                                Object {
+                                                  "label": "Name",
+                                                  "name": "name",
+                                                  "type": "text",
+                                                  "value": "",
+                                                },
+                                                Object {
+                                                  "label": "Email",
+                                                  "name": "email",
+                                                  "type": "email",
+                                                  "value": "",
+                                                },
+                                                Object {
+                                                  "label": "Password",
+                                                  "name": "password",
+                                                  "type": "password",
+                                                  "value": "",
+                                                },
+                                              ]
+                        }
+                        onChange={[Function]}
+            />
             <div
                         className="form-check form-group"
             >
@@ -376,59 +292,31 @@ ShallowWrapper {
 >
                 New user, Create an account
 </h3>,
-              <div
-                className="form-group "
->
-                <label
-                                className="label"
-                                htmlFor="name"
-                >
-                                Name
-                </label>
-                <input
-                                className="form-control"
-                                id="name"
-                                name="name"
-                                onChange={[Function]}
-                                required={true}
-                                type="text"
-                                value=""
-                />
-</div>,
-              <div
-                className="form-group"
->
-                <label
-                                htmlFor="email"
-                >
-                                Email
-                </label>
-                <input
-                                className="form-control"
-                                name="email"
-                                onChange={[Function]}
-                                required={true}
-                                type="email"
-                                value=""
-                />
-</div>,
-              <div
-                className=" form-group"
->
-                <label
-                                htmlFor="password"
-                >
-                                Password
-                </label>
-                <input
-                                className="form-control"
-                                name="password"
-                                onChange={[Function]}
-                                required={true}
-                                type="password"
-                                value=""
-                />
-</div>,
+              <Unknown
+                formFields={
+                                Array [
+                                                Object {
+                                                  "label": "Name",
+                                                  "name": "name",
+                                                  "type": "text",
+                                                  "value": "",
+                                                },
+                                                Object {
+                                                  "label": "Email",
+                                                  "name": "email",
+                                                  "type": "email",
+                                                  "value": "",
+                                                },
+                                                Object {
+                                                  "label": "Password",
+                                                  "name": "password",
+                                                  "type": "password",
+                                                  "value": "",
+                                                },
+                                              ]
+                }
+                onChange={[Function]}
+/>,
               <div
                 className="form-check form-group"
 >
@@ -493,171 +381,33 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "function",
               "props": Object {
-                "children": Array [
-                  <label
-                    className="label"
-                    htmlFor="name"
->
-                    Name
-</label>,
-                  <input
-                    className="form-control"
-                    id="name"
-                    name="name"
-                    onChange={[Function]}
-                    required={true}
-                    type="text"
-                    value=""
-/>,
-                ],
-                "className": "form-group ",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Name",
-                    "className": "label",
-                    "htmlFor": "name",
-                  },
-                  "ref": null,
-                  "rendered": "Name",
-                  "type": "label",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "form-control",
-                    "id": "name",
+                "formFields": Array [
+                  Object {
+                    "label": "Name",
                     "name": "name",
-                    "onChange": [Function],
-                    "required": true,
                     "type": "text",
                     "value": "",
                   },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "input",
-                },
-              ],
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <label
-                    htmlFor="email"
->
-                    Email
-</label>,
-                  <input
-                    className="form-control"
-                    name="email"
-                    onChange={[Function]}
-                    required={true}
-                    type="email"
-                    value=""
-/>,
-                ],
-                "className": "form-group",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Email",
-                    "htmlFor": "email",
-                  },
-                  "ref": null,
-                  "rendered": "Email",
-                  "type": "label",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "form-control",
+                  Object {
+                    "label": "Email",
                     "name": "email",
-                    "onChange": [Function],
-                    "required": true,
                     "type": "email",
                     "value": "",
                   },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "input",
-                },
-              ],
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <label
-                    htmlFor="password"
->
-                    Password
-</label>,
-                  <input
-                    className="form-control"
-                    name="password"
-                    onChange={[Function]}
-                    required={true}
-                    type="password"
-                    value=""
-/>,
-                ],
-                "className": " form-group",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Password",
-                    "htmlFor": "password",
-                  },
-                  "ref": null,
-                  "rendered": "Password",
-                  "type": "label",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "form-control",
+                  Object {
+                    "label": "Password",
                     "name": "password",
-                    "onChange": [Function],
-                    "required": true,
                     "type": "password",
                     "value": "",
                   },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "input",
-                },
-              ],
-              "type": "div",
+                ],
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
             },
             Object {
               "instance": null,
@@ -841,59 +591,31 @@ ShallowWrapper {
                               >
                                         New user, Create an account
                               </h3>
-                              <div
-                                        className="form-group "
-                              >
-                                        <label
-                                                  className="label"
-                                                  htmlFor="name"
-                                        >
-                                                  Name
-                                        </label>
-                                        <input
-                                                  className="form-control"
-                                                  id="name"
-                                                  name="name"
-                                                  onChange={[Function]}
-                                                  required={true}
-                                                  type="text"
-                                                  value=""
-                                        />
-                              </div>
-                              <div
-                                        className="form-group"
-                              >
-                                        <label
-                                                  htmlFor="email"
-                                        >
-                                                  Email
-                                        </label>
-                                        <input
-                                                  className="form-control"
-                                                  name="email"
-                                                  onChange={[Function]}
-                                                  required={true}
-                                                  type="email"
-                                                  value=""
-                                        />
-                              </div>
-                              <div
-                                        className=" form-group"
-                              >
-                                        <label
-                                                  htmlFor="password"
-                                        >
-                                                  Password
-                                        </label>
-                                        <input
-                                                  className="form-control"
-                                                  name="password"
-                                                  onChange={[Function]}
-                                                  required={true}
-                                                  type="password"
-                                                  value=""
-                                        />
-                              </div>
+                              <Unknown
+                                        formFields={
+                                                  Array [
+                                                            Object {
+                                                              "label": "Name",
+                                                              "name": "name",
+                                                              "type": "text",
+                                                              "value": "",
+                                                            },
+                                                            Object {
+                                                              "label": "Email",
+                                                              "name": "email",
+                                                              "type": "email",
+                                                              "value": "",
+                                                            },
+                                                            Object {
+                                                              "label": "Password",
+                                                              "name": "password",
+                                                              "type": "password",
+                                                              "value": "",
+                                                            },
+                                                          ]
+                                        }
+                                        onChange={[Function]}
+                              />
                               <div
                                         className="form-check form-group"
                               >
@@ -960,59 +682,31 @@ ShallowWrapper {
                         >
                                     New user, Create an account
                         </h3>
-                        <div
-                                    className="form-group "
-                        >
-                                    <label
-                                                className="label"
-                                                htmlFor="name"
-                                    >
-                                                Name
-                                    </label>
-                                    <input
-                                                className="form-control"
-                                                id="name"
-                                                name="name"
-                                                onChange={[Function]}
-                                                required={true}
-                                                type="text"
-                                                value=""
-                                    />
-                        </div>
-                        <div
-                                    className="form-group"
-                        >
-                                    <label
-                                                htmlFor="email"
-                                    >
-                                                Email
-                                    </label>
-                                    <input
-                                                className="form-control"
-                                                name="email"
-                                                onChange={[Function]}
-                                                required={true}
-                                                type="email"
-                                                value=""
-                                    />
-                        </div>
-                        <div
-                                    className=" form-group"
-                        >
-                                    <label
-                                                htmlFor="password"
-                                    >
-                                                Password
-                                    </label>
-                                    <input
-                                                className="form-control"
-                                                name="password"
-                                                onChange={[Function]}
-                                                required={true}
-                                                type="password"
-                                                value=""
-                                    />
-                        </div>
+                        <Unknown
+                                    formFields={
+                                                Array [
+                                                            Object {
+                                                              "label": "Name",
+                                                              "name": "name",
+                                                              "type": "text",
+                                                              "value": "",
+                                                            },
+                                                            Object {
+                                                              "label": "Email",
+                                                              "name": "email",
+                                                              "type": "email",
+                                                              "value": "",
+                                                            },
+                                                            Object {
+                                                              "label": "Password",
+                                                              "name": "password",
+                                                              "type": "password",
+                                                              "value": "",
+                                                            },
+                                                          ]
+                                    }
+                                    onChange={[Function]}
+                        />
                         <div
                                     className="form-check form-group"
                         >
@@ -1075,59 +769,31 @@ ShallowWrapper {
               >
                             New user, Create an account
               </h3>
-              <div
-                            className="form-group "
-              >
-                            <label
-                                          className="label"
-                                          htmlFor="name"
-                            >
-                                          Name
-                            </label>
-                            <input
-                                          className="form-control"
-                                          id="name"
-                                          name="name"
-                                          onChange={[Function]}
-                                          required={true}
-                                          type="text"
-                                          value=""
-                            />
-              </div>
-              <div
-                            className="form-group"
-              >
-                            <label
-                                          htmlFor="email"
-                            >
-                                          Email
-                            </label>
-                            <input
-                                          className="form-control"
-                                          name="email"
-                                          onChange={[Function]}
-                                          required={true}
-                                          type="email"
-                                          value=""
-                            />
-              </div>
-              <div
-                            className=" form-group"
-              >
-                            <label
-                                          htmlFor="password"
-                            >
-                                          Password
-                            </label>
-                            <input
-                                          className="form-control"
-                                          name="password"
-                                          onChange={[Function]}
-                                          required={true}
-                                          type="password"
-                                          value=""
-                            />
-              </div>
+              <Unknown
+                            formFields={
+                                          Array [
+                                                        Object {
+                                                          "label": "Name",
+                                                          "name": "name",
+                                                          "type": "text",
+                                                          "value": "",
+                                                        },
+                                                        Object {
+                                                          "label": "Email",
+                                                          "name": "email",
+                                                          "type": "email",
+                                                          "value": "",
+                                                        },
+                                                        Object {
+                                                          "label": "Password",
+                                                          "name": "password",
+                                                          "type": "password",
+                                                          "value": "",
+                                                        },
+                                                      ]
+                            }
+                            onChange={[Function]}
+              />
               <div
                             className="form-check form-group"
               >
@@ -1187,59 +853,31 @@ ShallowWrapper {
 >
                   New user, Create an account
 </h3>,
-                <div
-                  className="form-group "
->
-                  <label
-                                    className="label"
-                                    htmlFor="name"
-                  >
-                                    Name
-                  </label>
-                  <input
-                                    className="form-control"
-                                    id="name"
-                                    name="name"
-                                    onChange={[Function]}
-                                    required={true}
-                                    type="text"
-                                    value=""
-                  />
-</div>,
-                <div
-                  className="form-group"
->
-                  <label
-                                    htmlFor="email"
-                  >
-                                    Email
-                  </label>
-                  <input
-                                    className="form-control"
-                                    name="email"
-                                    onChange={[Function]}
-                                    required={true}
-                                    type="email"
-                                    value=""
-                  />
-</div>,
-                <div
-                  className=" form-group"
->
-                  <label
-                                    htmlFor="password"
-                  >
-                                    Password
-                  </label>
-                  <input
-                                    className="form-control"
-                                    name="password"
-                                    onChange={[Function]}
-                                    required={true}
-                                    type="password"
-                                    value=""
-                  />
-</div>,
+                <Unknown
+                  formFields={
+                                    Array [
+                                                      Object {
+                                                        "label": "Name",
+                                                        "name": "name",
+                                                        "type": "text",
+                                                        "value": "",
+                                                      },
+                                                      Object {
+                                                        "label": "Email",
+                                                        "name": "email",
+                                                        "type": "email",
+                                                        "value": "",
+                                                      },
+                                                      Object {
+                                                        "label": "Password",
+                                                        "name": "password",
+                                                        "type": "password",
+                                                        "value": "",
+                                                      },
+                                                    ]
+                  }
+                  onChange={[Function]}
+/>,
                 <div
                   className="form-check form-group"
 >
@@ -1304,171 +942,33 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "function",
                 "props": Object {
-                  "children": Array [
-                    <label
-                      className="label"
-                      htmlFor="name"
->
-                      Name
-</label>,
-                    <input
-                      className="form-control"
-                      id="name"
-                      name="name"
-                      onChange={[Function]}
-                      required={true}
-                      type="text"
-                      value=""
-/>,
-                  ],
-                  "className": "form-group ",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Name",
-                      "className": "label",
-                      "htmlFor": "name",
-                    },
-                    "ref": null,
-                    "rendered": "Name",
-                    "type": "label",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "form-control",
-                      "id": "name",
+                  "formFields": Array [
+                    Object {
+                      "label": "Name",
                       "name": "name",
-                      "onChange": [Function],
-                      "required": true,
                       "type": "text",
                       "value": "",
                     },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "input",
-                  },
-                ],
-                "type": "div",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <label
-                      htmlFor="email"
->
-                      Email
-</label>,
-                    <input
-                      className="form-control"
-                      name="email"
-                      onChange={[Function]}
-                      required={true}
-                      type="email"
-                      value=""
-/>,
-                  ],
-                  "className": "form-group",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Email",
-                      "htmlFor": "email",
-                    },
-                    "ref": null,
-                    "rendered": "Email",
-                    "type": "label",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "form-control",
+                    Object {
+                      "label": "Email",
                       "name": "email",
-                      "onChange": [Function],
-                      "required": true,
                       "type": "email",
                       "value": "",
                     },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "input",
-                  },
-                ],
-                "type": "div",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <label
-                      htmlFor="password"
->
-                      Password
-</label>,
-                    <input
-                      className="form-control"
-                      name="password"
-                      onChange={[Function]}
-                      required={true}
-                      type="password"
-                      value=""
-/>,
-                  ],
-                  "className": " form-group",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Password",
-                      "htmlFor": "password",
-                    },
-                    "ref": null,
-                    "rendered": "Password",
-                    "type": "label",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "form-control",
+                    Object {
+                      "label": "Password",
                       "name": "password",
-                      "onChange": [Function],
-                      "required": true,
                       "type": "password",
                       "value": "",
                     },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "input",
-                  },
-                ],
-                "type": "div",
+                  ],
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
               },
               Object {
                 "instance": null,
