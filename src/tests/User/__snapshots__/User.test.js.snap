@@ -45,7 +45,7 @@ ShallowWrapper {
           <h4
                     className="header text-center"
           >
-                    Sunday
+                    Monday
                     's Menus
           </h4>
           <Unknown
@@ -137,7 +137,7 @@ ShallowWrapper {
             <h4
               className="header text-center"
 >
-              Sunday
+              Monday
               's Menus
 </h4>,
             <Unknown
@@ -163,14 +163,14 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "Sunday",
+                "Monday",
                 "'s Menus",
               ],
               "className": "header text-center",
             },
             "ref": null,
             "rendered": Array [
-              "Sunday",
+              "Monday",
               "'s Menus",
             ],
             "type": "h4",
@@ -251,7 +251,7 @@ ShallowWrapper {
             <h4
                         className="header text-center"
             >
-                        Sunday
+                        Monday
                         's Menus
             </h4>
             <Unknown
@@ -343,7 +343,7 @@ ShallowWrapper {
               <h4
                 className="header text-center"
 >
-                Sunday
+                Monday
                 's Menus
 </h4>,
               <Unknown
@@ -369,14 +369,14 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Sunday",
+                  "Monday",
                   "'s Menus",
                 ],
                 "className": "header text-center",
               },
               "ref": null,
               "rendered": Array [
-                "Sunday",
+                "Monday",
                 "'s Menus",
               ],
               "type": "h4",

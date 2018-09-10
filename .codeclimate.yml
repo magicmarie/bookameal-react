@@ -1,0 +1,35 @@
+checks:
+  method-lines:
+    config:
+      threshold: 120
+engines:
+  eslint:
+    enabled: true
+    channel: "eslint-4"
+    config:
+      extensions:
+        - .js
+        - .jsx
+    checks:
+      react/prop-types:
+        enabled: false
+      jsx-a11y/aria-proptypes:
+        enabled: false
+  stylelint:
+    enabled: true
+  duplications:
+    enabled: true
+    config:
+      languages:
+        javascript:
+          mass_threshold: 100
+ratings:
+  paths:
+    - "**.js"
+    - "**.jsx"
+    - "**.scss"
+exclude_patterns:
+  - "**/*.test.js"
+  - "**/css/"
+  - "**/js/"
+  - "**/tests/"
